@@ -3,8 +3,10 @@ import { Activity, Zap, DollarSign, Heart } from 'lucide-react'
 import Header from './components/Header'
 import KpiCard from './components/KpiCard'
 import { GdpLifeExpChart, EnergyHealthChart } from './components/Charts'
+import MetricTrendChart from './components/MetricTrendChart'
 import AIInsightsPanel from './components/AIInsightsPanel'
-import type { GlobalEntityMetric, AISummary, KpiMetric } from './types'
+import Globe from './components/Globe'
+import type { GlobalEntityMetric, AISummary, ApiDataResponse, KpiMetric } from './types'
 
 /** Human-readable names matching COUNTRY_NAMES in apps/worker/src/data.ts */
 const COUNTRY_NAMES: Record<string, string> = {
@@ -14,7 +16,7 @@ const COUNTRY_NAMES: Record<string, string> = {
 }
 
 /** Generate plausible mock data for the selected country + year range */
-function generateMockData(iso3: string, year: number): GlobalEntityMetric[] {
+function generateMockData(iso3: string, startYear: number, endYear: number): GlobalEntityMetric[] {
   const base: Record<string, Partial<GlobalEntityMetric>> = {
     USA: { gdpPerCapitaUsd: 65000, lifeExpectancy: 78.9, daly100k: 23500, primaryEnergyTwh: 23000, renewableSharePct: 12 },
     CHN: { gdpPerCapitaUsd: 12500, lifeExpectancy: 77.3, daly100k: 25000, primaryEnergyTwh: 35000, renewableSharePct: 28 },
@@ -31,8 +33,8 @@ function generateMockData(iso3: string, year: number): GlobalEntityMetric[] {
   const b = base[iso3] ?? base['USA']
 
   // Return a small time-series for charts plus the current year
-  return Array.from({ length: 7 }, (_, i) => {
-    const y = year - 6 + i
+  return Array.from({ length: endYear - startYear + 1 }, (_, i) => {
+    const y = startYear + i
     const growth = 1 + i * 0.012
     return {
       iso3,
@@ -55,9 +57,9 @@ function generateMockData(iso3: string, year: number): GlobalEntityMetric[] {
   })
 }
 
-function buildKpis(metrics: GlobalEntityMetric[], year: number): KpiMetric[] {
-  const current = metrics.find((m) => m.year === year)
-  const prev = metrics.find((m) => m.year === year - 1)
+function buildKpis(metrics: GlobalEntityMetric[], endYear: number): KpiMetric[] {
+  const current = metrics.find((m) => m.year === endYear)
+  const prev = metrics.find((m) => m.year === endYear - 1)
 
   const delta = (cur: number | null, prv: number | null): number | null => {
     if (cur == null || prv == null || prv === 0) return null
@@ -94,22 +96,42 @@ function buildKpis(metrics: GlobalEntityMetric[], year: number): KpiMetric[] {
 
 export default function App() {
   const [selectedIso3, setSelectedIso3] = useState('USA')
-  const [year, setYear] = useState(2023)
+  const [startYear, setStartYear] = useState(2017)
+  const [endYear, setEndYear] = useState(2023)
   const [metrics, setMetrics] = useState<GlobalEntityMetric[]>([])
   const [aiSummary, setAiSummary] = useState<AISummary | null>(null)
   const [aiLoading, setAiLoading] = useState(false)
 
   useEffect(() => {
-    // In production this would fetch from /api/data?iso3=...&year=...
-    setMetrics(generateMockData(selectedIso3, year))
+    const controller = new AbortController()
+    setMetrics([])
+
+    async function loadMetrics() {
+      try {
+        const response = await fetch(
+          `/api/data?iso3=${selectedIso3}&startYear=${startYear}&endYear=${endYear}`,
+          { signal: controller.signal },
+        )
+        if (!response.ok) throw new Error('Data API error')
+        const payload = await response.json() as ApiDataResponse
+        setMetrics(payload.data)
+      } catch (error) {
+        if (error instanceof DOMException && error.name === 'AbortError') return
+        setMetrics(generateMockData(selectedIso3, startYear, endYear))
+      }
+    }
+
+    loadMetrics()
     setAiSummary(null)
-  }, [selectedIso3, year])
+
+    return () => controller.abort()
+  }, [selectedIso3, startYear, endYear])
 
   const fetchAiSummary = useCallback(async () => {
     setAiLoading(true)
     try {
       const res = await fetch(
-        `/api/summary?iso3=${selectedIso3}&year=${year}`,
+        `/api/summary?iso3=${selectedIso3}&year=${endYear}`,
       )
       if (!res.ok) throw new Error('API error')
       const data = (await res.json()) as AISummary
@@ -117,26 +139,52 @@ export default function App() {
     } catch {
       // Fallback: mock summary when worker is not running locally
       setAiSummary({
-        text: `In ${year}, ${selectedIso3} demonstrated notable resilience with sustained GDP growth. Health indicators showed continued improvement in life expectancy, while renewable energy adoption accelerated amid global decarbonisation efforts. DALYs per 100,000 declined year-on-year, reflecting improving public health outcomes.`,
+        text: `In ${endYear}, ${selectedIso3} demonstrated notable resilience with sustained GDP growth. Health indicators showed continued improvement in life expectancy, while renewable energy adoption accelerated amid global decarbonisation efforts. DALYs per 100,000 declined year-on-year, reflecting improving public health outcomes.`,
         generatedAt: new Date().toISOString(),
       })
     } finally {
       setAiLoading(false)
     }
-  }, [selectedIso3, year])
+  }, [selectedIso3, endYear])
 
-  const kpis = buildKpis(metrics, year)
+  const kpis = buildKpis(metrics, endYear)
 
   return (
     <div className="min-h-screen bg-surface-900">
       <Header
         selectedIso3={selectedIso3}
         onIso3Change={setSelectedIso3}
-        year={year}
-        onYearChange={setYear}
+        startYear={startYear}
+        endYear={endYear}
+        onRangeChange={(nextStart, nextEnd) => {
+          setStartYear(nextStart)
+          setEndYear(nextEnd)
+        }}
       />
 
       <main className="max-w-screen-2xl mx-auto px-4 py-6 space-y-6">
+        <section className="card grid grid-cols-1 items-center gap-5 overflow-hidden border-surface-600/80 bg-surface-800/70 lg:grid-cols-[minmax(0,1fr)_280px]">
+          <div className="order-2 space-y-2 lg:order-1">
+            <p className="text-xs font-semibold uppercase tracking-[0.18em] text-accent-blue">
+              Live country focus
+            </p>
+            <h1 className="text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+              Global conditions, one orbit at a time.
+            </h1>
+            <p className="max-w-xl text-sm leading-6 text-gray-400">
+              Select a country above to rotate the view and compare its economic,
+              energy, and health signals across the available timeline.
+            </p>
+            <div className="flex items-center gap-2 pt-2 text-xs text-gray-500">
+              <span className="h-2 w-2 rounded-full bg-accent-yellow shadow-[0_0_12px_rgba(250,204,21,0.8)]" />
+              Tracking {selectedIso3}
+            </div>
+          </div>
+          <div className="order-1 h-56 min-h-0 lg:order-2 lg:h-64">
+            <Globe selectedIso3={selectedIso3} />
+          </div>
+        </section>
+
         {/* KPI Cards */}
         <section
           className="grid grid-cols-2 md:grid-cols-4 gap-4"
@@ -156,6 +204,10 @@ export default function App() {
               }
             />
           ))}
+        </section>
+
+        <section aria-label="Metric trends">
+          <MetricTrendChart data={metrics} />
         </section>
 
         {/* Charts */}

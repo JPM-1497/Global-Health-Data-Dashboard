@@ -1,0 +1,341 @@
+population_group_id,population_group_name,measure_id,measure_name,location_id,location_name,sex_id,sex_name,age_id,age_name,cause_id,cause_name,metric_id,metric_name,year,val,upper,lower
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,294,All causes,3,Rate,1990,51378.61905662745,54349.97602648127,48722.48915442927
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,294,All causes,3,Rate,1991,50735.15426709617,53797.97522325718,48116.759348996035
+1,All Population,2,DALYs (Disability-Adjusted Life Years),95,United Kingdom,3,Both,22,All ages,294,All causes,3,Rate,1990,35295.810410279446,38583.53236683816,32269.674993551645
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,294,All causes,3,Rate,1993,49216.77979638901,52244.4083635478,46589.31488623455
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,294,All causes,3,Rate,1992,49733.41938026228,52782.203214376765,47108.69901688937
+1,All Population,2,DALYs (Disability-Adjusted Life Years),102,United States of America,3,Both,22,All ages,294,All causes,3,Rate,1990,34106.05841307156,37791.84867219117,30782.72219721785
+1,All Population,2,DALYs (Disability-Adjusted Life Years),6,China,3,Both,22,All ages,294,All causes,3,Rate,1990,38543.166739845234,41232.868640941575,36130.83113963911
+1,All Population,2,DALYs (Disability-Adjusted Life Years),135,Brazil,3,Both,22,All ages,294,All causes,3,Rate,1990,35904.268445143025,39218.201061090986,33218.879490514715
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,294,All causes,3,Rate,1995,48165.927465086075,51280.83963557578,45542.958631310285
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,294,All causes,3,Rate,1994,49620.27125521029,52795.07778018776,46926.552708678326
+1,All Population,2,DALYs (Disability-Adjusted Life Years),6,China,3,Both,22,All ages,294,All causes,3,Rate,1991,37880.902899648405,40888.08449222845,35392.281168304515
+1,All Population,2,DALYs (Disability-Adjusted Life Years),70,Australasia,3,Both,22,All ages,294,All causes,3,Rate,1990,29270.71248314001,32691.329628571264,26214.772041253094
+1,All Population,2,DALYs (Disability-Adjusted Life Years),95,United Kingdom,3,Both,22,All ages,294,All causes,3,Rate,1991,35023.58236680078,38391.1751465432,31932.889323118452
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,22,All ages,294,All causes,3,Rate,1990,67148.57287081111,71238.7858319561,63663.99849180529
+1,All Population,2,DALYs (Disability-Adjusted Life Years),81,Germany,3,Both,22,All ages,294,All causes,3,Rate,1990,36500.38088398362,40123.03463210283,33217.001892858905
+1,All Population,2,DALYs (Disability-Adjusted Life Years),70,Australasia,3,Both,22,All ages,294,All causes,3,Rate,1991,28800.46523774701,32239.777195876206,25770.18721543693
+1,All Population,2,DALYs (Disability-Adjusted Life Years),102,United States of America,3,Both,22,All ages,294,All causes,3,Rate,1991,33937.39658362625,37567.86256741116,30615.005505551475
+1,All Population,2,DALYs (Disability-Adjusted Life Years),196,South Africa,3,Both,22,All ages,294,All causes,3,Rate,1990,42287.1845847538,45488.750523154034,39652.7845898382
+1,All Population,2,DALYs (Disability-Adjusted Life Years),81,Germany,3,Both,22,All ages,294,All causes,3,Rate,1991,36197.372672275815,39797.43551445861,32941.95791327584
+1,All Population,2,DALYs (Disability-Adjusted Life Years),214,Nigeria,3,Both,22,All ages,294,All causes,3,Rate,1990,121529.31627146516,127112.052534525,116846.3358437943
+1,All Population,2,DALYs (Disability-Adjusted Life Years),6,China,3,Both,22,All ages,294,All causes,3,Rate,1992,37086.3821442756,40205.338070536796,34600.551008385475
+1,All Population,2,DALYs (Disability-Adjusted Life Years),6,China,3,Both,22,All ages,294,All causes,3,Rate,1993,36323.214688625805,39188.421575367924,33894.09560891274
+1,All Population,2,DALYs (Disability-Adjusted Life Years),70,Australasia,3,Both,22,All ages,294,All causes,3,Rate,1992,28690.179019819985,31994.54992686587,25686.012426593312
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,294,All causes,3,Rate,1997,46714.047772701655,49774.873712314424,44045.663297416984
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,294,All causes,3,Rate,1998,46103.731466130455,49142.956642915895,43378.03706455409
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,294,All causes,3,Rate,1996,47503.91176466215,50615.126879921576,44877.8228588198
+1,All Population,2,DALYs (Disability-Adjusted Life Years),196,South Africa,3,Both,22,All ages,294,All causes,3,Rate,1991,41165.990474719714,44370.196614007706,38475.40363799035
+1,All Population,2,DALYs (Disability-Adjusted Life Years),214,Nigeria,3,Both,22,All ages,294,All causes,3,Rate,1991,123229.10392095082,128610.73970599465,118415.19257277672
+1,All Population,2,DALYs (Disability-Adjusted Life Years),70,Australasia,3,Both,22,All ages,294,All causes,3,Rate,1993,28354.20538315678,31666.35689744414,25326.926988266878
+1,All Population,2,DALYs (Disability-Adjusted Life Years),135,Brazil,3,Both,22,All ages,294,All causes,3,Rate,1991,34821.363718998386,37991.245910282116,32111.79737440633
+1,All Population,2,DALYs (Disability-Adjusted Life Years),95,United Kingdom,3,Both,22,All ages,294,All causes,3,Rate,1992,34465.551165865996,37793.04475326228,31457.466920619932
+1,All Population,2,DALYs (Disability-Adjusted Life Years),81,Germany,3,Both,22,All ages,294,All causes,3,Rate,1993,35476.80863414649,39207.02236093545,32263.412919394075
+1,All Population,2,DALYs (Disability-Adjusted Life Years),135,Brazil,3,Both,22,All ages,294,All causes,3,Rate,1993,35233.55702267892,38484.58076578287,32683.405854759418
+1,All Population,2,DALYs (Disability-Adjusted Life Years),95,United Kingdom,3,Both,22,All ages,294,All causes,3,Rate,1993,34704.03536524229,38044.60795005143,31674.261347470427
+1,All Population,2,DALYs (Disability-Adjusted Life Years),6,China,3,Both,22,All ages,294,All causes,3,Rate,1994,35631.93451118892,38662.533777250406,33116.91211621367
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,294,All causes,3,Rate,1999,45461.1556457863,48486.740602508435,42825.34299051082
+1,All Population,2,DALYs (Disability-Adjusted Life Years),214,Nigeria,3,Both,22,All ages,294,All causes,3,Rate,1993,119081.89240884506,124189.22711301038,114198.28529481597
+1,All Population,2,DALYs (Disability-Adjusted Life Years),214,Nigeria,3,Both,22,All ages,294,All causes,3,Rate,1992,120049.462597486,125505.4079918444,115119.05256290508
+1,All Population,2,DALYs (Disability-Adjusted Life Years),196,South Africa,3,Both,22,All ages,294,All causes,3,Rate,1993,41380.81532897114,44414.63617945433,38847.853324042815
+1,All Population,2,DALYs (Disability-Adjusted Life Years),95,United Kingdom,3,Both,22,All ages,294,All causes,3,Rate,1994,33818.928710973974,37198.558232047704,30824.428359505397
+1,All Population,2,DALYs (Disability-Adjusted Life Years),135,Brazil,3,Both,22,All ages,294,All causes,3,Rate,1992,34732.3444075477,37895.53190817722,32110.819720721505
+1,All Population,2,DALYs (Disability-Adjusted Life Years),102,United States of America,3,Both,22,All ages,294,All causes,3,Rate,1994,33898.631316189974,37463.9931621505,30540.440562296655
+1,All Population,2,DALYs (Disability-Adjusted Life Years),6,China,3,Both,22,All ages,294,All causes,3,Rate,1996,34111.43446604802,37139.0486465962,31801.382268194655
+1,All Population,2,DALYs (Disability-Adjusted Life Years),196,South Africa,3,Both,22,All ages,294,All causes,3,Rate,1992,40705.26179765447,43969.29959276894,38113.57471824345
+1,All Population,2,DALYs (Disability-Adjusted Life Years),102,United States of America,3,Both,22,All ages,294,All causes,3,Rate,1996,33352.43812059813,36883.585698399926,29995.686021345093
+1,All Population,2,DALYs (Disability-Adjusted Life Years),6,China,3,Both,22,All ages,294,All causes,3,Rate,1995,34865.14525026693,37775.8982507437,32406.268289432177
+1,All Population,2,DALYs (Disability-Adjusted Life Years),102,United States of America,3,Both,22,All ages,294,All causes,3,Rate,1995,33811.61668323432,37341.60064344872,30445.166522323412
+1,All Population,2,DALYs (Disability-Adjusted Life Years),81,Germany,3,Both,22,All ages,294,All causes,3,Rate,1992,35499.71033874986,39180.71890589251,32275.182914491736
+1,All Population,2,DALYs (Disability-Adjusted Life Years),6,China,3,Both,22,All ages,294,All causes,3,Rate,1997,33381.93600324857,36367.936637773,30921.7787045643
+1,All Population,2,DALYs (Disability-Adjusted Life Years),95,United Kingdom,3,Both,22,All ages,294,All causes,3,Rate,1996,33659.28302109707,36986.001215204946,30620.830574601197
+1,All Population,2,DALYs (Disability-Adjusted Life Years),95,United Kingdom,3,Both,22,All ages,294,All causes,3,Rate,1995,33975.54742645131,37315.637073206584,30983.271789937506
+1,All Population,2,DALYs (Disability-Adjusted Life Years),102,United States of America,3,Both,22,All ages,294,All causes,3,Rate,1993,34045.19131120636,37628.38195111874,30696.315567794023
+1,All Population,2,DALYs (Disability-Adjusted Life Years),102,United States of America,3,Both,22,All ages,294,All causes,3,Rate,1992,33671.79155683263,37267.00082360161,30326.786247654076
+1,All Population,2,DALYs (Disability-Adjusted Life Years),6,China,3,Both,22,All ages,294,All causes,3,Rate,1998,32846.648820585375,35951.527461304744,30294.499573563004
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,294,All causes,3,Rate,2000,44685.12826203564,47651.13587174642,42007.64051996052
+1,All Population,2,DALYs (Disability-Adjusted Life Years),95,United Kingdom,3,Both,22,All ages,294,All causes,3,Rate,1998,33305.95519138482,36740.95327988445,30254.80379242591
+1,All Population,2,DALYs (Disability-Adjusted Life Years),70,Australasia,3,Both,22,All ages,294,All causes,3,Rate,1994,28415.356376814216,31760.941370266053,25353.612964764998
+1,All Population,2,DALYs (Disability-Adjusted Life Years),214,Nigeria,3,Both,22,All ages,294,All causes,3,Rate,1994,117994.43496395453,122925.34134577218,112816.66620002431
+1,All Population,2,DALYs (Disability-Adjusted Life Years),95,United Kingdom,3,Both,22,All ages,294,All causes,3,Rate,1999,33205.73963286247,36615.35620432115,30139.608340181447
+1,All Population,2,DALYs (Disability-Adjusted Life Years),6,China,3,Both,22,All ages,294,All causes,3,Rate,1999,32415.253676825447,35505.80389145872,29860.6115124688
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,22,All ages,294,All causes,3,Rate,1993,60521.18050831442,63851.39439886309,57582.07338313789
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,294,All causes,3,Rate,2001,43919.39697535114,46959.736434032166,41277.2711506883
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,22,All ages,294,All causes,3,Rate,1992,62840.67684204782,66376.45945179464,59966.05944582171
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,22,All ages,294,All causes,3,Rate,1991,64952.207388978444,68682.05843470471,61702.443008484195
+1,All Population,2,DALYs (Disability-Adjusted Life Years),102,United States of America,3,Both,22,All ages,294,All causes,3,Rate,1997,32867.477039932266,36397.582862352894,29501.265552954294
+1,All Population,2,DALYs (Disability-Adjusted Life Years),95,United Kingdom,3,Both,22,All ages,294,All causes,3,Rate,1997,33313.34177565525,36708.827877473406,30246.947695589934
+1,All Population,2,DALYs (Disability-Adjusted Life Years),81,Germany,3,Both,22,All ages,294,All causes,3,Rate,1994,35119.137298172594,38899.11825284475,31887.784980535656
+1,All Population,2,DALYs (Disability-Adjusted Life Years),70,Australasia,3,Both,22,All ages,294,All causes,3,Rate,1998,27729.15247613875,31127.925153685424,24618.96149363902
+1,All Population,2,DALYs (Disability-Adjusted Life Years),70,Australasia,3,Both,22,All ages,294,All causes,3,Rate,1995,28178.655942186448,31511.25198185678,25114.18232659715
+1,All Population,2,DALYs (Disability-Adjusted Life Years),70,Australasia,3,Both,22,All ages,294,All causes,3,Rate,1996,28216.667177818523,31586.859737745992,25154.545335671002
+1,All Population,2,DALYs (Disability-Adjusted Life Years),135,Brazil,3,Both,22,All ages,294,All causes,3,Rate,1998,33238.19469261354,36574.160395939805,30448.473796446295
+1,All Population,2,DALYs (Disability-Adjusted Life Years),135,Brazil,3,Both,22,All ages,294,All causes,3,Rate,1994,35066.2291524574,38304.46059150033,32358.88091762058
+1,All Population,2,DALYs (Disability-Adjusted Life Years),196,South Africa,3,Both,22,All ages,294,All causes,3,Rate,1994,43114.88191702491,46186.373257271145,40586.204642017976
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,294,All causes,3,Rate,2002,43287.02101963136,46287.98112979542,40559.737286809606
+1,All Population,2,DALYs (Disability-Adjusted Life Years),81,Germany,3,Both,22,All ages,294,All causes,3,Rate,1996,34783.77514298001,38694.69301209669,31555.872315411605
+1,All Population,2,DALYs (Disability-Adjusted Life Years),6,China,3,Both,22,All ages,294,All causes,3,Rate,2000,32102.528917001033,34935.68275893948,29636.128895614405
+1,All Population,2,DALYs (Disability-Adjusted Life Years),135,Brazil,3,Both,22,All ages,294,All causes,3,Rate,1995,34547.39117909824,37765.20160828539,31809.32444485648
+1,All Population,2,DALYs (Disability-Adjusted Life Years),95,United Kingdom,3,Both,22,All ages,294,All causes,3,Rate,2001,32121.435366486345,35616.38763250194,29037.771009927645
+1,All Population,2,DALYs (Disability-Adjusted Life Years),102,United States of America,3,Both,22,All ages,294,All causes,3,Rate,1999,32817.14388749755,36331.213323215605,29473.68144881148
+1,All Population,2,DALYs (Disability-Adjusted Life Years),95,United Kingdom,3,Both,22,All ages,294,All causes,3,Rate,2000,32503.18705638646,35949.962550458535,29460.91838769197
+1,All Population,2,DALYs (Disability-Adjusted Life Years),70,Australasia,3,Both,22,All ages,294,All causes,3,Rate,1999,27569.206094586367,30962.34428991237,24440.259734273433
+1,All Population,2,DALYs (Disability-Adjusted Life Years),196,South Africa,3,Both,22,All ages,294,All causes,3,Rate,1995,44633.84370172801,47473.258088921524,42009.27060563005
+1,All Population,2,DALYs (Disability-Adjusted Life Years),214,Nigeria,3,Both,22,All ages,294,All causes,3,Rate,1995,116936.12563409594,122111.56213124614,112122.23188620737
+1,All Population,2,DALYs (Disability-Adjusted Life Years),6,China,3,Both,22,All ages,294,All causes,3,Rate,2002,31273.038670098245,34100.49449028593,28433.4635685652
+1,All Population,2,DALYs (Disability-Adjusted Life Years),81,Germany,3,Both,22,All ages,294,All causes,3,Rate,1998,33827.482894594905,37630.801410117056,30582.83411329378
+1,All Population,2,DALYs (Disability-Adjusted Life Years),135,Brazil,3,Both,22,All ages,294,All causes,3,Rate,1996,33995.3561960505,37181.515551111705,31396.54588298598
+1,All Population,2,DALYs (Disability-Adjusted Life Years),135,Brazil,3,Both,22,All ages,294,All causes,3,Rate,1997,33413.70960168123,36657.71632094838,30730.030456939396
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,22,All ages,294,All causes,3,Rate,1998,54378.290925534166,57695.78591483362,51265.47066446877
+1,All Population,2,DALYs (Disability-Adjusted Life Years),81,Germany,3,Both,22,All ages,294,All causes,3,Rate,1995,34966.40492135942,38812.50944160154,31764.81554025172
+1,All Population,2,DALYs (Disability-Adjusted Life Years),81,Germany,3,Both,22,All ages,294,All causes,3,Rate,1999,33658.9057565817,37438.40249075476,30381.594457024406
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,22,All ages,294,All causes,3,Rate,1995,58107.38032209672,61558.57306271559,55056.0399517111
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,22,All ages,294,All causes,3,Rate,1994,58970.8936945445,62400.908778384335,55927.27343845857
+1,All Population,2,DALYs (Disability-Adjusted Life Years),214,Nigeria,3,Both,22,All ages,294,All causes,3,Rate,1997,114548.47702863989,119654.18137411591,110054.21424732883
+1,All Population,2,DALYs (Disability-Adjusted Life Years),214,Nigeria,3,Both,22,All ages,294,All causes,3,Rate,1996,117292.17847989699,122215.12016141738,113117.58939696863
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,294,All causes,3,Rate,2003,42623.37923451957,45629.808268427,39937.34254676783
+1,All Population,2,DALYs (Disability-Adjusted Life Years),214,Nigeria,3,Both,22,All ages,294,All causes,3,Rate,1998,113356.3766288104,118177.7265176185,109411.51081312685
+1,All Population,2,DALYs (Disability-Adjusted Life Years),196,South Africa,3,Both,22,All ages,294,All causes,3,Rate,1996,48220.03160917931,51084.13663972019,45568.94835926301
+1,All Population,2,DALYs (Disability-Adjusted Life Years),81,Germany,3,Both,22,All ages,294,All causes,3,Rate,1997,34182.6720741138,38020.287173355275,30976.690518521576
+1,All Population,2,DALYs (Disability-Adjusted Life Years),196,South Africa,3,Both,22,All ages,294,All causes,3,Rate,1998,55293.107804180574,58314.739923130524,52609.36963643387
+1,All Population,2,DALYs (Disability-Adjusted Life Years),81,Germany,3,Both,22,All ages,294,All causes,3,Rate,2001,33180.84589776607,37018.71220613512,29865.398489170802
+1,All Population,2,DALYs (Disability-Adjusted Life Years),135,Brazil,3,Both,22,All ages,294,All causes,3,Rate,2001,32174.15383617896,35631.19659995539,29380.101720683182
+1,All Population,2,DALYs (Disability-Adjusted Life Years),6,China,3,Both,22,All ages,294,All causes,3,Rate,2001,31780.445453344204,34570.39216103275,29136.266162878517
+1,All Population,2,DALYs (Disability-Adjusted Life Years),95,United Kingdom,3,Both,22,All ages,294,All causes,3,Rate,2002,32054.05132088045,35522.20234110007,28983.456587668632
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,22,All ages,294,All causes,3,Rate,1996,57102.91273216804,60635.27146228591,54348.433122248665
+1,All Population,2,DALYs (Disability-Adjusted Life Years),102,United States of America,3,Both,22,All ages,294,All causes,3,Rate,2002,32806.93269834496,36369.964377720615,29438.741159786274
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,294,All causes,3,Rate,2004,41976.21949962673,45023.88265330686,39242.0954258971
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,294,All causes,3,Rate,2005,41057.071250217734,44146.25164402892,38346.373383452774
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,294,All causes,3,Rate,2006,40238.9820925655,43356.25566421811,37532.38660671585
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,22,All ages,294,All causes,3,Rate,1997,55787.39125481394,59217.577356350645,52771.0853620128
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,22,All ages,294,All causes,3,Rate,1999,52395.67948570153,55915.21213480792,49429.29271174472
+1,All Population,2,DALYs (Disability-Adjusted Life Years),6,China,3,Both,22,All ages,294,All causes,3,Rate,2003,30813.709246667797,33716.89091652067,28095.120567093705
+1,All Population,2,DALYs (Disability-Adjusted Life Years),102,United States of America,3,Both,22,All ages,294,All causes,3,Rate,1998,32705.435382489508,36245.658087079704,29346.808500907784
+1,All Population,2,DALYs (Disability-Adjusted Life Years),135,Brazil,3,Both,22,All ages,294,All causes,3,Rate,1999,32903.37160239197,36173.24984934831,30196.263759856072
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,22,All ages,294,All causes,3,Rate,2000,50331.44912022715,53788.12074169653,47465.874856999326
+1,All Population,2,DALYs (Disability-Adjusted Life Years),81,Germany,3,Both,22,All ages,294,All causes,3,Rate,2000,33480.68747881092,37314.31895368954,30209.245439070208
+1,All Population,2,DALYs (Disability-Adjusted Life Years),70,Australasia,3,Both,22,All ages,294,All causes,3,Rate,2001,27257.671228879397,30804.92868508205,24077.762329779063
+1,All Population,2,DALYs (Disability-Adjusted Life Years),196,South Africa,3,Both,22,All ages,294,All causes,3,Rate,1997,51386.11661213349,54460.04196909028,48767.284910630246
+1,All Population,2,DALYs (Disability-Adjusted Life Years),214,Nigeria,3,Both,22,All ages,294,All causes,3,Rate,1999,111691.65239779037,116610.97978972834,107757.56770130158
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,22,All ages,294,All causes,3,Rate,2001,48777.240411647836,52028.18188482974,46002.352301774394
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,294,All causes,3,Rate,2007,39590.321645061165,42758.147424299255,36947.47584786946
+1,All Population,2,DALYs (Disability-Adjusted Life Years),81,Germany,3,Both,22,All ages,294,All causes,3,Rate,2002,33328.76468993945,37147.4137926029,29990.795561286253
+1,All Population,2,DALYs (Disability-Adjusted Life Years),70,Australasia,3,Both,22,All ages,294,All causes,3,Rate,2002,27253.49781654712,30864.57747632889,24087.044424500837
+1,All Population,2,DALYs (Disability-Adjusted Life Years),196,South Africa,3,Both,22,All ages,294,All causes,3,Rate,1999,57929.7502245805,61044.29914386227,55253.30125105605
+1,All Population,2,DALYs (Disability-Adjusted Life Years),70,Australasia,3,Both,22,All ages,294,All causes,3,Rate,2000,27363.676845853013,30873.968369874237,24193.461516030326
+1,All Population,2,DALYs (Disability-Adjusted Life Years),214,Nigeria,3,Both,22,All ages,294,All causes,3,Rate,2001,107199.79041629945,111724.6922983242,103148.80264506466
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,22,All ages,294,All causes,3,Rate,2002,47392.449752649416,50715.64502607272,44650.37069434319
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,294,All causes,3,Rate,2008,39123.04465237931,42336.048267502265,36532.439978713846
+1,All Population,2,DALYs (Disability-Adjusted Life Years),102,United States of America,3,Both,22,All ages,294,All causes,3,Rate,2001,32771.48212707392,36303.95677660536,29404.00972933536
+1,All Population,2,DALYs (Disability-Adjusted Life Years),102,United States of America,3,Both,22,All ages,294,All causes,3,Rate,2003,32765.493941866447,36325.31732157268,29387.742580219583
+1,All Population,2,DALYs (Disability-Adjusted Life Years),6,China,3,Both,22,All ages,294,All causes,3,Rate,2004,30262.060836543387,33178.206281189734,27542.6155814669
+1,All Population,2,DALYs (Disability-Adjusted Life Years),102,United States of America,3,Both,22,All ages,294,All causes,3,Rate,2000,32769.338731038464,36286.552508990964,29428.839160523796
+1,All Population,2,DALYs (Disability-Adjusted Life Years),95,United Kingdom,3,Both,22,All ages,294,All causes,3,Rate,2006,30721.665250738723,34256.37171160572,27573.846769141725
+1,All Population,2,DALYs (Disability-Adjusted Life Years),95,United Kingdom,3,Both,22,All ages,294,All causes,3,Rate,2004,31136.82498262092,34614.89840781844,28059.653014948548
+1,All Population,2,DALYs (Disability-Adjusted Life Years),6,China,3,Both,22,All ages,294,All causes,3,Rate,2005,29709.901753428585,32582.884556481033,27067.17742003854
+1,All Population,2,DALYs (Disability-Adjusted Life Years),81,Germany,3,Both,22,All ages,294,All causes,3,Rate,2003,33460.446218051926,37254.93857538997,30159.950699203524
+1,All Population,2,DALYs (Disability-Adjusted Life Years),95,United Kingdom,3,Both,22,All ages,294,All causes,3,Rate,2003,31952.9445654064,35435.25334054455,28850.695473497635
+1,All Population,2,DALYs (Disability-Adjusted Life Years),81,Germany,3,Both,22,All ages,294,All causes,3,Rate,2004,32807.38380504614,36606.590722092136,29477.500804327745
+1,All Population,2,DALYs (Disability-Adjusted Life Years),81,Germany,3,Both,22,All ages,294,All causes,3,Rate,2006,32756.31458561611,36600.53488837407,29365.63865348335
+1,All Population,2,DALYs (Disability-Adjusted Life Years),196,South Africa,3,Both,22,All ages,294,All causes,3,Rate,2001,64570.318711532294,67907.97777090795,61832.811331175995
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,22,All ages,294,All causes,3,Rate,2003,46141.72054430487,49594.6797752314,43424.74027697591
+1,All Population,2,DALYs (Disability-Adjusted Life Years),81,Germany,3,Both,22,All ages,294,All causes,3,Rate,2005,32917.6914671229,36766.57147793395,29548.558465927366
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,22,All ages,294,All causes,3,Rate,2006,43145.00247084916,46674.02139854902,40479.41162984069
+1,All Population,2,DALYs (Disability-Adjusted Life Years),135,Brazil,3,Both,22,All ages,294,All causes,3,Rate,2000,32483.731981215664,35844.269338926875,29770.650403794923
+1,All Population,2,DALYs (Disability-Adjusted Life Years),196,South Africa,3,Both,22,All ages,294,All causes,3,Rate,2000,60732.73609932611,64150.255349210005,58004.72249202273
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,294,All causes,3,Rate,2009,38247.082302501694,41420.20656308731,35615.28609465954
+1,All Population,2,DALYs (Disability-Adjusted Life Years),102,United States of America,3,Both,22,All ages,294,All causes,3,Rate,2004,32343.59009052374,35894.96114564677,28972.116309333716
+1,All Population,2,DALYs (Disability-Adjusted Life Years),6,China,3,Both,22,All ages,294,All causes,3,Rate,2006,29141.017757476722,32072.289952855448,26367.233841389225
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,22,All ages,294,All causes,3,Rate,2004,44833.95596935001,48178.536122850426,42007.74749052969
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,22,All ages,294,All causes,3,Rate,2005,43681.524179304586,47155.27516055241,40911.21200991641
+1,All Population,2,DALYs (Disability-Adjusted Life Years),81,Germany,3,Both,22,All ages,294,All causes,3,Rate,2007,32823.70340913506,36764.81682703818,29404.480938252524
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,294,All causes,3,Rate,2010,37898.44338391886,41062.865353536996,35276.339809504185
+1,All Population,2,DALYs (Disability-Adjusted Life Years),102,United States of America,3,Both,22,All ages,294,All causes,3,Rate,2005,32554.118514115875,36123.4755964487,29195.163682452825
+1,All Population,2,DALYs (Disability-Adjusted Life Years),70,Australasia,3,Both,22,All ages,294,All causes,3,Rate,1997,27957.0296057695,31340.42408390445,24890.719928462873
+1,All Population,2,DALYs (Disability-Adjusted Life Years),135,Brazil,3,Both,22,All ages,294,All causes,3,Rate,2002,31951.105924165506,35349.17462620647,29135.817304811724
+1,All Population,2,DALYs (Disability-Adjusted Life Years),196,South Africa,3,Both,22,All ages,294,All causes,3,Rate,2002,69172.04444895773,72552.19857339007,66397.10917595292
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,294,All causes,3,Rate,2011,37180.48736806501,40397.18832953152,34492.21920734916
+1,All Population,2,DALYs (Disability-Adjusted Life Years),6,China,3,Both,22,All ages,294,All causes,3,Rate,2008,28635.61737566133,31821.87080367427,25923.537039903367
+1,All Population,2,DALYs (Disability-Adjusted Life Years),214,Nigeria,3,Both,22,All ages,294,All causes,3,Rate,2000,110023.14688988517,114740.39146226646,106356.81143502152
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,22,All ages,294,All causes,3,Rate,2007,42775.23630968889,46169.74390530821,40084.70615883311
+1,All Population,2,DALYs (Disability-Adjusted Life Years),214,Nigeria,3,Both,22,All ages,294,All causes,3,Rate,2002,104313.05324007447,108456.25115579725,100316.1577917436
+1,All Population,2,DALYs (Disability-Adjusted Life Years),6,China,3,Both,22,All ages,294,All causes,3,Rate,2007,28779.04991057543,31786.985392309918,25947.393048404378
+1,All Population,2,DALYs (Disability-Adjusted Life Years),102,United States of America,3,Both,22,All ages,294,All causes,3,Rate,2006,32357.766287554747,35916.94815468153,29006.029746420787
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,22,All ages,294,All causes,3,Rate,2008,42016.91198866675,45489.11153630107,39440.36823085074
+1,All Population,2,DALYs (Disability-Adjusted Life Years),81,Germany,3,Both,22,All ages,294,All causes,3,Rate,2009,33308.53959329364,37484.22137572841,29872.212556495782
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,294,All causes,3,Rate,2012,36626.80807063925,39851.330612876394,33940.3292003596
+1,All Population,2,DALYs (Disability-Adjusted Life Years),214,Nigeria,3,Both,22,All ages,294,All causes,3,Rate,2003,100293.80783201789,104217.35989009489,96536.98002883319
+1,All Population,2,DALYs (Disability-Adjusted Life Years),70,Australasia,3,Both,22,All ages,294,All causes,3,Rate,2004,26850.33336719466,30539.364785747126,23666.625468518952
+1,All Population,2,DALYs (Disability-Adjusted Life Years),70,Australasia,3,Both,22,All ages,294,All causes,3,Rate,2003,27055.20796490342,30710.720156796782,23880.70194790191
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,22,All ages,294,All causes,3,Rate,2011,39158.62027825922,42629.014334013365,36388.08843284689
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,294,All causes,3,Rate,2013,36169.61554078219,39345.58333511538,33480.447811125276
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,294,All causes,3,Rate,2014,35813.9697195339,38980.76576903281,33108.038415543706
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,294,All causes,3,Rate,2015,35589.41883872569,38804.44233528976,32826.535970831676
+1,All Population,2,DALYs (Disability-Adjusted Life Years),95,United Kingdom,3,Both,22,All ages,294,All causes,3,Rate,2005,30959.139419153104,34469.76891099497,27849.3310271797
+1,All Population,2,DALYs (Disability-Adjusted Life Years),81,Germany,3,Both,22,All ages,294,All causes,3,Rate,2010,33325.05277708965,37616.859848963904,29864.34482595871
+1,All Population,2,DALYs (Disability-Adjusted Life Years),95,United Kingdom,3,Both,22,All ages,294,All causes,3,Rate,2009,30208.434433957387,33901.96694449775,26989.75067586385
+1,All Population,2,DALYs (Disability-Adjusted Life Years),81,Germany,3,Both,22,All ages,294,All causes,3,Rate,2011,33100.690937714535,37339.07341383564,29628.949350883653
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,22,All ages,294,All causes,3,Rate,2009,41030.258781429795,44477.0627128269,38325.89023375024
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,22,All ages,294,All causes,3,Rate,2010,40082.813156375654,43435.24112417229,37439.43648977767
+1,All Population,2,DALYs (Disability-Adjusted Life Years),95,United Kingdom,3,Both,22,All ages,294,All causes,3,Rate,2007,30728.630349333514,34316.66107397395,27549.328638001265
+1,All Population,2,DALYs (Disability-Adjusted Life Years),95,United Kingdom,3,Both,22,All ages,294,All causes,3,Rate,2008,30742.37006244051,34384.30726816341,27555.832391654832
+1,All Population,2,DALYs (Disability-Adjusted Life Years),81,Germany,3,Both,22,All ages,294,All causes,3,Rate,2008,33109.61142289956,37180.64527376904,29682.37148275449
+1,All Population,2,DALYs (Disability-Adjusted Life Years),135,Brazil,3,Both,22,All ages,294,All causes,3,Rate,2003,31733.1272125188,35082.85963275424,28956.302377629694
+1,All Population,2,DALYs (Disability-Adjusted Life Years),135,Brazil,3,Both,22,All ages,294,All causes,3,Rate,2006,30606.382456543433,33880.34458493598,27710.389668805834
+1,All Population,2,DALYs (Disability-Adjusted Life Years),6,China,3,Both,22,All ages,294,All causes,3,Rate,2009,27933.549257443297,31001.96509288765,25226.633320540852
+1,All Population,2,DALYs (Disability-Adjusted Life Years),70,Australasia,3,Both,22,All ages,294,All causes,3,Rate,2006,26629.85294365331,30432.76024329715,23426.839750002462
+1,All Population,2,DALYs (Disability-Adjusted Life Years),81,Germany,3,Both,22,All ages,294,All causes,3,Rate,2012,33250.66123567333,37455.77377841084,29803.275808867656
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,294,All causes,3,Rate,2016,35327.190959637475,38557.71030982235,32518.82435936173
+1,All Population,2,DALYs (Disability-Adjusted Life Years),196,South Africa,3,Both,22,All ages,294,All causes,3,Rate,2003,73090.52124807895,76517.7797194973,70297.16272572665
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,294,All causes,3,Rate,2017,34986.95420324928,38267.43890724404,32242.260847473015
+1,All Population,2,DALYs (Disability-Adjusted Life Years),81,Germany,3,Both,22,All ages,294,All causes,3,Rate,2014,33317.47550723081,37601.9879089285,29827.057957529167
+1,All Population,2,DALYs (Disability-Adjusted Life Years),70,Australasia,3,Both,22,All ages,294,All causes,3,Rate,2007,26801.77746403451,30596.54706414503,23587.70849532296
+1,All Population,2,DALYs (Disability-Adjusted Life Years),102,United States of America,3,Both,22,All ages,294,All causes,3,Rate,2011,32121.005103096144,35886.862920387895,28644.469179309985
+1,All Population,2,DALYs (Disability-Adjusted Life Years),95,United Kingdom,3,Both,22,All ages,294,All causes,3,Rate,2011,29450.233135607636,33238.128608441606,26228.03942832016
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,22,All ages,294,All causes,3,Rate,2012,38326.41687371047,41556.45336522042,35607.55733609108
+1,All Population,2,DALYs (Disability-Adjusted Life Years),81,Germany,3,Both,22,All ages,294,All causes,3,Rate,2015,34255.7124514847,38441.94492012561,30748.556013429683
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,22,All ages,294,All causes,3,Rate,2015,36021.075870656314,39297.136768126904,32980.58891790915
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,294,All causes,3,Rate,2018,34486.527770388835,37731.02289005222,31737.39392184527
+1,All Population,2,DALYs (Disability-Adjusted Life Years),6,China,3,Both,22,All ages,294,All causes,3,Rate,2010,27372.37050645,30603.602653965827,24661.864647194776
+1,All Population,2,DALYs (Disability-Adjusted Life Years),6,China,3,Both,22,All ages,294,All causes,3,Rate,2012,26593.00773912102,30028.45061004753,23920.93101409697
+1,All Population,2,DALYs (Disability-Adjusted Life Years),214,Nigeria,3,Both,22,All ages,294,All causes,3,Rate,2005,93078.48390788549,97265.30886056265,89598.77029785729
+1,All Population,2,DALYs (Disability-Adjusted Life Years),135,Brazil,3,Both,22,All ages,294,All causes,3,Rate,2004,31474.087113987454,34874.939440388705,28667.976398328767
+1,All Population,2,DALYs (Disability-Adjusted Life Years),135,Brazil,3,Both,22,All ages,294,All causes,3,Rate,2005,30855.607758713133,34266.081793656376,28065.335202752976
+1,All Population,2,DALYs (Disability-Adjusted Life Years),95,United Kingdom,3,Both,22,All ages,294,All causes,3,Rate,2010,29948.69458502229,33715.69714487005,26729.656624149167
+1,All Population,2,DALYs (Disability-Adjusted Life Years),6,China,3,Both,22,All ages,294,All causes,3,Rate,2013,26400.534972065536,29879.09194916542,23691.478332161136
+1,All Population,2,DALYs (Disability-Adjusted Life Years),196,South Africa,3,Both,22,All ages,294,All causes,3,Rate,2005,77407.89547828466,80973.89507018171,74651.40358242895
+1,All Population,2,DALYs (Disability-Adjusted Life Years),196,South Africa,3,Both,22,All ages,294,All causes,3,Rate,2004,75704.3226702967,79316.19071343378,72833.02825982627
+1,All Population,2,DALYs (Disability-Adjusted Life Years),214,Nigeria,3,Both,22,All ages,294,All causes,3,Rate,2004,96842.0526654548,100890.97507483201,93247.87755344785
+1,All Population,2,DALYs (Disability-Adjusted Life Years),214,Nigeria,3,Both,22,All ages,294,All causes,3,Rate,2006,89431.02967932727,93626.84696318468,85730.25922913398
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,22,All ages,294,All causes,3,Rate,2013,37464.974454832816,40633.65671772223,34767.26334536343
+1,All Population,2,DALYs (Disability-Adjusted Life Years),102,United States of America,3,Both,22,All ages,294,All causes,3,Rate,2009,31975.775328903623,35665.583116815294,28558.55801646027
+1,All Population,2,DALYs (Disability-Adjusted Life Years),6,China,3,Both,22,All ages,294,All causes,3,Rate,2011,26891.97157635113,30275.00268247354,24135.717096718716
+1,All Population,2,DALYs (Disability-Adjusted Life Years),102,United States of America,3,Both,22,All ages,294,All causes,3,Rate,2010,31932.258305181425,35646.33248992834,28485.792073136683
+1,All Population,2,DALYs (Disability-Adjusted Life Years),102,United States of America,3,Both,22,All ages,294,All causes,3,Rate,2012,32267.086639462832,36052.90658860386,28752.9061271368
+1,All Population,2,DALYs (Disability-Adjusted Life Years),81,Germany,3,Both,22,All ages,294,All causes,3,Rate,2013,33651.484057751855,37958.13040095952,30208.15958333437
+1,All Population,2,DALYs (Disability-Adjusted Life Years),95,United Kingdom,3,Both,22,All ages,294,All causes,3,Rate,2012,29531.665561498594,33341.12209981556,26224.960189369205
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,294,All causes,3,Rate,2019,33947.01825767265,37255.38172578316,31174.986656587556
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,22,All ages,294,All causes,3,Rate,2014,36673.26719205481,39953.647201075015,33768.93982848214
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,294,All causes,3,Rate,2020,35511.709997159756,39000.593975335505,32651.842340724877
+1,All Population,2,DALYs (Disability-Adjusted Life Years),70,Australasia,3,Both,22,All ages,294,All causes,3,Rate,2005,26596.829019365243,30340.588956859294,23427.559952170952
+1,All Population,2,DALYs (Disability-Adjusted Life Years),70,Australasia,3,Both,22,All ages,294,All causes,3,Rate,2009,26766.408637462748,30491.58490087115,23449.963461307703
+1,All Population,2,DALYs (Disability-Adjusted Life Years),81,Germany,3,Both,22,All ages,294,All causes,3,Rate,2017,34177.883991089584,38431.682605662296,30667.5382047645
+1,All Population,2,DALYs (Disability-Adjusted Life Years),95,United Kingdom,3,Both,22,All ages,294,All causes,3,Rate,2014,29405.64900141652,33192.74155246067,26062.811957026253
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,22,All ages,294,All causes,3,Rate,2016,35667.46851317992,39194.50920078497,32663.000724092883
+1,All Population,2,DALYs (Disability-Adjusted Life Years),81,Germany,3,Both,22,All ages,294,All causes,3,Rate,2016,34058.609193968645,38319.46752554847,30553.66463965608
+1,All Population,2,DALYs (Disability-Adjusted Life Years),81,Germany,3,Both,22,All ages,294,All causes,3,Rate,2019,33968.21215291392,38096.36226037655,30469.87933973126
+1,All Population,2,DALYs (Disability-Adjusted Life Years),6,China,3,Both,22,All ages,294,All causes,3,Rate,2014,26361.243273430613,29840.26916715241,23620.912325842717
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,22,All ages,294,All causes,3,Rate,2017,35203.74339850074,38799.54674147647,32451.09047148157
+1,All Population,2,DALYs (Disability-Adjusted Life Years),135,Brazil,3,Both,22,All ages,294,All causes,3,Rate,2009,30417.303045162593,33800.136079406795,27523.858888593215
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,294,All causes,3,Rate,2021,37480.429575537186,40951.82737020287,34607.950638450166
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,294,All causes,3,Rate,2022,35147.825387588775,38586.911475634486,32247.348845960532
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,22,All ages,294,All causes,3,Rate,2019,33604.19380530672,37124.929475064106,30798.33314632135
+1,All Population,2,DALYs (Disability-Adjusted Life Years),1,Global,3,Both,22,All ages,294,All causes,3,Rate,2023,34703.63518658286,38237.24882802512,31824.351507793384
+1,All Population,2,DALYs (Disability-Adjusted Life Years),196,South Africa,3,Both,22,All ages,294,All causes,3,Rate,2006,77652.93293658407,81130.00261279673,74672.928692645
+1,All Population,2,DALYs (Disability-Adjusted Life Years),135,Brazil,3,Both,22,All ages,294,All causes,3,Rate,2007,30427.87061868212,33844.80480106427,27555.755682145715
+1,All Population,2,DALYs (Disability-Adjusted Life Years),102,United States of America,3,Both,22,All ages,294,All causes,3,Rate,2007,32184.0264244309,35780.49199034371,28805.87392984527
+1,All Population,2,DALYs (Disability-Adjusted Life Years),95,United Kingdom,3,Both,22,All ages,294,All causes,3,Rate,2013,29606.554319439187,33367.116741315505,26301.050661076224
+1,All Population,2,DALYs (Disability-Adjusted Life Years),81,Germany,3,Both,22,All ages,294,All causes,3,Rate,2020,34879.75277325849,39064.514302301555,31264.30731233185
+1,All Population,2,DALYs (Disability-Adjusted Life Years),214,Nigeria,3,Both,22,All ages,294,All causes,3,Rate,2007,85696.48955815782,89693.09412951618,82020.60388435586
+1,All Population,2,DALYs (Disability-Adjusted Life Years),102,United States of America,3,Both,22,All ages,294,All causes,3,Rate,2008,32259.68808409434,35881.409806631455,28869.00104733665
+1,All Population,2,DALYs (Disability-Adjusted Life Years),6,China,3,Both,22,All ages,294,All causes,3,Rate,2015,26529.827580705773,29969.25763261643,23743.890091808225
+1,All Population,2,DALYs (Disability-Adjusted Life Years),81,Germany,3,Both,22,All ages,294,All causes,3,Rate,2018,34356.03584694581,38575.60102156809,30869.12810027727
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,22,All ages,294,All causes,3,Rate,2018,34572.6056514775,37926.2650736997,31796.93746045314
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,22,All ages,294,All causes,3,Rate,2020,34993.69000758991,38585.54169246131,31952.912952253464
+1,All Population,2,DALYs (Disability-Adjusted Life Years),102,United States of America,3,Both,22,All ages,294,All causes,3,Rate,2013,32593.030962549547,36435.972316540756,29051.008246770114
+1,All Population,2,DALYs (Disability-Adjusted Life Years),6,China,3,Both,22,All ages,294,All causes,3,Rate,2016,26874.837445999954,30193.360366202643,24048.486092087496
+1,All Population,2,DALYs (Disability-Adjusted Life Years),135,Brazil,3,Both,22,All ages,294,All causes,3,Rate,2011,30643.129173857054,34021.32500404722,27749.994581218583
+1,All Population,2,DALYs (Disability-Adjusted Life Years),196,South Africa,3,Both,22,All ages,294,All causes,3,Rate,2008,73488.54914517583,76868.23204299713,70571.92984798795
+1,All Population,2,DALYs (Disability-Adjusted Life Years),70,Australasia,3,Both,22,All ages,294,All causes,3,Rate,2011,26705.34781842464,30454.792961931842,23367.29366259211
+1,All Population,2,DALYs (Disability-Adjusted Life Years),214,Nigeria,3,Both,22,All ages,294,All causes,3,Rate,2008,82757.73860941245,86524.0556386405,79232.70793817825
+1,All Population,2,DALYs (Disability-Adjusted Life Years),81,Germany,3,Both,22,All ages,294,All causes,3,Rate,2021,35689.572149705244,39788.66255555179,32090.932891791435
+1,All Population,2,DALYs (Disability-Adjusted Life Years),95,United Kingdom,3,Both,22,All ages,294,All causes,3,Rate,2015,29912.355928936875,33730.93090373928,26505.99874565383
+1,All Population,2,DALYs (Disability-Adjusted Life Years),135,Brazil,3,Both,22,All ages,294,All causes,3,Rate,2008,30400.39569234167,33860.959316825385,27553.92971931243
+1,All Population,2,DALYs (Disability-Adjusted Life Years),81,Germany,3,Both,22,All ages,294,All causes,3,Rate,2022,36134.5109373464,40119.385958306666,32526.437400006198
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,22,All ages,294,All causes,3,Rate,2021,38113.21642827161,41762.475909432775,35006.94131980963
+1,All Population,2,DALYs (Disability-Adjusted Life Years),95,United Kingdom,3,Both,22,All ages,294,All causes,3,Rate,2017,29943.25683302182,33735.2260197034,26513.29440835534
+1,All Population,2,DALYs (Disability-Adjusted Life Years),6,China,3,Both,22,All ages,294,All causes,3,Rate,2017,26847.948691042806,30227.161642371415,24159.40082292232
+1,All Population,2,DALYs (Disability-Adjusted Life Years),70,Australasia,3,Both,22,All ages,294,All causes,3,Rate,2012,26532.942975693113,30296.56283444387,23182.56845729737
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,22,All ages,294,All causes,3,Rate,2023,33556.58235279176,37071.38565806783,30382.52255165301
+1,All Population,2,DALYs (Disability-Adjusted Life Years),163,India,3,Both,22,All ages,294,All causes,3,Rate,2022,33973.92493262446,37548.911804247284,30912.152842474854
+1,All Population,2,DALYs (Disability-Adjusted Life Years),102,United States of America,3,Both,22,All ages,294,All causes,3,Rate,2014,32854.6098123336,36727.834785622596,29296.581522087607
+1,All Population,2,DALYs (Disability-Adjusted Life Years),196,South Africa,3,Both,22,All ages,294,All causes,3,Rate,2007,76491.7785742844,80064.75627217007,73464.0078112816
+1,All Population,2,DALYs (Disability-Adjusted Life Years),70,Australasia,3,Both,22,All ages,294,All causes,3,Rate,2008,26970.199853849506,30726.492266744986,23695.088428544695
+1,All Population,2,DALYs (Disability-Adjusted Life Years),214,Nigeria,3,Both,22,All ages,294,All causes,3,Rate,2009,80245.0280150348,84293.30166982893,76888.79280577484
+1,All Population,2,DALYs (Disability-Adjusted Life Years),196,South Africa,3,Both,22,All ages,294,All causes,3,Rate,2010,66002.60869534552,69550.84436752755,63139.82526416559
+1,All Population,2,DALYs (Disability-Adjusted Life Years),81,Germany,3,Both,22,All ages,294,All causes,3,Rate,2023,35278.85297997194,39536.447568057556,31590.424934932416
+1,All Population,2,DALYs (Disability-Adjusted Life Years),6,China,3,Both,22,All ages,294,All causes,3,Rate,2020,25107.01505421962,28452.402388134524,22368.61066026909
+1,All Population,2,DALYs (Disability-Adjusted Life Years),95,United Kingdom,3,Both,22,All ages,294,All causes,3,Rate,2020,32343.214965926803,36287.055062645835,28804.203927314815
+1,All Population,2,DALYs (Disability-Adjusted Life Years),102,United States of America,3,Both,22,All ages,294,All causes,3,Rate,2019,34339.04615056037,38402.197649011454,30691.541565733143
+1,All Population,2,DALYs (Disability-Adjusted Life Years),196,South Africa,3,Both,22,All ages,294,All causes,3,Rate,2009,70015.34107837027,73520.44834154114,67122.73047708198
+1,All Population,2,DALYs (Disability-Adjusted Life Years),6,China,3,Both,22,All ages,294,All causes,3,Rate,2018,26186.00946661792,29600.158699844607,23498.751398416698
+1,All Population,2,DALYs (Disability-Adjusted Life Years),6,China,3,Both,22,All ages,294,All causes,3,Rate,2019,25394.953855799795,28793.835183425654,22690.553639841615
+1,All Population,2,DALYs (Disability-Adjusted Life Years),6,China,3,Both,22,All ages,294,All causes,3,Rate,2021,26050.857083752628,29371.249729143954,23336.657255639508
+1,All Population,2,DALYs (Disability-Adjusted Life Years),70,Australasia,3,Both,22,All ages,294,All causes,3,Rate,2010,26662.73750577771,30424.66183429631,23368.736789345003
+1,All Population,2,DALYs (Disability-Adjusted Life Years),214,Nigeria,3,Both,22,All ages,294,All causes,3,Rate,2010,78179.6009718398,81920.93705545916,74891.89386313791
+1,All Population,2,DALYs (Disability-Adjusted Life Years),135,Brazil,3,Both,22,All ages,294,All causes,3,Rate,2010,30518.462244286125,33970.24033132923,27661.443290879008
+1,All Population,2,DALYs (Disability-Adjusted Life Years),95,United Kingdom,3,Both,22,All ages,294,All causes,3,Rate,2022,31913.28489495312,36043.354653979164,28280.487477177612
+1,All Population,2,DALYs (Disability-Adjusted Life Years),102,United States of America,3,Both,22,All ages,294,All causes,3,Rate,2017,34112.24387130795,38081.839824049326,30494.782516401552
+1,All Population,2,DALYs (Disability-Adjusted Life Years),102,United States of America,3,Both,22,All ages,294,All causes,3,Rate,2015,33386.18541452813,37285.29076012483,29801.750024192654
+1,All Population,2,DALYs (Disability-Adjusted Life Years),95,United Kingdom,3,Both,22,All ages,294,All causes,3,Rate,2018,30034.172874261738,33827.8210440911,26635.444926050222
+1,All Population,2,DALYs (Disability-Adjusted Life Years),135,Brazil,3,Both,22,All ages,294,All causes,3,Rate,2014,30744.0267866765,34149.951454272574,27813.850417784015
+1,All Population,2,DALYs (Disability-Adjusted Life Years),196,South Africa,3,Both,22,All ages,294,All causes,3,Rate,2011,61381.215366048025,65122.29331338517,58275.252776411144
+1,All Population,2,DALYs (Disability-Adjusted Life Years),70,Australasia,3,Both,22,All ages,294,All causes,3,Rate,2015,26819.122545580663,30644.210587585214,23440.817777645294
+1,All Population,2,DALYs (Disability-Adjusted Life Years),102,United States of America,3,Both,22,All ages,294,All causes,3,Rate,2020,38190.52978603658,42348.32441812207,34480.46130748712
+1,All Population,2,DALYs (Disability-Adjusted Life Years),102,United States of America,3,Both,22,All ages,294,All causes,3,Rate,2018,34193.88080809382,38211.01826123928,30567.166094533728
+1,All Population,2,DALYs (Disability-Adjusted Life Years),70,Australasia,3,Both,22,All ages,294,All causes,3,Rate,2014,26697.02777979163,30497.900806230715,23303.634605513307
+1,All Population,2,DALYs (Disability-Adjusted Life Years),214,Nigeria,3,Both,22,All ages,294,All causes,3,Rate,2013,72351.1354077873,76054.81722409993,68967.41538034772
+1,All Population,2,DALYs (Disability-Adjusted Life Years),95,United Kingdom,3,Both,22,All ages,294,All causes,3,Rate,2016,29872.78985667124,33673.472688939,26459.006328406176
+1,All Population,2,DALYs (Disability-Adjusted Life Years),102,United States of America,3,Both,22,All ages,294,All causes,3,Rate,2021,39781.52181337027,44023.080539848925,35998.102281594736
+1,All Population,2,DALYs (Disability-Adjusted Life Years),95,United Kingdom,3,Both,22,All ages,294,All causes,3,Rate,2021,32186.832470500947,36266.828341376764,28622.408590936484
+1,All Population,2,DALYs (Disability-Adjusted Life Years),6,China,3,Both,22,All ages,294,All causes,3,Rate,2022,27208.73165845423,30921.37118526662,23995.408634591386
+1,All Population,2,DALYs (Disability-Adjusted Life Years),6,China,3,Both,22,All ages,294,All causes,3,Rate,2023,27370.404975469144,30977.2362829368,23838.27574760027
+1,All Population,2,DALYs (Disability-Adjusted Life Years),135,Brazil,3,Both,22,All ages,294,All causes,3,Rate,2012,30598.83371776827,33929.44567050303,27604.324918968065
+1,All Population,2,DALYs (Disability-Adjusted Life Years),214,Nigeria,3,Both,22,All ages,294,All causes,3,Rate,2011,75752.28577049993,79237.3708286407,72656.63155523555
+1,All Population,2,DALYs (Disability-Adjusted Life Years),95,United Kingdom,3,Both,22,All ages,294,All causes,3,Rate,2023,32245.891823636575,36337.144262643546,28590.070688586078
+1,All Population,2,DALYs (Disability-Adjusted Life Years),135,Brazil,3,Both,22,All ages,294,All causes,3,Rate,2013,30747.460656478164,34079.70828698407,27840.510525623362
+1,All Population,2,DALYs (Disability-Adjusted Life Years),70,Australasia,3,Both,22,All ages,294,All causes,3,Rate,2013,26410.505880490342,30194.398288689245,23019.932293088397
+1,All Population,2,DALYs (Disability-Adjusted Life Years),196,South Africa,3,Both,22,All ages,294,All causes,3,Rate,2013,55452.39709421151,58841.21859477663,52253.014583048374
+1,All Population,2,DALYs (Disability-Adjusted Life Years),95,United Kingdom,3,Both,22,All ages,294,All causes,3,Rate,2019,29751.89707303724,33569.18162002952,26358.018039463703
+1,All Population,2,DALYs (Disability-Adjusted Life Years),102,United States of America,3,Both,22,All ages,294,All causes,3,Rate,2022,38025.21397238943,42300.923368940246,34199.26397436298
+1,All Population,2,DALYs (Disability-Adjusted Life Years),102,United States of America,3,Both,22,All ages,294,All causes,3,Rate,2016,33757.015259737585,37690.58233398927,30161.59378568916
+1,All Population,2,DALYs (Disability-Adjusted Life Years),102,United States of America,3,Both,22,All ages,294,All causes,3,Rate,2023,36739.51239885122,41051.83918015752,32853.70479664927
+1,All Population,2,DALYs (Disability-Adjusted Life Years),214,Nigeria,3,Both,22,All ages,294,All causes,3,Rate,2012,73877.07739515176,77452.62354769873,70493.32565670599
+1,All Population,2,DALYs (Disability-Adjusted Life Years),214,Nigeria,3,Both,22,All ages,294,All causes,3,Rate,2014,70788.66005284106,74235.33319809905,67679.92026681153
+1,All Population,2,DALYs (Disability-Adjusted Life Years),196,South Africa,3,Both,22,All ages,294,All causes,3,Rate,2014,53742.86636888303,57342.26549983307,50679.963998397296
+1,All Population,2,DALYs (Disability-Adjusted Life Years),196,South Africa,3,Both,22,All ages,294,All causes,3,Rate,2012,57901.058409489415,61325.20685240064,54718.81253023882
+1,All Population,2,DALYs (Disability-Adjusted Life Years),135,Brazil,3,Both,22,All ages,294,All causes,3,Rate,2015,30950.563779315227,34346.92974203084,27938.130996047916
+1,All Population,2,DALYs (Disability-Adjusted Life Years),135,Brazil,3,Both,22,All ages,294,All causes,3,Rate,2019,30935.26083801031,34424.13524077237,27895.741404791697
+1,All Population,2,DALYs (Disability-Adjusted Life Years),70,Australasia,3,Both,22,All ages,294,All causes,3,Rate,2019,26743.111523663898,30631.713563567777,23285.69858597533
+1,All Population,2,DALYs (Disability-Adjusted Life Years),70,Australasia,3,Both,22,All ages,294,All causes,3,Rate,2017,26673.32405019168,30523.891162255866,23242.461049814727
+1,All Population,2,DALYs (Disability-Adjusted Life Years),70,Australasia,3,Both,22,All ages,294,All causes,3,Rate,2016,26681.78449803158,30478.266862971104,23292.463209390284
+1,All Population,2,DALYs (Disability-Adjusted Life Years),196,South Africa,3,Both,22,All ages,294,All causes,3,Rate,2015,51954.6415649767,55629.59645908496,49043.70916754595
+1,All Population,2,DALYs (Disability-Adjusted Life Years),214,Nigeria,3,Both,22,All ages,294,All causes,3,Rate,2016,66540.3566514183,69731.38067955487,63475.498118413685
+1,All Population,2,DALYs (Disability-Adjusted Life Years),214,Nigeria,3,Both,22,All ages,294,All causes,3,Rate,2015,69369.26975829675,72565.20851762393,66206.8611645157
+1,All Population,2,DALYs (Disability-Adjusted Life Years),135,Brazil,3,Both,22,All ages,294,All causes,3,Rate,2016,31286.96500955993,34685.49153183147,28220.792847455818
+1,All Population,2,DALYs (Disability-Adjusted Life Years),196,South Africa,3,Both,22,All ages,294,All causes,3,Rate,2017,49223.243334218394,52582.75778178962,46191.99534780769
+1,All Population,2,DALYs (Disability-Adjusted Life Years),196,South Africa,3,Both,22,All ages,294,All causes,3,Rate,2016,50728.50269476953,54202.64318282271,47707.80018433069
+1,All Population,2,DALYs (Disability-Adjusted Life Years),70,Australasia,3,Both,22,All ages,294,All causes,3,Rate,2020,26405.728835837337,30313.554279146814,22878.051028128626
+1,All Population,2,DALYs (Disability-Adjusted Life Years),214,Nigeria,3,Both,22,All ages,294,All causes,3,Rate,2017,64243.06647141973,67513.44661988923,61194.70737015663
+1,All Population,2,DALYs (Disability-Adjusted Life Years),135,Brazil,3,Both,22,All ages,294,All causes,3,Rate,2017,31113.516690256783,34554.941809619944,28126.399228391612
+1,All Population,2,DALYs (Disability-Adjusted Life Years),70,Australasia,3,Both,22,All ages,294,All causes,3,Rate,2018,26556.739393363005,30449.77231282663,23114.175144276756
+1,All Population,2,DALYs (Disability-Adjusted Life Years),135,Brazil,3,Both,22,All ages,294,All causes,3,Rate,2018,30893.228309818445,34425.59224904586,27851.28297646897
+1,All Population,2,DALYs (Disability-Adjusted Life Years),196,South Africa,3,Both,22,All ages,294,All causes,3,Rate,2018,47920.531976677135,51503.812337259806,44945.81311151319
+1,All Population,2,DALYs (Disability-Adjusted Life Years),214,Nigeria,3,Both,22,All ages,294,All causes,3,Rate,2019,59432.99640132846,62735.890943277904,56566.38027864025
+1,All Population,2,DALYs (Disability-Adjusted Life Years),196,South Africa,3,Both,22,All ages,294,All causes,3,Rate,2019,46357.87429644345,50209.94047012365,43408.7908640278
+1,All Population,2,DALYs (Disability-Adjusted Life Years),214,Nigeria,3,Both,22,All ages,294,All causes,3,Rate,2018,61751.8361130577,65166.69409178601,58851.55904580292
+1,All Population,2,DALYs (Disability-Adjusted Life Years),135,Brazil,3,Both,22,All ages,294,All causes,3,Rate,2022,33478.1645476219,37306.39662428088,30048.11321705588
+1,All Population,2,DALYs (Disability-Adjusted Life Years),135,Brazil,3,Both,22,All ages,294,All causes,3,Rate,2020,33864.14166209291,37531.79589346707,30618.077552559735
+1,All Population,2,DALYs (Disability-Adjusted Life Years),70,Australasia,3,Both,22,All ages,294,All causes,3,Rate,2022,27942.084073147947,31865.977594406493,24324.161480258037
+1,All Population,2,DALYs (Disability-Adjusted Life Years),70,Australasia,3,Both,22,All ages,294,All causes,3,Rate,2023,27361.575430179273,31378.594999249803,23769.27861216622
+1,All Population,2,DALYs (Disability-Adjusted Life Years),214,Nigeria,3,Both,22,All ages,294,All causes,3,Rate,2020,58601.4272546327,61849.22837178744,55631.64986391902
+1,All Population,2,DALYs (Disability-Adjusted Life Years),196,South Africa,3,Both,22,All ages,294,All causes,3,Rate,2020,49534.51974863568,53191.88088644267,46416.212478016074
+1,All Population,2,DALYs (Disability-Adjusted Life Years),70,Australasia,3,Both,22,All ages,294,All causes,3,Rate,2021,26806.15457581096,30728.748011574226,23271.073194371387
+1,All Population,2,DALYs (Disability-Adjusted Life Years),135,Brazil,3,Both,22,All ages,294,All causes,3,Rate,2021,37860.371219634995,41583.60762398062,34499.09492206864
+1,All Population,2,DALYs (Disability-Adjusted Life Years),135,Brazil,3,Both,22,All ages,294,All causes,3,Rate,2023,32898.25896631066,36849.412972837745,29454.35516301354
+1,All Population,2,DALYs (Disability-Adjusted Life Years),196,South Africa,3,Both,22,All ages,294,All causes,3,Rate,2021,56428.62445749349,60196.51492417374,53283.57213063053
+1,All Population,2,DALYs (Disability-Adjusted Life Years),214,Nigeria,3,Both,22,All ages,294,All causes,3,Rate,2021,57342.10610924947,60995.57295500601,54385.59789106313
+1,All Population,2,DALYs (Disability-Adjusted Life Years),214,Nigeria,3,Both,22,All ages,294,All causes,3,Rate,2023,54295.82226658995,57448.62066193872,51118.599276398745
+1,All Population,2,DALYs (Disability-Adjusted Life Years),214,Nigeria,3,Both,22,All ages,294,All causes,3,Rate,2022,55371.151982121635,58628.56780286587,52430.7523061738
+1,All Population,2,DALYs (Disability-Adjusted Life Years),196,South Africa,3,Both,22,All ages,294,All causes,3,Rate,2022,48183.33468302177,51828.75182819288,44952.85565275135
+1,All Population,2,DALYs (Disability-Adjusted Life Years),196,South Africa,3,Both,22,All ages,294,All causes,3,Rate,2023,46751.975308459034,50386.0711531388,43369.94787407361

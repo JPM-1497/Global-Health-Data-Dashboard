@@ -32,6 +32,8 @@ export interface GlobalEntityMetric {
   // --- Energy ---
   /** Primary energy consumption (TWh) */
   primaryEnergyTwh: number | null;
+  /** Primary energy consumption per person (kWh/person) */
+  primaryEnergyPerCapitaKwh?: number | null;
   /** Energy intensity (MJ per USD GDP) */
   energyIntensityMjPerUsd: number | null;
   /** Renewable energy share (%) */

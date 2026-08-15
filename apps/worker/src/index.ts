@@ -1,5 +1,7 @@
 import type { Env, GlobalEntityMetric } from './types'
 import { joinMetrics } from './data'
+import { fetchWorldBankMetrics } from './sources/worldBank'
+import { fetchOwidMetrics } from './sources/owid'
 
 /** TTL for KV cache entries: 24 hours in seconds */
 const CACHE_TTL_SECONDS = 86_400
@@ -31,15 +33,23 @@ async function handleData(
   const iso3 = (url.searchParams.get('iso3') ?? 'USA').toUpperCase()
   const yearParam = url.searchParams.get('year')
   const year = yearParam ? parseInt(yearParam, 10) : 2023
+  const startYearParam = url.searchParams.get('startYear')
+  const endYearParam = url.searchParams.get('endYear')
+  const startYear = startYearParam ? parseInt(startYearParam, 10) : Math.max(1990, year - 6)
+  const endYear = endYearParam ? parseInt(endYearParam, 10) : year
 
   if (!/^[A-Z]{3}$/.test(iso3)) {
     return errorJson('iso3 must be a 3-letter ISO country code')
   }
-  if (isNaN(year) || year < 1990 || year > 2026) {
-    return errorJson('year must be between 1990 and 2026')
+  if (
+    isNaN(year) || year < 1990 || year > 2026 ||
+    isNaN(startYear) || isNaN(endYear) ||
+    startYear < 1990 || endYear > 2026 || startYear > endYear
+  ) {
+    return errorJson('startYear and endYear must be between 1990 and 2026, with startYear <= endYear')
   }
 
-  const cacheKey = `data:${iso3}:${year}`
+  const cacheKey = `data:${iso3}:${startYear}:${endYear}`
 
   // Try KV cache first
   const cached = await env.GLOBAL_DATA_KV.get(cacheKey, 'json')
@@ -48,9 +58,31 @@ async function handleData(
   }
 
   // Build a small time-series (current year + 5 prior years) for chart rendering
+  let worldBankMetrics: Map<number, Partial<GlobalEntityMetric>>
+  try {
+    worldBankMetrics = await fetchWorldBankMetrics(iso3, startYear, endYear)
+  } catch {
+    worldBankMetrics = new Map()
+  }
+
+  const dashboardCountries = new Set([
+    'USA', 'CHN', 'IND', 'DEU', 'GBR',
+    'BRA', 'NGA', 'ZAF', 'JPN', 'AUS',
+  ])
+  let owidMetrics: Map<string, Partial<GlobalEntityMetric>>
+  try {
+    owidMetrics = await fetchOwidMetrics(dashboardCountries, startYear, endYear)
+  } catch {
+    owidMetrics = new Map()
+  }
+
   const series: GlobalEntityMetric[] = []
-  for (let y = Math.max(1990, year - 6); y <= year; y++) {
-    series.push(joinMetrics(iso3, y))
+  for (let y = startYear; y <= endYear; y++) {
+    series.push({
+      ...joinMetrics(iso3, y),
+      ...(worldBankMetrics.get(y) ?? {}),
+      ...(owidMetrics.get(`${iso3}:${y}`) ?? {}),
+    })
   }
 
   // Store in KV with 24-hour TTL

@@ -1,0 +1,2743 @@
+{
+  "source": "Our World in Data energy-data",
+  "sourceUrl": "https://raw.githubusercontent.com/owid/energy-data/master/owid-energy-data.csv",
+  "fetchedAt": "2026-08-15T22:17:03.443Z",
+  "countries": [
+    "USA",
+    "CHN",
+    "IND",
+    "DEU",
+    "GBR",
+    "BRA",
+    "NGA",
+    "ZAF",
+    "JPN",
+    "AUS"
+  ],
+  "yearRange": {
+    "start": 1990,
+    "end": 2023
+  },
+  "records": [
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "year": 1990,
+      "primaryEnergyTwh": 1051.079,
+      "primaryEnergyPerCapitaKwh": 61372.223,
+      "renewableSharePct": 4.137
+    },
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "year": 1991,
+      "primaryEnergyTwh": 1043.94,
+      "primaryEnergyPerCapitaKwh": 60158.379,
+      "renewableSharePct": 4.394
+    },
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "year": 1992,
+      "primaryEnergyTwh": 1060.42,
+      "primaryEnergyPerCapitaKwh": 60425.266,
+      "renewableSharePct": 4.389
+    },
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "year": 1993,
+      "primaryEnergyTwh": 1084.443,
+      "primaryEnergyPerCapitaKwh": 61188.77,
+      "renewableSharePct": 4.407
+    },
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "year": 1994,
+      "primaryEnergyTwh": 1125.552,
+      "primaryEnergyPerCapitaKwh": 62888.992,
+      "renewableSharePct": 4.196
+    },
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "year": 1995,
+      "primaryEnergyTwh": 1154.299,
+      "primaryEnergyPerCapitaKwh": 63789.848,
+      "renewableSharePct": 4.002
+    },
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "year": 1996,
+      "primaryEnergyTwh": 1188.137,
+      "primaryEnergyPerCapitaKwh": 64906.695,
+      "renewableSharePct": 4
+    },
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "year": 1997,
+      "primaryEnergyTwh": 1217.288,
+      "primaryEnergyPerCapitaKwh": 65781.891,
+      "renewableSharePct": 3.914
+    },
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "year": 1998,
+      "primaryEnergyTwh": 1246.33,
+      "primaryEnergyPerCapitaKwh": 66642.594,
+      "renewableSharePct": 3.813
+    },
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "year": 1999,
+      "primaryEnergyTwh": 1297.347,
+      "primaryEnergyPerCapitaKwh": 68606.484,
+      "renewableSharePct": 3.786
+    },
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "year": 2000,
+      "primaryEnergyTwh": 1305.26,
+      "primaryEnergyPerCapitaKwh": 68222.211,
+      "renewableSharePct": 3.765
+    },
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "year": 2001,
+      "primaryEnergyTwh": 1315.385,
+      "primaryEnergyPerCapitaKwh": 67924.375,
+      "renewableSharePct": 3.655
+    },
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "year": 2002,
+      "primaryEnergyTwh": 1341.745,
+      "primaryEnergyPerCapitaKwh": 68472.609,
+      "renewableSharePct": 3.711
+    },
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "year": 2003,
+      "primaryEnergyTwh": 1360.862,
+      "primaryEnergyPerCapitaKwh": 68662.977,
+      "renewableSharePct": 3.797
+    },
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "year": 2004,
+      "primaryEnergyTwh": 1404.444,
+      "primaryEnergyPerCapitaKwh": 70058.688,
+      "renewableSharePct": 3.829
+    },
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "year": 2005,
+      "primaryEnergyTwh": 1410.35,
+      "primaryEnergyPerCapitaKwh": 69494.242,
+      "renewableSharePct": 4.095
+    },
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "year": 2006,
+      "primaryEnergyTwh": 1470.838,
+      "primaryEnergyPerCapitaKwh": 71432.609,
+      "renewableSharePct": 4.024
+    },
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "year": 2007,
+      "primaryEnergyTwh": 1506.167,
+      "primaryEnergyPerCapitaKwh": 71877.82,
+      "renewableSharePct": 3.786
+    },
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "year": 2008,
+      "primaryEnergyTwh": 1531.745,
+      "primaryEnergyPerCapitaKwh": 71675.375,
+      "renewableSharePct": 3.499
+    },
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "year": 2009,
+      "primaryEnergyTwh": 1509.545,
+      "primaryEnergyPerCapitaKwh": 69299.156,
+      "renewableSharePct": 3.722
+    },
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "year": 2010,
+      "primaryEnergyTwh": 1508.838,
+      "primaryEnergyPerCapitaKwh": 68144.984,
+      "renewableSharePct": 4.088
+    },
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "year": 2011,
+      "primaryEnergyTwh": 1558.602,
+      "primaryEnergyPerCapitaKwh": 69333.531,
+      "renewableSharePct": 5.392
+    },
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "year": 2012,
+      "primaryEnergyTwh": 1536.113,
+      "primaryEnergyPerCapitaKwh": 67218.164,
+      "renewableSharePct": 5.4
+    },
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "year": 2013,
+      "primaryEnergyTwh": 1555.586,
+      "primaryEnergyPerCapitaKwh": 66946.461,
+      "renewableSharePct": 6.173
+    },
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "year": 2014,
+      "primaryEnergyTwh": 1566.458,
+      "primaryEnergyPerCapitaKwh": 66387.727,
+      "renewableSharePct": 5.663
+    },
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "year": 2015,
+      "primaryEnergyTwh": 1601.626,
+      "primaryEnergyPerCapitaKwh": 66879.32,
+      "renewableSharePct": 5.955
+    },
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "year": 2016,
+      "primaryEnergyTwh": 1606.889,
+      "primaryEnergyPerCapitaKwh": 66045.68,
+      "renewableSharePct": 6.785
+    },
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "year": 2017,
+      "primaryEnergyTwh": 1602.028,
+      "primaryEnergyPerCapitaKwh": 64778.02,
+      "renewableSharePct": 6.373
+    },
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "year": 2018,
+      "primaryEnergyTwh": 1625.908,
+      "primaryEnergyPerCapitaKwh": 64726.418,
+      "renewableSharePct": 7.848
+    },
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "year": 2019,
+      "primaryEnergyTwh": 1680.293,
+      "primaryEnergyPerCapitaKwh": 65938.531,
+      "renewableSharePct": 8.407
+    },
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "year": 2020,
+      "primaryEnergyTwh": 1585.412,
+      "primaryEnergyPerCapitaKwh": 61584.258,
+      "renewableSharePct": 10.292
+    },
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "year": 2021,
+      "primaryEnergyTwh": 1589.323,
+      "primaryEnergyPerCapitaKwh": 61230.445,
+      "renewableSharePct": 12.283
+    },
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "year": 2022,
+      "primaryEnergyTwh": 1660.79,
+      "primaryEnergyPerCapitaKwh": 63386.535,
+      "renewableSharePct": 13.247
+    },
+    {
+      "countryCode": "AUS",
+      "countryName": "Australia",
+      "year": 2023,
+      "primaryEnergyTwh": 1657.377,
+      "primaryEnergyPerCapitaKwh": 62658.078,
+      "renewableSharePct": 14.323
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 1990,
+      "primaryEnergyTwh": 1562.972,
+      "primaryEnergyPerCapitaKwh": 10479.675,
+      "renewableSharePct": 43.267
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 1991,
+      "primaryEnergyTwh": 1624.042,
+      "primaryEnergyPerCapitaKwh": 10703.902,
+      "renewableSharePct": 43.701
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 1992,
+      "primaryEnergyTwh": 1652.104,
+      "primaryEnergyPerCapitaKwh": 10708.817,
+      "renewableSharePct": 44.017
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 1993,
+      "primaryEnergyTwh": 1730.256,
+      "primaryEnergyPerCapitaKwh": 11035.176,
+      "renewableSharePct": 44.217
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 1994,
+      "primaryEnergyTwh": 1806.904,
+      "primaryEnergyPerCapitaKwh": 11345.266,
+      "renewableSharePct": 43.932
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 1995,
+      "primaryEnergyTwh": 1913.031,
+      "primaryEnergyPerCapitaKwh": 11828.174,
+      "renewableSharePct": 43.373
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 1996,
+      "primaryEnergyTwh": 2030.631,
+      "primaryEnergyPerCapitaKwh": 12366.625,
+      "renewableSharePct": 42.834
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 1997,
+      "primaryEnergyTwh": 2149.204,
+      "primaryEnergyPerCapitaKwh": 12895.613,
+      "renewableSharePct": 42.148
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 1998,
+      "primaryEnergyTwh": 2239.432,
+      "primaryEnergyPerCapitaKwh": 13238.571,
+      "renewableSharePct": 42.033
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 1999,
+      "primaryEnergyTwh": 2269.971,
+      "primaryEnergyPerCapitaKwh": 13225.068,
+      "renewableSharePct": 41.786
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2000,
+      "primaryEnergyTwh": 2364.255,
+      "primaryEnergyPerCapitaKwh": 13586.246,
+      "renewableSharePct": 40.939
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2001,
+      "primaryEnergyTwh": 2304.051,
+      "primaryEnergyPerCapitaKwh": 13068.835,
+      "renewableSharePct": 37.181
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2002,
+      "primaryEnergyTwh": 2351.535,
+      "primaryEnergyPerCapitaKwh": 13173.609,
+      "renewableSharePct": 38.819
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2003,
+      "primaryEnergyTwh": 2386.334,
+      "primaryEnergyPerCapitaKwh": 13211.707,
+      "renewableSharePct": 40.449
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2004,
+      "primaryEnergyTwh": 2503.373,
+      "primaryEnergyPerCapitaKwh": 13703.958,
+      "renewableSharePct": 40.444
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2005,
+      "primaryEnergyTwh": 2569.063,
+      "primaryEnergyPerCapitaKwh": 13910.277,
+      "renewableSharePct": 41.27
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2006,
+      "primaryEnergyTwh": 2641.583,
+      "primaryEnergyPerCapitaKwh": 14152.363,
+      "renewableSharePct": 41.147
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2007,
+      "primaryEnergyTwh": 2810.543,
+      "primaryEnergyPerCapitaKwh": 14905.908,
+      "renewableSharePct": 42.285
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2008,
+      "primaryEnergyTwh": 2936.354,
+      "primaryEnergyPerCapitaKwh": 15424.676,
+      "renewableSharePct": 41.389
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2009,
+      "primaryEnergyTwh": 2925.52,
+      "primaryEnergyPerCapitaKwh": 15230.74,
+      "renewableSharePct": 44.157
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2010,
+      "primaryEnergyTwh": 3188.735,
+      "primaryEnergyPerCapitaKwh": 16462.07,
+      "renewableSharePct": 42.505
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2011,
+      "primaryEnergyTwh": 3316.323,
+      "primaryEnergyPerCapitaKwh": 16981.988,
+      "renewableSharePct": 42.378
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2012,
+      "primaryEnergyTwh": 3408.335,
+      "primaryEnergyPerCapitaKwh": 17312.078,
+      "renewableSharePct": 40.259
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2013,
+      "primaryEnergyTwh": 3500.955,
+      "primaryEnergyPerCapitaKwh": 17638.982,
+      "renewableSharePct": 38.407
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2014,
+      "primaryEnergyTwh": 3575.635,
+      "primaryEnergyPerCapitaKwh": 17870.57,
+      "renewableSharePct": 37.566
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2015,
+      "primaryEnergyTwh": 3535.438,
+      "primaryEnergyPerCapitaKwh": 17530.328,
+      "renewableSharePct": 38.708
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2016,
+      "primaryEnergyTwh": 3451.454,
+      "primaryEnergyPerCapitaKwh": 16983.99,
+      "renewableSharePct": 41.536
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2017,
+      "primaryEnergyTwh": 3477.629,
+      "primaryEnergyPerCapitaKwh": 16988.619,
+      "renewableSharePct": 41.294
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2018,
+      "primaryEnergyTwh": 3486.378,
+      "primaryEnergyPerCapitaKwh": 16915.357,
+      "renewableSharePct": 44.126
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2019,
+      "primaryEnergyTwh": 3567.019,
+      "primaryEnergyPerCapitaKwh": 17194.145,
+      "renewableSharePct": 45.178
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2020,
+      "primaryEnergyTwh": 3422.429,
+      "primaryEnergyPerCapitaKwh": 16401.875,
+      "renewableSharePct": 47.116
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2021,
+      "primaryEnergyTwh": 3581.199,
+      "primaryEnergyPerCapitaKwh": 17089.926,
+      "renewableSharePct": 43.673
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2022,
+      "primaryEnergyTwh": 3731.718,
+      "primaryEnergyPerCapitaKwh": 17744.193,
+      "renewableSharePct": 47.66
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2023,
+      "primaryEnergyTwh": 3853.746,
+      "primaryEnergyPerCapitaKwh": 18252.027,
+      "renewableSharePct": 48.95
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 1990,
+      "primaryEnergyTwh": 7938.25,
+      "primaryEnergyPerCapitaKwh": 6881.387,
+      "renewableSharePct": 4.45
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 1991,
+      "primaryEnergyTwh": 8337.61,
+      "primaryEnergyPerCapitaKwh": 7121.363,
+      "renewableSharePct": 4.168
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 1992,
+      "primaryEnergyTwh": 8773.708,
+      "primaryEnergyPerCapitaKwh": 7406.634,
+      "renewableSharePct": 4.157
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 1993,
+      "primaryEnergyTwh": 9457.634,
+      "primaryEnergyPerCapitaKwh": 7899.078,
+      "renewableSharePct": 4.483
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 1994,
+      "primaryEnergyTwh": 10048.812,
+      "primaryEnergyPerCapitaKwh": 8311.651,
+      "renewableSharePct": 4.668
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 1995,
+      "primaryEnergyTwh": 10352.658,
+      "primaryEnergyPerCapitaKwh": 8484.854,
+      "renewableSharePct": 5.239
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 1996,
+      "primaryEnergyTwh": 10907.45,
+      "primaryEnergyPerCapitaKwh": 8861.039,
+      "renewableSharePct": 4.849
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 1997,
+      "primaryEnergyTwh": 10981.134,
+      "primaryEnergyPerCapitaKwh": 8847.622,
+      "renewableSharePct": 5.057
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 1998,
+      "primaryEnergyTwh": 11000.566,
+      "primaryEnergyPerCapitaKwh": 8794.493,
+      "renewableSharePct": 5.119
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 1999,
+      "primaryEnergyTwh": 11386.068,
+      "primaryEnergyPerCapitaKwh": 9035.296,
+      "renewableSharePct": 4.893
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2000,
+      "primaryEnergyTwh": 11800.284,
+      "primaryEnergyPerCapitaKwh": 9294.628,
+      "renewableSharePct": 5.336
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2001,
+      "primaryEnergyTwh": 12470.063,
+      "primaryEnergyPerCapitaKwh": 9751.95,
+      "renewableSharePct": 6.251
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2002,
+      "primaryEnergyTwh": 13580.491,
+      "primaryEnergyPerCapitaKwh": 10553.145,
+      "renewableSharePct": 5.922
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2003,
+      "primaryEnergyTwh": 15818.756,
+      "primaryEnergyPerCapitaKwh": 12219.811,
+      "renewableSharePct": 5.001
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2004,
+      "primaryEnergyTwh": 18509.137,
+      "primaryEnergyPerCapitaKwh": 14214.832,
+      "renewableSharePct": 5.289
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2005,
+      "primaryEnergyTwh": 21027.164,
+      "primaryEnergyPerCapitaKwh": 16050.938,
+      "renewableSharePct": 5.239
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2006,
+      "primaryEnergyTwh": 23048.334,
+      "primaryEnergyPerCapitaKwh": 17486.639,
+      "renewableSharePct": 5.267
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2007,
+      "primaryEnergyTwh": 25049.576,
+      "primaryEnergyPerCapitaKwh": 18893.74,
+      "renewableSharePct": 5.407
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2008,
+      "primaryEnergyTwh": 26020.463,
+      "primaryEnergyPerCapitaKwh": 19508.211,
+      "renewableSharePct": 6.872
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2009,
+      "primaryEnergyTwh": 27158.898,
+      "primaryEnergyPerCapitaKwh": 20229.75,
+      "renewableSharePct": 6.56
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2010,
+      "primaryEnergyTwh": 29055.609,
+      "primaryEnergyPerCapitaKwh": 21497.809,
+      "renewableSharePct": 7.195
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2011,
+      "primaryEnergyTwh": 31336.537,
+      "primaryEnergyPerCapitaKwh": 23037.326,
+      "renewableSharePct": 6.697
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2012,
+      "primaryEnergyTwh": 32624.18,
+      "primaryEnergyPerCapitaKwh": 23821.602,
+      "renewableSharePct": 8.068
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2013,
+      "primaryEnergyTwh": 33852.566,
+      "primaryEnergyPerCapitaKwh": 24548.49,
+      "renewableSharePct": 8.474
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2014,
+      "primaryEnergyTwh": 34729.066,
+      "primaryEnergyPerCapitaKwh": 25021.807,
+      "renewableSharePct": 9.69
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2015,
+      "primaryEnergyTwh": 35135.988,
+      "primaryEnergyPerCapitaKwh": 25166.627,
+      "renewableSharePct": 10.278
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2016,
+      "primaryEnergyTwh": 35277.711,
+      "primaryEnergyPerCapitaKwh": 25125.633,
+      "renewableSharePct": 11.113
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2017,
+      "primaryEnergyTwh": 36649.383,
+      "primaryEnergyPerCapitaKwh": 25949.135,
+      "renewableSharePct": 11.666
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2018,
+      "primaryEnergyTwh": 38409.82,
+      "primaryEnergyPerCapitaKwh": 27068.061,
+      "renewableSharePct": 12.224
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2019,
+      "primaryEnergyTwh": 40188.723,
+      "primaryEnergyPerCapitaKwh": 28231.928,
+      "renewableSharePct": 12.786
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2020,
+      "primaryEnergyTwh": 41493.891,
+      "primaryEnergyPerCapitaKwh": 29095.936,
+      "renewableSharePct": 13.396
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2021,
+      "primaryEnergyTwh": 43847.18,
+      "primaryEnergyPerCapitaKwh": 30738.947,
+      "renewableSharePct": 14.195
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2022,
+      "primaryEnergyTwh": 44516.492,
+      "primaryEnergyPerCapitaKwh": 31235.707,
+      "renewableSharePct": 15.218
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2023,
+      "primaryEnergyTwh": 47072.012,
+      "primaryEnergyPerCapitaKwh": 33089.07,
+      "renewableSharePct": 15.505
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 1990,
+      "primaryEnergyTwh": 4192.642,
+      "primaryEnergyPerCapitaKwh": 52600.035,
+      "renewableSharePct": 1.264
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 1991,
+      "primaryEnergyTwh": 4090.643,
+      "primaryEnergyPerCapitaKwh": 50939.98,
+      "renewableSharePct": 1.202
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 1992,
+      "primaryEnergyTwh": 4009.338,
+      "primaryEnergyPerCapitaKwh": 49537.809,
+      "renewableSharePct": 1.438
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 1993,
+      "primaryEnergyTwh": 3991.527,
+      "primaryEnergyPerCapitaKwh": 48983.738,
+      "renewableSharePct": 1.498
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 1994,
+      "primaryEnergyTwh": 3954.172,
+      "primaryEnergyPerCapitaKwh": 48355.109,
+      "renewableSharePct": 1.646
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 1995,
+      "primaryEnergyTwh": 3974.795,
+      "primaryEnergyPerCapitaKwh": 48461.355,
+      "renewableSharePct": 1.788
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 1996,
+      "primaryEnergyTwh": 4105.846,
+      "primaryEnergyPerCapitaKwh": 49911.09,
+      "renewableSharePct": 1.593
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 1997,
+      "primaryEnergyTwh": 4053.187,
+      "primaryEnergyPerCapitaKwh": 49195.352,
+      "renewableSharePct": 1.709
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 1998,
+      "primaryEnergyTwh": 4019.632,
+      "primaryEnergyPerCapitaKwh": 49012.766,
+      "renewableSharePct": 1.868
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 1999,
+      "primaryEnergyTwh": 3963.56,
+      "primaryEnergyPerCapitaKwh": 48526.492,
+      "renewableSharePct": 2.112
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2000,
+      "primaryEnergyTwh": 3988.179,
+      "primaryEnergyPerCapitaKwh": 48756.883,
+      "renewableSharePct": 2.738
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2001,
+      "primaryEnergyTwh": 4062.799,
+      "primaryEnergyPerCapitaKwh": 49586.312,
+      "renewableSharePct": 2.798
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2002,
+      "primaryEnergyTwh": 4011.723,
+      "primaryEnergyPerCapitaKwh": 48882.719,
+      "renewableSharePct": 3.365
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2003,
+      "primaryEnergyTwh": 4010.471,
+      "primaryEnergyPerCapitaKwh": 48841.699,
+      "renewableSharePct": 3.477
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2004,
+      "primaryEnergyTwh": 4009.893,
+      "primaryEnergyPerCapitaKwh": 48845.914,
+      "renewableSharePct": 4.316
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2005,
+      "primaryEnergyTwh": 3962.635,
+      "primaryEnergyPerCapitaKwh": 48297.293,
+      "renewableSharePct": 4.992
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2006,
+      "primaryEnergyTwh": 4062.387,
+      "primaryEnergyPerCapitaKwh": 49722.023,
+      "renewableSharePct": 5.797
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2007,
+      "primaryEnergyTwh": 3893.423,
+      "primaryEnergyPerCapitaKwh": 47890.441,
+      "renewableSharePct": 7.37
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2008,
+      "primaryEnergyTwh": 3934.666,
+      "primaryEnergyPerCapitaKwh": 48509.781,
+      "renewableSharePct": 7.523
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2009,
+      "primaryEnergyTwh": 3692.178,
+      "primaryEnergyPerCapitaKwh": 45618.898,
+      "renewableSharePct": 8.147
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2010,
+      "primaryEnergyTwh": 3847.151,
+      "primaryEnergyPerCapitaKwh": 47595.047,
+      "renewableSharePct": 8.465
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2011,
+      "primaryEnergyTwh": 3710.585,
+      "primaryEnergyPerCapitaKwh": 45890.207,
+      "renewableSharePct": 10.168
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2012,
+      "primaryEnergyTwh": 3761.916,
+      "primaryEnergyPerCapitaKwh": 46491.398,
+      "renewableSharePct": 11.46
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2013,
+      "primaryEnergyTwh": 3868.517,
+      "primaryEnergyPerCapitaKwh": 47734.965,
+      "renewableSharePct": 11.603
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2014,
+      "primaryEnergyTwh": 3710.465,
+      "primaryEnergyPerCapitaKwh": 45596.504,
+      "renewableSharePct": 12.84
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2015,
+      "primaryEnergyTwh": 3780.86,
+      "primaryEnergyPerCapitaKwh": 46064.484,
+      "renewableSharePct": 14.318
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2016,
+      "primaryEnergyTwh": 3841.451,
+      "primaryEnergyPerCapitaKwh": 46416.703,
+      "renewableSharePct": 14.101
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2017,
+      "primaryEnergyTwh": 3949.556,
+      "primaryEnergyPerCapitaKwh": 47525.457,
+      "renewableSharePct": 15.388
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2018,
+      "primaryEnergyTwh": 3845.414,
+      "primaryEnergyPerCapitaKwh": 46125.492,
+      "renewableSharePct": 16.263
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2019,
+      "primaryEnergyTwh": 3753.704,
+      "primaryEnergyPerCapitaKwh": 44922.695,
+      "renewableSharePct": 17.811
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2020,
+      "primaryEnergyTwh": 3498.915,
+      "primaryEnergyPerCapitaKwh": 41838.684,
+      "renewableSharePct": 20.017
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2021,
+      "primaryEnergyTwh": 3598.492,
+      "primaryEnergyPerCapitaKwh": 42994.242,
+      "renewableSharePct": 18.082
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2022,
+      "primaryEnergyTwh": 3455.45,
+      "primaryEnergyPerCapitaKwh": 41094.125,
+      "renewableSharePct": 20.329
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2023,
+      "primaryEnergyTwh": 3178.886,
+      "primaryEnergyPerCapitaKwh": 37598.492,
+      "renewableSharePct": 23.603
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 1990,
+      "primaryEnergyTwh": 2300.701,
+      "primaryEnergyPerCapitaKwh": 2659.855,
+      "renewableSharePct": 8.068
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 1991,
+      "primaryEnergyTwh": 2427.663,
+      "primaryEnergyPerCapitaKwh": 2746.45,
+      "renewableSharePct": 8.531
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 1992,
+      "primaryEnergyTwh": 2552.772,
+      "primaryEnergyPerCapitaKwh": 2827.125,
+      "renewableSharePct": 7.687
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 1993,
+      "primaryEnergyTwh": 2616.248,
+      "primaryEnergyPerCapitaKwh": 2837.215,
+      "renewableSharePct": 7.588
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 1994,
+      "primaryEnergyTwh": 2757.121,
+      "primaryEnergyPerCapitaKwh": 2929.481,
+      "renewableSharePct": 8.187
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 1995,
+      "primaryEnergyTwh": 2963.118,
+      "primaryEnergyPerCapitaKwh": 3085.614,
+      "renewableSharePct": 7.258
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 1996,
+      "primaryEnergyTwh": 3081.631,
+      "primaryEnergyPerCapitaKwh": 3145.554,
+      "renewableSharePct": 6.408
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 1997,
+      "primaryEnergyTwh": 3252.01,
+      "primaryEnergyPerCapitaKwh": 3254.829,
+      "renewableSharePct": 6.202
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 1998,
+      "primaryEnergyTwh": 3449.497,
+      "primaryEnergyPerCapitaKwh": 3386.291,
+      "renewableSharePct": 6.971
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 1999,
+      "primaryEnergyTwh": 3546.363,
+      "primaryEnergyPerCapitaKwh": 3415.791,
+      "renewableSharePct": 6.735
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2000,
+      "primaryEnergyTwh": 3725.401,
+      "primaryEnergyPerCapitaKwh": 3521.43,
+      "renewableSharePct": 6.042
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2001,
+      "primaryEnergyTwh": 3740.874,
+      "primaryEnergyPerCapitaKwh": 3470.525,
+      "renewableSharePct": 5.693
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2002,
+      "primaryEnergyTwh": 3870.809,
+      "primaryEnergyPerCapitaKwh": 3526.61,
+      "renewableSharePct": 5.218
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2003,
+      "primaryEnergyTwh": 4008.71,
+      "primaryEnergyPerCapitaKwh": 3589.451,
+      "renewableSharePct": 5.144
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2004,
+      "primaryEnergyTwh": 4352.651,
+      "primaryEnergyPerCapitaKwh": 3831.588,
+      "renewableSharePct": 6.887
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2005,
+      "primaryEnergyTwh": 4608.417,
+      "primaryEnergyPerCapitaKwh": 3991.09,
+      "renewableSharePct": 6.359
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2006,
+      "primaryEnergyTwh": 4854.867,
+      "primaryEnergyPerCapitaKwh": 4139.273,
+      "renewableSharePct": 7.134
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2007,
+      "primaryEnergyTwh": 5268.96,
+      "primaryEnergyPerCapitaKwh": 4425.184,
+      "renewableSharePct": 7.276
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2008,
+      "primaryEnergyTwh": 5576.529,
+      "primaryEnergyPerCapitaKwh": 4616.596,
+      "renewableSharePct": 6.712
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2009,
+      "primaryEnergyTwh": 5988.39,
+      "primaryEnergyPerCapitaKwh": 4886.388,
+      "renewableSharePct": 5.965
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2010,
+      "primaryEnergyTwh": 6247.89,
+      "primaryEnergyPerCapitaKwh": 5024.514,
+      "renewableSharePct": 6.057
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2011,
+      "primaryEnergyTwh": 6587.01,
+      "primaryEnergyPerCapitaKwh": 5222.708,
+      "renewableSharePct": 6.967
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2012,
+      "primaryEnergyTwh": 6937.768,
+      "primaryEnergyPerCapitaKwh": 5425.75,
+      "renewableSharePct": 6.208
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2013,
+      "primaryEnergyTwh": 7163.062,
+      "primaryEnergyPerCapitaKwh": 5527.781,
+      "renewableSharePct": 6.75
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2014,
+      "primaryEnergyTwh": 7652.732,
+      "primaryEnergyPerCapitaKwh": 5831.643,
+      "renewableSharePct": 6.829
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2015,
+      "primaryEnergyTwh": 7892.49,
+      "primaryEnergyPerCapitaKwh": 5943.03,
+      "renewableSharePct": 6.357
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2016,
+      "primaryEnergyTwh": 8262.856,
+      "primaryEnergyPerCapitaKwh": 6148.213,
+      "renewableSharePct": 6.37
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2017,
+      "primaryEnergyTwh": 8571.671,
+      "primaryEnergyPerCapitaKwh": 6304.287,
+      "renewableSharePct": 6.793
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2018,
+      "primaryEnergyTwh": 9063.36,
+      "primaryEnergyPerCapitaKwh": 6593.169,
+      "renewableSharePct": 7.307
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2019,
+      "primaryEnergyTwh": 9281.595,
+      "primaryEnergyPerCapitaKwh": 6682.068,
+      "renewableSharePct": 8.108
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2020,
+      "primaryEnergyTwh": 8792.22,
+      "primaryEnergyPerCapitaKwh": 6268.437,
+      "renewableSharePct": 8.893
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2021,
+      "primaryEnergyTwh": 9544.969,
+      "primaryEnergyPerCapitaKwh": 6749.358,
+      "renewableSharePct": 8.657
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2022,
+      "primaryEnergyTwh": 10059.478,
+      "primaryEnergyPerCapitaKwh": 7057.187,
+      "renewableSharePct": 9.421
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2023,
+      "primaryEnergyTwh": 10827.859,
+      "primaryEnergyPerCapitaKwh": 7529.44,
+      "renewableSharePct": 8.861
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "year": 1990,
+      "primaryEnergyTwh": 5184.285,
+      "primaryEnergyPerCapitaKwh": 42012.113,
+      "renewableSharePct": 5.368
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "year": 1991,
+      "primaryEnergyTwh": 5363.508,
+      "primaryEnergyPerCapitaKwh": 43292.547,
+      "renewableSharePct": 5.6
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "year": 1992,
+      "primaryEnergyTwh": 5426.293,
+      "primaryEnergyPerCapitaKwh": 43625.438,
+      "renewableSharePct": 4.805
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "year": 1993,
+      "primaryEnergyTwh": 5516.979,
+      "primaryEnergyPerCapitaKwh": 44192.41,
+      "renewableSharePct": 5.348
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "year": 1994,
+      "primaryEnergyTwh": 5718.397,
+      "primaryEnergyPerCapitaKwh": 45642.43,
+      "renewableSharePct": 3.887
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "year": 1995,
+      "primaryEnergyTwh": 5911.905,
+      "primaryEnergyPerCapitaKwh": 47042.098,
+      "renewableSharePct": 4.483
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "year": 1996,
+      "primaryEnergyTwh": 6029.414,
+      "primaryEnergyPerCapitaKwh": 47861.875,
+      "renewableSharePct": 4.371
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "year": 1997,
+      "primaryEnergyTwh": 6146.964,
+      "primaryEnergyPerCapitaKwh": 48682.684,
+      "renewableSharePct": 4.773
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "year": 1998,
+      "primaryEnergyTwh": 6049.681,
+      "primaryEnergyPerCapitaKwh": 47804.98,
+      "renewableSharePct": 4.961
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "year": 1999,
+      "primaryEnergyTwh": 6144.011,
+      "primaryEnergyPerCapitaKwh": 48453.75,
+      "renewableSharePct": 4.664
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "year": 2000,
+      "primaryEnergyTwh": 6253.324,
+      "primaryEnergyPerCapitaKwh": 49227.996,
+      "renewableSharePct": 4.603
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "year": 2001,
+      "primaryEnergyTwh": 6185.704,
+      "primaryEnergyPerCapitaKwh": 48606.762,
+      "renewableSharePct": 4.508
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "year": 2002,
+      "primaryEnergyTwh": 6165.896,
+      "primaryEnergyPerCapitaKwh": 48365.816,
+      "renewableSharePct": 4.514
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "year": 2003,
+      "primaryEnergyTwh": 6162.913,
+      "primaryEnergyPerCapitaKwh": 48271.73,
+      "renewableSharePct": 5.098
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "year": 2004,
+      "primaryEnergyTwh": 6247.106,
+      "primaryEnergyPerCapitaKwh": 48875.867,
+      "renewableSharePct": 5.023
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "year": 2005,
+      "primaryEnergyTwh": 6353.936,
+      "primaryEnergyPerCapitaKwh": 49673.758,
+      "renewableSharePct": 4.52
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "year": 2006,
+      "primaryEnergyTwh": 6336.102,
+      "primaryEnergyPerCapitaKwh": 49501.863,
+      "renewableSharePct": 5.011
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "year": 2007,
+      "primaryEnergyTwh": 6275.421,
+      "primaryEnergyPerCapitaKwh": 48993.164,
+      "renewableSharePct": 4.499
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "year": 2008,
+      "primaryEnergyTwh": 6158.084,
+      "primaryEnergyPerCapitaKwh": 48051.477,
+      "renewableSharePct": 4.561
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "year": 2009,
+      "primaryEnergyTwh": 5622.332,
+      "primaryEnergyPerCapitaKwh": 43858.52,
+      "renewableSharePct": 4.756
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "year": 2010,
+      "primaryEnergyTwh": 5983.169,
+      "primaryEnergyPerCapitaKwh": 46675.945,
+      "renewableSharePct": 5.404
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "year": 2011,
+      "primaryEnergyTwh": 5669.594,
+      "primaryEnergyPerCapitaKwh": 44260.359,
+      "renewableSharePct": 5.447
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "year": 2012,
+      "primaryEnergyTwh": 5615.285,
+      "primaryEnergyPerCapitaKwh": 43894.004,
+      "renewableSharePct": 5.379
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "year": 2013,
+      "primaryEnergyTwh": 5576.221,
+      "primaryEnergyPerCapitaKwh": 43658.484,
+      "renewableSharePct": 5.829
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "year": 2014,
+      "primaryEnergyTwh": 5431.795,
+      "primaryEnergyPerCapitaKwh": 42606.789,
+      "renewableSharePct": 6.604
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "year": 2015,
+      "primaryEnergyTwh": 5363.261,
+      "primaryEnergyPerCapitaKwh": 42138.867,
+      "renewableSharePct": 7.685
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "year": 2016,
+      "primaryEnergyTwh": 5295.819,
+      "primaryEnergyPerCapitaKwh": 41646.914,
+      "renewableSharePct": 7.593
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "year": 2017,
+      "primaryEnergyTwh": 5354.196,
+      "primaryEnergyPerCapitaKwh": 42137.562,
+      "renewableSharePct": 8.029
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "year": 2018,
+      "primaryEnergyTwh": 5317.67,
+      "primaryEnergyPerCapitaKwh": 41899.98,
+      "renewableSharePct": 8.65
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "year": 2019,
+      "primaryEnergyTwh": 5205.6,
+      "primaryEnergyPerCapitaKwh": 41086.219,
+      "renewableSharePct": 8.871
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "year": 2020,
+      "primaryEnergyTwh": 4825.24,
+      "primaryEnergyPerCapitaKwh": 38203.219,
+      "renewableSharePct": 10.457
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "year": 2021,
+      "primaryEnergyTwh": 5029.708,
+      "primaryEnergyPerCapitaKwh": 40020.164,
+      "renewableSharePct": 10.814
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "year": 2022,
+      "primaryEnergyTwh": 4996.771,
+      "primaryEnergyPerCapitaKwh": 39974.945,
+      "renewableSharePct": 11.154
+    },
+    {
+      "countryCode": "JPN",
+      "countryName": "Japan",
+      "year": 2023,
+      "primaryEnergyTwh": 4858.53,
+      "primaryEnergyPerCapitaKwh": 39064.832,
+      "renewableSharePct": 11.965
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 1990,
+      "primaryEnergyTwh": 195.42,
+      "primaryEnergyPerCapitaKwh": 2012.134,
+      "renewableSharePct": null
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 1991,
+      "primaryEnergyTwh": 212.529,
+      "primaryEnergyPerCapitaKwh": 2131.258,
+      "renewableSharePct": null
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 1992,
+      "primaryEnergyTwh": 218.113,
+      "primaryEnergyPerCapitaKwh": 2130.576,
+      "renewableSharePct": null
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 1993,
+      "primaryEnergyTwh": 222.645,
+      "primaryEnergyPerCapitaKwh": 2117.968,
+      "renewableSharePct": null
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 1994,
+      "primaryEnergyTwh": 206.853,
+      "primaryEnergyPerCapitaKwh": 1916.443,
+      "renewableSharePct": null
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 1995,
+      "primaryEnergyTwh": 231.431,
+      "primaryEnergyPerCapitaKwh": 2088.36,
+      "renewableSharePct": null
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 1996,
+      "primaryEnergyTwh": 237.369,
+      "primaryEnergyPerCapitaKwh": 2086.673,
+      "renewableSharePct": null
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 1997,
+      "primaryEnergyTwh": 237.488,
+      "primaryEnergyPerCapitaKwh": 2034.072,
+      "renewableSharePct": null
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 1998,
+      "primaryEnergyTwh": 226.951,
+      "primaryEnergyPerCapitaKwh": 1893.687,
+      "renewableSharePct": null
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 1999,
+      "primaryEnergyTwh": 227.026,
+      "primaryEnergyPerCapitaKwh": 1845.027,
+      "renewableSharePct": null
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2000,
+      "primaryEnergyTwh": 215.365,
+      "primaryEnergyPerCapitaKwh": 1704.075,
+      "renewableSharePct": null
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2001,
+      "primaryEnergyTwh": 244.256,
+      "primaryEnergyPerCapitaKwh": 1880.878,
+      "renewableSharePct": null
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2002,
+      "primaryEnergyTwh": 250.952,
+      "primaryEnergyPerCapitaKwh": 1880.187,
+      "renewableSharePct": null
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2003,
+      "primaryEnergyTwh": 267.13,
+      "primaryEnergyPerCapitaKwh": 1946.971,
+      "renewableSharePct": null
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2004,
+      "primaryEnergyTwh": 276.614,
+      "primaryEnergyPerCapitaKwh": 1961.007,
+      "renewableSharePct": null
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2005,
+      "primaryEnergyTwh": 304.852,
+      "primaryEnergyPerCapitaKwh": 2102.179,
+      "renewableSharePct": null
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2006,
+      "primaryEnergyTwh": 274.024,
+      "primaryEnergyPerCapitaKwh": 1838.13,
+      "renewableSharePct": null
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2007,
+      "primaryEnergyTwh": 251.889,
+      "primaryEnergyPerCapitaKwh": 1643.461,
+      "renewableSharePct": null
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2008,
+      "primaryEnergyTwh": 310.307,
+      "primaryEnergyPerCapitaKwh": 1969.013,
+      "renewableSharePct": null
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2009,
+      "primaryEnergyTwh": 196.343,
+      "primaryEnergyPerCapitaKwh": 1211.625,
+      "renewableSharePct": null
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2010,
+      "primaryEnergyTwh": 240.845,
+      "primaryEnergyPerCapitaKwh": 1445.278,
+      "renewableSharePct": null
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2011,
+      "primaryEnergyTwh": 346.692,
+      "primaryEnergyPerCapitaKwh": 2022.947,
+      "renewableSharePct": null
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2012,
+      "primaryEnergyTwh": 350.17,
+      "primaryEnergyPerCapitaKwh": 1987.339,
+      "renewableSharePct": null
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2013,
+      "primaryEnergyTwh": 453.333,
+      "primaryEnergyPerCapitaKwh": 2503.916,
+      "renewableSharePct": null
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2014,
+      "primaryEnergyTwh": 494.192,
+      "primaryEnergyPerCapitaKwh": 2658.422,
+      "renewableSharePct": null
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2015,
+      "primaryEnergyTwh": 468.837,
+      "primaryEnergyPerCapitaKwh": 2458.865,
+      "renewableSharePct": null
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2016,
+      "primaryEnergyTwh": 475.244,
+      "primaryEnergyPerCapitaKwh": 2431.617,
+      "renewableSharePct": null
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2017,
+      "primaryEnergyTwh": 460.025,
+      "primaryEnergyPerCapitaKwh": 2297.201,
+      "renewableSharePct": null
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2018,
+      "primaryEnergyTwh": 491.568,
+      "primaryEnergyPerCapitaKwh": 2398.611,
+      "renewableSharePct": null
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2019,
+      "primaryEnergyTwh": 514.787,
+      "primaryEnergyPerCapitaKwh": 2457.388,
+      "renewableSharePct": null
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2020,
+      "primaryEnergyTwh": 475.403,
+      "primaryEnergyPerCapitaKwh": 2221.549,
+      "renewableSharePct": null
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2021,
+      "primaryEnergyTwh": 512.507,
+      "primaryEnergyPerCapitaKwh": 2345.254,
+      "renewableSharePct": null
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2022,
+      "primaryEnergyTwh": 517.687,
+      "primaryEnergyPerCapitaKwh": 2319.896,
+      "renewableSharePct": null
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2023,
+      "primaryEnergyTwh": 533.847,
+      "primaryEnergyPerCapitaKwh": 2342.639,
+      "renewableSharePct": null
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 1990,
+      "primaryEnergyTwh": 1029.669,
+      "primaryEnergyPerCapitaKwh": 25270.26,
+      "renewableSharePct": 0.273
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 1991,
+      "primaryEnergyTwh": 1022.248,
+      "primaryEnergyPerCapitaKwh": 24521.457,
+      "renewableSharePct": 0.539
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 1992,
+      "primaryEnergyTwh": 1027.038,
+      "primaryEnergyPerCapitaKwh": 24197.768,
+      "renewableSharePct": 0.204
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 1993,
+      "primaryEnergyTwh": 1025.258,
+      "primaryEnergyPerCapitaKwh": 23679.57,
+      "renewableSharePct": 0.04
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 1994,
+      "primaryEnergyTwh": 1069.309,
+      "primaryEnergyPerCapitaKwh": 24300.189,
+      "renewableSharePct": 0.279
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 1995,
+      "primaryEnergyTwh": 1117.516,
+      "primaryEnergyPerCapitaKwh": 25089.297,
+      "renewableSharePct": 0.132
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 1996,
+      "primaryEnergyTwh": 1139.763,
+      "primaryEnergyPerCapitaKwh": 25259.006,
+      "renewableSharePct": 0.338
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 1997,
+      "primaryEnergyTwh": 1165.543,
+      "primaryEnergyPerCapitaKwh": 25522.74,
+      "renewableSharePct": 0.538
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 1998,
+      "primaryEnergyTwh": 1145.026,
+      "primaryEnergyPerCapitaKwh": 24771.293,
+      "renewableSharePct": 0.45
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 1999,
+      "primaryEnergyTwh": 1183.745,
+      "primaryEnergyPerCapitaKwh": 25331.398,
+      "renewableSharePct": 0.223
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2000,
+      "primaryEnergyTwh": 1185.383,
+      "primaryEnergyPerCapitaKwh": 25135.504,
+      "renewableSharePct": 0.386
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2001,
+      "primaryEnergyTwh": 1191.536,
+      "primaryEnergyPerCapitaKwh": 25049.746,
+      "renewableSharePct": 0.513
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2002,
+      "primaryEnergyTwh": 1161.125,
+      "primaryEnergyPerCapitaKwh": 24180.324,
+      "renewableSharePct": 0.661
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2003,
+      "primaryEnergyTwh": 1257.958,
+      "primaryEnergyPerCapitaKwh": 25937.09,
+      "renewableSharePct": 0.328
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2004,
+      "primaryEnergyTwh": 1372.773,
+      "primaryEnergyPerCapitaKwh": 28020.674,
+      "renewableSharePct": 0.327
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2005,
+      "primaryEnergyTwh": 1299.322,
+      "primaryEnergyPerCapitaKwh": 26254.201,
+      "renewableSharePct": 0.384
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2006,
+      "primaryEnergyTwh": 1326.061,
+      "primaryEnergyPerCapitaKwh": 26522.131,
+      "renewableSharePct": 0.692
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2007,
+      "primaryEnergyTwh": 1362.193,
+      "primaryEnergyPerCapitaKwh": 26958.873,
+      "renewableSharePct": 0.723
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2008,
+      "primaryEnergyTwh": 1459.697,
+      "primaryEnergyPerCapitaKwh": 28557.336,
+      "renewableSharePct": 0.373
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2009,
+      "primaryEnergyTwh": 1453.214,
+      "primaryEnergyPerCapitaKwh": 28093.094,
+      "renewableSharePct": 0.39
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2010,
+      "primaryEnergyTwh": 1463.989,
+      "primaryEnergyPerCapitaKwh": 27968.58,
+      "renewableSharePct": 0.31
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2011,
+      "primaryEnergyTwh": 1446.214,
+      "primaryEnergyPerCapitaKwh": 27289.521,
+      "renewableSharePct": 0.692
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2012,
+      "primaryEnergyTwh": 1424.104,
+      "primaryEnergyPerCapitaKwh": 26478.908,
+      "renewableSharePct": 0.358
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2013,
+      "primaryEnergyTwh": 1430.569,
+      "primaryEnergyPerCapitaKwh": 26163.137,
+      "renewableSharePct": 0.397
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2014,
+      "primaryEnergyTwh": 1448.045,
+      "primaryEnergyPerCapitaKwh": 26046.393,
+      "renewableSharePct": 0.81
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2015,
+      "primaryEnergyTwh": 1415.416,
+      "primaryEnergyPerCapitaKwh": 24952.885,
+      "renewableSharePct": 1.29
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2016,
+      "primaryEnergyTwh": 1480.061,
+      "primaryEnergyPerCapitaKwh": 25848.275,
+      "renewableSharePct": 1.482
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2017,
+      "primaryEnergyTwh": 1475.142,
+      "primaryEnergyPerCapitaKwh": 25594.477,
+      "renewableSharePct": 2.16
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2018,
+      "primaryEnergyTwh": 1409.859,
+      "primaryEnergyPerCapitaKwh": 24053.697,
+      "renewableSharePct": 2.29
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2019,
+      "primaryEnergyTwh": 1471.708,
+      "primaryEnergyPerCapitaKwh": 24698.113,
+      "renewableSharePct": 2.24
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2020,
+      "primaryEnergyTwh": 1399.597,
+      "primaryEnergyPerCapitaKwh": 23110.006,
+      "renewableSharePct": 2.582
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2021,
+      "primaryEnergyTwh": 1405.65,
+      "primaryEnergyPerCapitaKwh": 22855.135,
+      "renewableSharePct": 3.247
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2022,
+      "primaryEnergyTwh": 1346.169,
+      "primaryEnergyPerCapitaKwh": 21580.689,
+      "renewableSharePct": 3.648
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2023,
+      "primaryEnergyTwh": 1367.989,
+      "primaryEnergyPerCapitaKwh": 21641.15,
+      "renewableSharePct": 3.757
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 1990,
+      "primaryEnergyTwh": 2508.393,
+      "primaryEnergyPerCapitaKwh": 43724.711,
+      "renewableSharePct": 0.643
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 1991,
+      "primaryEnergyTwh": 2561.217,
+      "primaryEnergyPerCapitaKwh": 44500.176,
+      "renewableSharePct": 0.578
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 1992,
+      "primaryEnergyTwh": 2545.327,
+      "primaryEnergyPerCapitaKwh": 44098.398,
+      "renewableSharePct": 0.704
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 1993,
+      "primaryEnergyTwh": 2574.725,
+      "primaryEnergyPerCapitaKwh": 44498.426,
+      "renewableSharePct": 0.635
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 1994,
+      "primaryEnergyTwh": 2543.823,
+      "primaryEnergyPerCapitaKwh": 43856.598,
+      "renewableSharePct": 0.785
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 1995,
+      "primaryEnergyTwh": 2552.545,
+      "primaryEnergyPerCapitaKwh": 43892.383,
+      "renewableSharePct": 0.752
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 1996,
+      "primaryEnergyTwh": 2676.295,
+      "primaryEnergyPerCapitaKwh": 45906.703,
+      "renewableSharePct": 0.615
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 1997,
+      "primaryEnergyTwh": 2629.999,
+      "primaryEnergyPerCapitaKwh": 44997.941,
+      "renewableSharePct": 0.788
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 1998,
+      "primaryEnergyTwh": 2651.618,
+      "primaryEnergyPerCapitaKwh": 45228.754,
+      "renewableSharePct": 0.943
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 1999,
+      "primaryEnergyTwh": 2639.219,
+      "primaryEnergyPerCapitaKwh": 44855.188,
+      "renewableSharePct": 1.06
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2000,
+      "primaryEnergyTwh": 2664.116,
+      "primaryEnergyPerCapitaKwh": 45110.676,
+      "renewableSharePct": 1.087
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2001,
+      "primaryEnergyTwh": 2691.806,
+      "primaryEnergyPerCapitaKwh": 45402.137,
+      "renewableSharePct": 1.043
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2002,
+      "primaryEnergyTwh": 2630.84,
+      "primaryEnergyPerCapitaKwh": 44185.527,
+      "renewableSharePct": 1.237
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2003,
+      "primaryEnergyTwh": 2668.734,
+      "primaryEnergyPerCapitaKwh": 44612.457,
+      "renewableSharePct": 1.194
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2004,
+      "primaryEnergyTwh": 2690.652,
+      "primaryEnergyPerCapitaKwh": 44717.523,
+      "renewableSharePct": 1.549
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2005,
+      "primaryEnergyTwh": 2712.682,
+      "primaryEnergyPerCapitaKwh": 44766.613,
+      "renewableSharePct": 1.86
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2006,
+      "primaryEnergyTwh": 2678.337,
+      "primaryEnergyPerCapitaKwh": 43870.426,
+      "renewableSharePct": 2.047
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2007,
+      "primaryEnergyTwh": 2604.192,
+      "primaryEnergyPerCapitaKwh": 42319.914,
+      "renewableSharePct": 2.337
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2008,
+      "primaryEnergyTwh": 2558.816,
+      "primaryEnergyPerCapitaKwh": 41253.062,
+      "renewableSharePct": 2.81
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2009,
+      "primaryEnergyTwh": 2422.812,
+      "primaryEnergyPerCapitaKwh": 38761.125,
+      "renewableSharePct": 2.989
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2010,
+      "primaryEnergyTwh": 2475.146,
+      "primaryEnergyPerCapitaKwh": 39283.996,
+      "renewableSharePct": 3.043
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2011,
+      "primaryEnergyTwh": 2332.188,
+      "primaryEnergyPerCapitaKwh": 36722.008,
+      "renewableSharePct": 4.268
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2012,
+      "primaryEnergyTwh": 2375.146,
+      "primaryEnergyPerCapitaKwh": 37134.582,
+      "renewableSharePct": 4.869
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2013,
+      "primaryEnergyTwh": 2388.473,
+      "primaryEnergyPerCapitaKwh": 37094.207,
+      "renewableSharePct": 6.655
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2014,
+      "primaryEnergyTwh": 2255.708,
+      "primaryEnergyPerCapitaKwh": 34774.93,
+      "renewableSharePct": 8.506
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2015,
+      "primaryEnergyTwh": 2279.467,
+      "primaryEnergyPerCapitaKwh": 34863.777,
+      "renewableSharePct": 10.562
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2016,
+      "primaryEnergyTwh": 2246.922,
+      "primaryEnergyPerCapitaKwh": 34099.367,
+      "renewableSharePct": 10.659
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2017,
+      "primaryEnergyTwh": 2251.043,
+      "primaryEnergyPerCapitaKwh": 33924.512,
+      "renewableSharePct": 12.44
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2018,
+      "primaryEnergyTwh": 2246.424,
+      "primaryEnergyPerCapitaKwh": 33653.051,
+      "renewableSharePct": 13.98
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2019,
+      "primaryEnergyTwh": 2192.985,
+      "primaryEnergyPerCapitaKwh": 32676.998,
+      "renewableSharePct": 15.684
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2020,
+      "primaryEnergyTwh": 1982.843,
+      "primaryEnergyPerCapitaKwh": 29440.059,
+      "renewableSharePct": 19.068
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2021,
+      "primaryEnergyTwh": 1990.967,
+      "primaryEnergyPerCapitaKwh": 29422.24,
+      "renewableSharePct": 17.482
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2022,
+      "primaryEnergyTwh": 2009.944,
+      "primaryEnergyPerCapitaKwh": 29480.258,
+      "renewableSharePct": 19.072
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2023,
+      "primaryEnergyTwh": 1929.626,
+      "primaryEnergyPerCapitaKwh": 28094.684,
+      "renewableSharePct": 19.976
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States",
+      "year": 1990,
+      "primaryEnergyTwh": 22609.195,
+      "primaryEnergyPerCapitaKwh": 89232.719,
+      "renewableSharePct": 4.516
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States",
+      "year": 1991,
+      "primaryEnergyTwh": 22579.719,
+      "primaryEnergyPerCapitaKwh": 88039.898,
+      "renewableSharePct": 4.519
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States",
+      "year": 1992,
+      "primaryEnergyTwh": 22913.111,
+      "primaryEnergyPerCapitaKwh": 88261.094,
+      "renewableSharePct": 4.083
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States",
+      "year": 1993,
+      "primaryEnergyTwh": 23396.387,
+      "primaryEnergyPerCapitaKwh": 89083.875,
+      "renewableSharePct": 4.377
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States",
+      "year": 1994,
+      "primaryEnergyTwh": 23824.131,
+      "primaryEnergyPerCapitaKwh": 89741.586,
+      "renewableSharePct": 4.076
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States",
+      "year": 1995,
+      "primaryEnergyTwh": 24343.418,
+      "primaryEnergyPerCapitaKwh": 90763.953,
+      "renewableSharePct": 4.551
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States",
+      "year": 1996,
+      "primaryEnergyTwh": 25165.373,
+      "primaryEnergyPerCapitaKwh": 92908.914,
+      "renewableSharePct": 4.791
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States",
+      "year": 1997,
+      "primaryEnergyTwh": 25354.096,
+      "primaryEnergyPerCapitaKwh": 92713.203,
+      "renewableSharePct": 4.884
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States",
+      "year": 1998,
+      "primaryEnergyTwh": 25513.363,
+      "primaryEnergyPerCapitaKwh": 92399.773,
+      "renewableSharePct": 4.489
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States",
+      "year": 1999,
+      "primaryEnergyTwh": 25965.076,
+      "primaryEnergyPerCapitaKwh": 93136.398,
+      "renewableSharePct": 4.383
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States",
+      "year": 2000,
+      "primaryEnergyTwh": 26546.236,
+      "primaryEnergyPerCapitaKwh": 94308.109,
+      "renewableSharePct": 3.856
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States",
+      "year": 2001,
+      "primaryEnergyTwh": 25918.357,
+      "primaryEnergyPerCapitaKwh": 91172.055,
+      "renewableSharePct": 3.287
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States",
+      "year": 2002,
+      "primaryEnergyTwh": 26297.27,
+      "primaryEnergyPerCapitaKwh": 91601.203,
+      "renewableSharePct": 3.851
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States",
+      "year": 2003,
+      "primaryEnergyTwh": 26383.084,
+      "primaryEnergyPerCapitaKwh": 91004.992,
+      "renewableSharePct": 4.012
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States",
+      "year": 2004,
+      "primaryEnergyTwh": 26899.117,
+      "primaryEnergyPerCapitaKwh": 91872.883,
+      "renewableSharePct": 3.944
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States",
+      "year": 2005,
+      "primaryEnergyTwh": 26912.564,
+      "primaryEnergyPerCapitaKwh": 91007.938,
+      "renewableSharePct": 4.055
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States",
+      "year": 2006,
+      "primaryEnergyTwh": 26699.963,
+      "primaryEnergyPerCapitaKwh": 89378.18,
+      "renewableSharePct": 4.502
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States",
+      "year": 2007,
+      "primaryEnergyTwh": 27066.711,
+      "primaryEnergyPerCapitaKwh": 89671.125,
+      "renewableSharePct": 4.222
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States",
+      "year": 2008,
+      "primaryEnergyTwh": 26407.25,
+      "primaryEnergyPerCapitaKwh": 86589.57,
+      "renewableSharePct": 4.833
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States",
+      "year": 2009,
+      "primaryEnergyTwh": 25110.527,
+      "primaryEnergyPerCapitaKwh": 81521.477,
+      "renewableSharePct": 5.601
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States",
+      "year": 2010,
+      "primaryEnergyTwh": 25953.547,
+      "primaryEnergyPerCapitaKwh": 83435.078,
+      "renewableSharePct": 5.642
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States",
+      "year": 2011,
+      "primaryEnergyTwh": 25729.088,
+      "primaryEnergyPerCapitaKwh": 81912.359,
+      "renewableSharePct": 6.653
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States",
+      "year": 2012,
+      "primaryEnergyTwh": 25047.367,
+      "primaryEnergyPerCapitaKwh": 78985.039,
+      "renewableSharePct": 6.652
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States",
+      "year": 2013,
+      "primaryEnergyTwh": 25728.629,
+      "primaryEnergyPerCapitaKwh": 80374.148,
+      "renewableSharePct": 6.888
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States",
+      "year": 2014,
+      "primaryEnergyTwh": 25995.914,
+      "primaryEnergyPerCapitaKwh": 80453.969,
+      "renewableSharePct": 7.015
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States",
+      "year": 2015,
+      "primaryEnergyTwh": 25747.426,
+      "primaryEnergyPerCapitaKwh": 78949.203,
+      "renewableSharePct": 7.219
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States",
+      "year": 2016,
+      "primaryEnergyTwh": 25727.051,
+      "primaryEnergyPerCapitaKwh": 78155.102,
+      "renewableSharePct": 7.993
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States",
+      "year": 2017,
+      "primaryEnergyTwh": 25822.156,
+      "primaryEnergyPerCapitaKwh": 77729.664,
+      "renewableSharePct": 8.755
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States",
+      "year": 2018,
+      "primaryEnergyTwh": 26768.988,
+      "primaryEnergyPerCapitaKwh": 79893.953,
+      "renewableSharePct": 8.64
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States",
+      "year": 2019,
+      "primaryEnergyTwh": 26578.494,
+      "primaryEnergyPerCapitaKwh": 78683.469,
+      "renewableSharePct": 8.967
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States",
+      "year": 2020,
+      "primaryEnergyTwh": 24630.395,
+      "primaryEnergyPerCapitaKwh": 72562.672,
+      "renewableSharePct": 10.123
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States",
+      "year": 2021,
+      "primaryEnergyTwh": 25956.828,
+      "primaryEnergyPerCapitaKwh": 76307.383,
+      "renewableSharePct": 10.116
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States",
+      "year": 2022,
+      "primaryEnergyTwh": 26512.51,
+      "primaryEnergyPerCapitaKwh": 77627.719,
+      "renewableSharePct": 10.875
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States",
+      "year": 2023,
+      "primaryEnergyTwh": 26216.545,
+      "primaryEnergyPerCapitaKwh": 76326.859,
+      "renewableSharePct": 11.212
+    }
+  ]
+}

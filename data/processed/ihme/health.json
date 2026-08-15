@@ -1,0 +1,2197 @@
+{
+  "source": "IHME Global Burden of Disease export",
+  "preparedAt": "2026-08-15T22:54:48.203Z",
+  "filters": {
+    "dalys": "All causes, both sexes, all ages, rate",
+    "countries": [
+      "USA",
+      "CHN",
+      "IND",
+      "DEU",
+      "GBR",
+      "BRA",
+      "NGA",
+      "ZAF",
+      "JPN",
+      "AUS"
+    ]
+  },
+  "records": [
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 1990,
+      "dalysRate": 35904.268445143025,
+      "dalysRateUpper": 39218.201061090986,
+      "dalysRateLower": 33218.879490514715
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 1991,
+      "dalysRate": 34821.363718998386,
+      "dalysRateUpper": 37991.245910282116,
+      "dalysRateLower": 32111.79737440633
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 1992,
+      "dalysRate": 34732.3444075477,
+      "dalysRateUpper": 37895.53190817722,
+      "dalysRateLower": 32110.819720721505
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 1993,
+      "dalysRate": 35233.55702267892,
+      "dalysRateUpper": 38484.58076578287,
+      "dalysRateLower": 32683.405854759418
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 1994,
+      "dalysRate": 35066.2291524574,
+      "dalysRateUpper": 38304.46059150033,
+      "dalysRateLower": 32358.88091762058
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 1995,
+      "dalysRate": 34547.39117909824,
+      "dalysRateUpper": 37765.20160828539,
+      "dalysRateLower": 31809.32444485648
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 1996,
+      "dalysRate": 33995.3561960505,
+      "dalysRateUpper": 37181.515551111705,
+      "dalysRateLower": 31396.54588298598
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 1997,
+      "dalysRate": 33413.70960168123,
+      "dalysRateUpper": 36657.71632094838,
+      "dalysRateLower": 30730.030456939396
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 1998,
+      "dalysRate": 33238.19469261354,
+      "dalysRateUpper": 36574.160395939805,
+      "dalysRateLower": 30448.473796446295
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 1999,
+      "dalysRate": 32903.37160239197,
+      "dalysRateUpper": 36173.24984934831,
+      "dalysRateLower": 30196.263759856072
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2000,
+      "dalysRate": 32483.731981215664,
+      "dalysRateUpper": 35844.269338926875,
+      "dalysRateLower": 29770.650403794923
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2001,
+      "dalysRate": 32174.15383617896,
+      "dalysRateUpper": 35631.19659995539,
+      "dalysRateLower": 29380.101720683182
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2002,
+      "dalysRate": 31951.105924165506,
+      "dalysRateUpper": 35349.17462620647,
+      "dalysRateLower": 29135.817304811724
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2003,
+      "dalysRate": 31733.1272125188,
+      "dalysRateUpper": 35082.85963275424,
+      "dalysRateLower": 28956.302377629694
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2004,
+      "dalysRate": 31474.087113987454,
+      "dalysRateUpper": 34874.939440388705,
+      "dalysRateLower": 28667.976398328767
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2005,
+      "dalysRate": 30855.607758713133,
+      "dalysRateUpper": 34266.081793656376,
+      "dalysRateLower": 28065.335202752976
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2006,
+      "dalysRate": 30606.382456543433,
+      "dalysRateUpper": 33880.34458493598,
+      "dalysRateLower": 27710.389668805834
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2007,
+      "dalysRate": 30427.87061868212,
+      "dalysRateUpper": 33844.80480106427,
+      "dalysRateLower": 27555.755682145715
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2008,
+      "dalysRate": 30400.39569234167,
+      "dalysRateUpper": 33860.959316825385,
+      "dalysRateLower": 27553.92971931243
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2009,
+      "dalysRate": 30417.303045162593,
+      "dalysRateUpper": 33800.136079406795,
+      "dalysRateLower": 27523.858888593215
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2010,
+      "dalysRate": 30518.462244286125,
+      "dalysRateUpper": 33970.24033132923,
+      "dalysRateLower": 27661.443290879008
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2011,
+      "dalysRate": 30643.129173857054,
+      "dalysRateUpper": 34021.32500404722,
+      "dalysRateLower": 27749.994581218583
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2012,
+      "dalysRate": 30598.83371776827,
+      "dalysRateUpper": 33929.44567050303,
+      "dalysRateLower": 27604.324918968065
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2013,
+      "dalysRate": 30747.460656478164,
+      "dalysRateUpper": 34079.70828698407,
+      "dalysRateLower": 27840.510525623362
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2014,
+      "dalysRate": 30744.0267866765,
+      "dalysRateUpper": 34149.951454272574,
+      "dalysRateLower": 27813.850417784015
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2015,
+      "dalysRate": 30950.563779315227,
+      "dalysRateUpper": 34346.92974203084,
+      "dalysRateLower": 27938.130996047916
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2016,
+      "dalysRate": 31286.96500955993,
+      "dalysRateUpper": 34685.49153183147,
+      "dalysRateLower": 28220.792847455818
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2017,
+      "dalysRate": 31113.516690256783,
+      "dalysRateUpper": 34554.941809619944,
+      "dalysRateLower": 28126.399228391612
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2018,
+      "dalysRate": 30893.228309818445,
+      "dalysRateUpper": 34425.59224904586,
+      "dalysRateLower": 27851.28297646897
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2019,
+      "dalysRate": 30935.26083801031,
+      "dalysRateUpper": 34424.13524077237,
+      "dalysRateLower": 27895.741404791697
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2020,
+      "dalysRate": 33864.14166209291,
+      "dalysRateUpper": 37531.79589346707,
+      "dalysRateLower": 30618.077552559735
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2021,
+      "dalysRate": 37860.371219634995,
+      "dalysRateUpper": 41583.60762398062,
+      "dalysRateLower": 34499.09492206864
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2022,
+      "dalysRate": 33478.1645476219,
+      "dalysRateUpper": 37306.39662428088,
+      "dalysRateLower": 30048.11321705588
+    },
+    {
+      "countryCode": "BRA",
+      "countryName": "Brazil",
+      "year": 2023,
+      "dalysRate": 32898.25896631066,
+      "dalysRateUpper": 36849.412972837745,
+      "dalysRateLower": 29454.35516301354
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 1990,
+      "dalysRate": 38543.166739845234,
+      "dalysRateUpper": 41232.868640941575,
+      "dalysRateLower": 36130.83113963911
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 1991,
+      "dalysRate": 37880.902899648405,
+      "dalysRateUpper": 40888.08449222845,
+      "dalysRateLower": 35392.281168304515
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 1992,
+      "dalysRate": 37086.3821442756,
+      "dalysRateUpper": 40205.338070536796,
+      "dalysRateLower": 34600.551008385475
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 1993,
+      "dalysRate": 36323.214688625805,
+      "dalysRateUpper": 39188.421575367924,
+      "dalysRateLower": 33894.09560891274
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 1994,
+      "dalysRate": 35631.93451118892,
+      "dalysRateUpper": 38662.533777250406,
+      "dalysRateLower": 33116.91211621367
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 1995,
+      "dalysRate": 34865.14525026693,
+      "dalysRateUpper": 37775.8982507437,
+      "dalysRateLower": 32406.268289432177
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 1996,
+      "dalysRate": 34111.43446604802,
+      "dalysRateUpper": 37139.0486465962,
+      "dalysRateLower": 31801.382268194655
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 1997,
+      "dalysRate": 33381.93600324857,
+      "dalysRateUpper": 36367.936637773,
+      "dalysRateLower": 30921.7787045643
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 1998,
+      "dalysRate": 32846.648820585375,
+      "dalysRateUpper": 35951.527461304744,
+      "dalysRateLower": 30294.499573563004
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 1999,
+      "dalysRate": 32415.253676825447,
+      "dalysRateUpper": 35505.80389145872,
+      "dalysRateLower": 29860.6115124688
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2000,
+      "dalysRate": 32102.528917001033,
+      "dalysRateUpper": 34935.68275893948,
+      "dalysRateLower": 29636.128895614405
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2001,
+      "dalysRate": 31780.445453344204,
+      "dalysRateUpper": 34570.39216103275,
+      "dalysRateLower": 29136.266162878517
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2002,
+      "dalysRate": 31273.038670098245,
+      "dalysRateUpper": 34100.49449028593,
+      "dalysRateLower": 28433.4635685652
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2003,
+      "dalysRate": 30813.709246667797,
+      "dalysRateUpper": 33716.89091652067,
+      "dalysRateLower": 28095.120567093705
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2004,
+      "dalysRate": 30262.060836543387,
+      "dalysRateUpper": 33178.206281189734,
+      "dalysRateLower": 27542.6155814669
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2005,
+      "dalysRate": 29709.901753428585,
+      "dalysRateUpper": 32582.884556481033,
+      "dalysRateLower": 27067.17742003854
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2006,
+      "dalysRate": 29141.017757476722,
+      "dalysRateUpper": 32072.289952855448,
+      "dalysRateLower": 26367.233841389225
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2007,
+      "dalysRate": 28779.04991057543,
+      "dalysRateUpper": 31786.985392309918,
+      "dalysRateLower": 25947.393048404378
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2008,
+      "dalysRate": 28635.61737566133,
+      "dalysRateUpper": 31821.87080367427,
+      "dalysRateLower": 25923.537039903367
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2009,
+      "dalysRate": 27933.549257443297,
+      "dalysRateUpper": 31001.96509288765,
+      "dalysRateLower": 25226.633320540852
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2010,
+      "dalysRate": 27372.37050645,
+      "dalysRateUpper": 30603.602653965827,
+      "dalysRateLower": 24661.864647194776
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2011,
+      "dalysRate": 26891.97157635113,
+      "dalysRateUpper": 30275.00268247354,
+      "dalysRateLower": 24135.717096718716
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2012,
+      "dalysRate": 26593.00773912102,
+      "dalysRateUpper": 30028.45061004753,
+      "dalysRateLower": 23920.93101409697
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2013,
+      "dalysRate": 26400.534972065536,
+      "dalysRateUpper": 29879.09194916542,
+      "dalysRateLower": 23691.478332161136
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2014,
+      "dalysRate": 26361.243273430613,
+      "dalysRateUpper": 29840.26916715241,
+      "dalysRateLower": 23620.912325842717
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2015,
+      "dalysRate": 26529.827580705773,
+      "dalysRateUpper": 29969.25763261643,
+      "dalysRateLower": 23743.890091808225
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2016,
+      "dalysRate": 26874.837445999954,
+      "dalysRateUpper": 30193.360366202643,
+      "dalysRateLower": 24048.486092087496
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2017,
+      "dalysRate": 26847.948691042806,
+      "dalysRateUpper": 30227.161642371415,
+      "dalysRateLower": 24159.40082292232
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2018,
+      "dalysRate": 26186.00946661792,
+      "dalysRateUpper": 29600.158699844607,
+      "dalysRateLower": 23498.751398416698
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2019,
+      "dalysRate": 25394.953855799795,
+      "dalysRateUpper": 28793.835183425654,
+      "dalysRateLower": 22690.553639841615
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2020,
+      "dalysRate": 25107.01505421962,
+      "dalysRateUpper": 28452.402388134524,
+      "dalysRateLower": 22368.61066026909
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2021,
+      "dalysRate": 26050.857083752628,
+      "dalysRateUpper": 29371.249729143954,
+      "dalysRateLower": 23336.657255639508
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2022,
+      "dalysRate": 27208.73165845423,
+      "dalysRateUpper": 30921.37118526662,
+      "dalysRateLower": 23995.408634591386
+    },
+    {
+      "countryCode": "CHN",
+      "countryName": "China",
+      "year": 2023,
+      "dalysRate": 27370.404975469144,
+      "dalysRateUpper": 30977.2362829368,
+      "dalysRateLower": 23838.27574760027
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 1990,
+      "dalysRate": 36500.38088398362,
+      "dalysRateUpper": 40123.03463210283,
+      "dalysRateLower": 33217.001892858905
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 1991,
+      "dalysRate": 36197.372672275815,
+      "dalysRateUpper": 39797.43551445861,
+      "dalysRateLower": 32941.95791327584
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 1992,
+      "dalysRate": 35499.71033874986,
+      "dalysRateUpper": 39180.71890589251,
+      "dalysRateLower": 32275.182914491736
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 1993,
+      "dalysRate": 35476.80863414649,
+      "dalysRateUpper": 39207.02236093545,
+      "dalysRateLower": 32263.412919394075
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 1994,
+      "dalysRate": 35119.137298172594,
+      "dalysRateUpper": 38899.11825284475,
+      "dalysRateLower": 31887.784980535656
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 1995,
+      "dalysRate": 34966.40492135942,
+      "dalysRateUpper": 38812.50944160154,
+      "dalysRateLower": 31764.81554025172
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 1996,
+      "dalysRate": 34783.77514298001,
+      "dalysRateUpper": 38694.69301209669,
+      "dalysRateLower": 31555.872315411605
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 1997,
+      "dalysRate": 34182.6720741138,
+      "dalysRateUpper": 38020.287173355275,
+      "dalysRateLower": 30976.690518521576
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 1998,
+      "dalysRate": 33827.482894594905,
+      "dalysRateUpper": 37630.801410117056,
+      "dalysRateLower": 30582.83411329378
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 1999,
+      "dalysRate": 33658.9057565817,
+      "dalysRateUpper": 37438.40249075476,
+      "dalysRateLower": 30381.594457024406
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2000,
+      "dalysRate": 33480.68747881092,
+      "dalysRateUpper": 37314.31895368954,
+      "dalysRateLower": 30209.245439070208
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2001,
+      "dalysRate": 33180.84589776607,
+      "dalysRateUpper": 37018.71220613512,
+      "dalysRateLower": 29865.398489170802
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2002,
+      "dalysRate": 33328.76468993945,
+      "dalysRateUpper": 37147.4137926029,
+      "dalysRateLower": 29990.795561286253
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2003,
+      "dalysRate": 33460.446218051926,
+      "dalysRateUpper": 37254.93857538997,
+      "dalysRateLower": 30159.950699203524
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2004,
+      "dalysRate": 32807.38380504614,
+      "dalysRateUpper": 36606.590722092136,
+      "dalysRateLower": 29477.500804327745
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2005,
+      "dalysRate": 32917.6914671229,
+      "dalysRateUpper": 36766.57147793395,
+      "dalysRateLower": 29548.558465927366
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2006,
+      "dalysRate": 32756.31458561611,
+      "dalysRateUpper": 36600.53488837407,
+      "dalysRateLower": 29365.63865348335
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2007,
+      "dalysRate": 32823.70340913506,
+      "dalysRateUpper": 36764.81682703818,
+      "dalysRateLower": 29404.480938252524
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2008,
+      "dalysRate": 33109.61142289956,
+      "dalysRateUpper": 37180.64527376904,
+      "dalysRateLower": 29682.37148275449
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2009,
+      "dalysRate": 33308.53959329364,
+      "dalysRateUpper": 37484.22137572841,
+      "dalysRateLower": 29872.212556495782
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2010,
+      "dalysRate": 33325.05277708965,
+      "dalysRateUpper": 37616.859848963904,
+      "dalysRateLower": 29864.34482595871
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2011,
+      "dalysRate": 33100.690937714535,
+      "dalysRateUpper": 37339.07341383564,
+      "dalysRateLower": 29628.949350883653
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2012,
+      "dalysRate": 33250.66123567333,
+      "dalysRateUpper": 37455.77377841084,
+      "dalysRateLower": 29803.275808867656
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2013,
+      "dalysRate": 33651.484057751855,
+      "dalysRateUpper": 37958.13040095952,
+      "dalysRateLower": 30208.15958333437
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2014,
+      "dalysRate": 33317.47550723081,
+      "dalysRateUpper": 37601.9879089285,
+      "dalysRateLower": 29827.057957529167
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2015,
+      "dalysRate": 34255.7124514847,
+      "dalysRateUpper": 38441.94492012561,
+      "dalysRateLower": 30748.556013429683
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2016,
+      "dalysRate": 34058.609193968645,
+      "dalysRateUpper": 38319.46752554847,
+      "dalysRateLower": 30553.66463965608
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2017,
+      "dalysRate": 34177.883991089584,
+      "dalysRateUpper": 38431.682605662296,
+      "dalysRateLower": 30667.5382047645
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2018,
+      "dalysRate": 34356.03584694581,
+      "dalysRateUpper": 38575.60102156809,
+      "dalysRateLower": 30869.12810027727
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2019,
+      "dalysRate": 33968.21215291392,
+      "dalysRateUpper": 38096.36226037655,
+      "dalysRateLower": 30469.87933973126
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2020,
+      "dalysRate": 34879.75277325849,
+      "dalysRateUpper": 39064.514302301555,
+      "dalysRateLower": 31264.30731233185
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2021,
+      "dalysRate": 35689.572149705244,
+      "dalysRateUpper": 39788.66255555179,
+      "dalysRateLower": 32090.932891791435
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2022,
+      "dalysRate": 36134.5109373464,
+      "dalysRateUpper": 40119.385958306666,
+      "dalysRateLower": 32526.437400006198
+    },
+    {
+      "countryCode": "DEU",
+      "countryName": "Germany",
+      "year": 2023,
+      "dalysRate": 35278.85297997194,
+      "dalysRateUpper": 39536.447568057556,
+      "dalysRateLower": 31590.424934932416
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 1990,
+      "dalysRate": 35295.810410279446,
+      "dalysRateUpper": 38583.53236683816,
+      "dalysRateLower": 32269.674993551645
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 1991,
+      "dalysRate": 35023.58236680078,
+      "dalysRateUpper": 38391.1751465432,
+      "dalysRateLower": 31932.889323118452
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 1992,
+      "dalysRate": 34465.551165865996,
+      "dalysRateUpper": 37793.04475326228,
+      "dalysRateLower": 31457.466920619932
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 1993,
+      "dalysRate": 34704.03536524229,
+      "dalysRateUpper": 38044.60795005143,
+      "dalysRateLower": 31674.261347470427
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 1994,
+      "dalysRate": 33818.928710973974,
+      "dalysRateUpper": 37198.558232047704,
+      "dalysRateLower": 30824.428359505397
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 1995,
+      "dalysRate": 33975.54742645131,
+      "dalysRateUpper": 37315.637073206584,
+      "dalysRateLower": 30983.271789937506
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 1996,
+      "dalysRate": 33659.28302109707,
+      "dalysRateUpper": 36986.001215204946,
+      "dalysRateLower": 30620.830574601197
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 1997,
+      "dalysRate": 33313.34177565525,
+      "dalysRateUpper": 36708.827877473406,
+      "dalysRateLower": 30246.947695589934
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 1998,
+      "dalysRate": 33305.95519138482,
+      "dalysRateUpper": 36740.95327988445,
+      "dalysRateLower": 30254.80379242591
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 1999,
+      "dalysRate": 33205.73963286247,
+      "dalysRateUpper": 36615.35620432115,
+      "dalysRateLower": 30139.608340181447
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2000,
+      "dalysRate": 32503.18705638646,
+      "dalysRateUpper": 35949.962550458535,
+      "dalysRateLower": 29460.91838769197
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2001,
+      "dalysRate": 32121.435366486345,
+      "dalysRateUpper": 35616.38763250194,
+      "dalysRateLower": 29037.771009927645
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2002,
+      "dalysRate": 32054.05132088045,
+      "dalysRateUpper": 35522.20234110007,
+      "dalysRateLower": 28983.456587668632
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2003,
+      "dalysRate": 31952.9445654064,
+      "dalysRateUpper": 35435.25334054455,
+      "dalysRateLower": 28850.695473497635
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2004,
+      "dalysRate": 31136.82498262092,
+      "dalysRateUpper": 34614.89840781844,
+      "dalysRateLower": 28059.653014948548
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2005,
+      "dalysRate": 30959.139419153104,
+      "dalysRateUpper": 34469.76891099497,
+      "dalysRateLower": 27849.3310271797
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2006,
+      "dalysRate": 30721.665250738723,
+      "dalysRateUpper": 34256.37171160572,
+      "dalysRateLower": 27573.846769141725
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2007,
+      "dalysRate": 30728.630349333514,
+      "dalysRateUpper": 34316.66107397395,
+      "dalysRateLower": 27549.328638001265
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2008,
+      "dalysRate": 30742.37006244051,
+      "dalysRateUpper": 34384.30726816341,
+      "dalysRateLower": 27555.832391654832
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2009,
+      "dalysRate": 30208.434433957387,
+      "dalysRateUpper": 33901.96694449775,
+      "dalysRateLower": 26989.75067586385
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2010,
+      "dalysRate": 29948.69458502229,
+      "dalysRateUpper": 33715.69714487005,
+      "dalysRateLower": 26729.656624149167
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2011,
+      "dalysRate": 29450.233135607636,
+      "dalysRateUpper": 33238.128608441606,
+      "dalysRateLower": 26228.03942832016
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2012,
+      "dalysRate": 29531.665561498594,
+      "dalysRateUpper": 33341.12209981556,
+      "dalysRateLower": 26224.960189369205
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2013,
+      "dalysRate": 29606.554319439187,
+      "dalysRateUpper": 33367.116741315505,
+      "dalysRateLower": 26301.050661076224
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2014,
+      "dalysRate": 29405.64900141652,
+      "dalysRateUpper": 33192.74155246067,
+      "dalysRateLower": 26062.811957026253
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2015,
+      "dalysRate": 29912.355928936875,
+      "dalysRateUpper": 33730.93090373928,
+      "dalysRateLower": 26505.99874565383
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2016,
+      "dalysRate": 29872.78985667124,
+      "dalysRateUpper": 33673.472688939,
+      "dalysRateLower": 26459.006328406176
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2017,
+      "dalysRate": 29943.25683302182,
+      "dalysRateUpper": 33735.2260197034,
+      "dalysRateLower": 26513.29440835534
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2018,
+      "dalysRate": 30034.172874261738,
+      "dalysRateUpper": 33827.8210440911,
+      "dalysRateLower": 26635.444926050222
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2019,
+      "dalysRate": 29751.89707303724,
+      "dalysRateUpper": 33569.18162002952,
+      "dalysRateLower": 26358.018039463703
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2020,
+      "dalysRate": 32343.214965926803,
+      "dalysRateUpper": 36287.055062645835,
+      "dalysRateLower": 28804.203927314815
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2021,
+      "dalysRate": 32186.832470500947,
+      "dalysRateUpper": 36266.828341376764,
+      "dalysRateLower": 28622.408590936484
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2022,
+      "dalysRate": 31913.28489495312,
+      "dalysRateUpper": 36043.354653979164,
+      "dalysRateLower": 28280.487477177612
+    },
+    {
+      "countryCode": "GBR",
+      "countryName": "United Kingdom",
+      "year": 2023,
+      "dalysRate": 32245.891823636575,
+      "dalysRateUpper": 36337.144262643546,
+      "dalysRateLower": 28590.070688586078
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 1990,
+      "dalysRate": 67148.57287081111,
+      "dalysRateUpper": 71238.7858319561,
+      "dalysRateLower": 63663.99849180529
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 1991,
+      "dalysRate": 64952.207388978444,
+      "dalysRateUpper": 68682.05843470471,
+      "dalysRateLower": 61702.443008484195
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 1992,
+      "dalysRate": 62840.67684204782,
+      "dalysRateUpper": 66376.45945179464,
+      "dalysRateLower": 59966.05944582171
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 1993,
+      "dalysRate": 60521.18050831442,
+      "dalysRateUpper": 63851.39439886309,
+      "dalysRateLower": 57582.07338313789
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 1994,
+      "dalysRate": 58970.8936945445,
+      "dalysRateUpper": 62400.908778384335,
+      "dalysRateLower": 55927.27343845857
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 1995,
+      "dalysRate": 58107.38032209672,
+      "dalysRateUpper": 61558.57306271559,
+      "dalysRateLower": 55056.0399517111
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 1996,
+      "dalysRate": 57102.91273216804,
+      "dalysRateUpper": 60635.27146228591,
+      "dalysRateLower": 54348.433122248665
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 1997,
+      "dalysRate": 55787.39125481394,
+      "dalysRateUpper": 59217.577356350645,
+      "dalysRateLower": 52771.0853620128
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 1998,
+      "dalysRate": 54378.290925534166,
+      "dalysRateUpper": 57695.78591483362,
+      "dalysRateLower": 51265.47066446877
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 1999,
+      "dalysRate": 52395.67948570153,
+      "dalysRateUpper": 55915.21213480792,
+      "dalysRateLower": 49429.29271174472
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2000,
+      "dalysRate": 50331.44912022715,
+      "dalysRateUpper": 53788.12074169653,
+      "dalysRateLower": 47465.874856999326
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2001,
+      "dalysRate": 48777.240411647836,
+      "dalysRateUpper": 52028.18188482974,
+      "dalysRateLower": 46002.352301774394
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2002,
+      "dalysRate": 47392.449752649416,
+      "dalysRateUpper": 50715.64502607272,
+      "dalysRateLower": 44650.37069434319
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2003,
+      "dalysRate": 46141.72054430487,
+      "dalysRateUpper": 49594.6797752314,
+      "dalysRateLower": 43424.74027697591
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2004,
+      "dalysRate": 44833.95596935001,
+      "dalysRateUpper": 48178.536122850426,
+      "dalysRateLower": 42007.74749052969
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2005,
+      "dalysRate": 43681.524179304586,
+      "dalysRateUpper": 47155.27516055241,
+      "dalysRateLower": 40911.21200991641
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2006,
+      "dalysRate": 43145.00247084916,
+      "dalysRateUpper": 46674.02139854902,
+      "dalysRateLower": 40479.41162984069
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2007,
+      "dalysRate": 42775.23630968889,
+      "dalysRateUpper": 46169.74390530821,
+      "dalysRateLower": 40084.70615883311
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2008,
+      "dalysRate": 42016.91198866675,
+      "dalysRateUpper": 45489.11153630107,
+      "dalysRateLower": 39440.36823085074
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2009,
+      "dalysRate": 41030.258781429795,
+      "dalysRateUpper": 44477.0627128269,
+      "dalysRateLower": 38325.89023375024
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2010,
+      "dalysRate": 40082.813156375654,
+      "dalysRateUpper": 43435.24112417229,
+      "dalysRateLower": 37439.43648977767
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2011,
+      "dalysRate": 39158.62027825922,
+      "dalysRateUpper": 42629.014334013365,
+      "dalysRateLower": 36388.08843284689
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2012,
+      "dalysRate": 38326.41687371047,
+      "dalysRateUpper": 41556.45336522042,
+      "dalysRateLower": 35607.55733609108
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2013,
+      "dalysRate": 37464.974454832816,
+      "dalysRateUpper": 40633.65671772223,
+      "dalysRateLower": 34767.26334536343
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2014,
+      "dalysRate": 36673.26719205481,
+      "dalysRateUpper": 39953.647201075015,
+      "dalysRateLower": 33768.93982848214
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2015,
+      "dalysRate": 36021.075870656314,
+      "dalysRateUpper": 39297.136768126904,
+      "dalysRateLower": 32980.58891790915
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2016,
+      "dalysRate": 35667.46851317992,
+      "dalysRateUpper": 39194.50920078497,
+      "dalysRateLower": 32663.000724092883
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2017,
+      "dalysRate": 35203.74339850074,
+      "dalysRateUpper": 38799.54674147647,
+      "dalysRateLower": 32451.09047148157
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2018,
+      "dalysRate": 34572.6056514775,
+      "dalysRateUpper": 37926.2650736997,
+      "dalysRateLower": 31796.93746045314
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2019,
+      "dalysRate": 33604.19380530672,
+      "dalysRateUpper": 37124.929475064106,
+      "dalysRateLower": 30798.33314632135
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2020,
+      "dalysRate": 34993.69000758991,
+      "dalysRateUpper": 38585.54169246131,
+      "dalysRateLower": 31952.912952253464
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2021,
+      "dalysRate": 38113.21642827161,
+      "dalysRateUpper": 41762.475909432775,
+      "dalysRateLower": 35006.94131980963
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2022,
+      "dalysRate": 33973.92493262446,
+      "dalysRateUpper": 37548.911804247284,
+      "dalysRateLower": 30912.152842474854
+    },
+    {
+      "countryCode": "IND",
+      "countryName": "India",
+      "year": 2023,
+      "dalysRate": 33556.58235279176,
+      "dalysRateUpper": 37071.38565806783,
+      "dalysRateLower": 30382.52255165301
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 1990,
+      "dalysRate": 121529.31627146516,
+      "dalysRateUpper": 127112.052534525,
+      "dalysRateLower": 116846.3358437943
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 1991,
+      "dalysRate": 123229.10392095082,
+      "dalysRateUpper": 128610.73970599465,
+      "dalysRateLower": 118415.19257277672
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 1992,
+      "dalysRate": 120049.462597486,
+      "dalysRateUpper": 125505.4079918444,
+      "dalysRateLower": 115119.05256290508
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 1993,
+      "dalysRate": 119081.89240884506,
+      "dalysRateUpper": 124189.22711301038,
+      "dalysRateLower": 114198.28529481597
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 1994,
+      "dalysRate": 117994.43496395453,
+      "dalysRateUpper": 122925.34134577218,
+      "dalysRateLower": 112816.66620002431
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 1995,
+      "dalysRate": 116936.12563409594,
+      "dalysRateUpper": 122111.56213124614,
+      "dalysRateLower": 112122.23188620737
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 1996,
+      "dalysRate": 117292.17847989699,
+      "dalysRateUpper": 122215.12016141738,
+      "dalysRateLower": 113117.58939696863
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 1997,
+      "dalysRate": 114548.47702863989,
+      "dalysRateUpper": 119654.18137411591,
+      "dalysRateLower": 110054.21424732883
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 1998,
+      "dalysRate": 113356.3766288104,
+      "dalysRateUpper": 118177.7265176185,
+      "dalysRateLower": 109411.51081312685
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 1999,
+      "dalysRate": 111691.65239779037,
+      "dalysRateUpper": 116610.97978972834,
+      "dalysRateLower": 107757.56770130158
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2000,
+      "dalysRate": 110023.14688988517,
+      "dalysRateUpper": 114740.39146226646,
+      "dalysRateLower": 106356.81143502152
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2001,
+      "dalysRate": 107199.79041629945,
+      "dalysRateUpper": 111724.6922983242,
+      "dalysRateLower": 103148.80264506466
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2002,
+      "dalysRate": 104313.05324007447,
+      "dalysRateUpper": 108456.25115579725,
+      "dalysRateLower": 100316.1577917436
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2003,
+      "dalysRate": 100293.80783201789,
+      "dalysRateUpper": 104217.35989009489,
+      "dalysRateLower": 96536.98002883319
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2004,
+      "dalysRate": 96842.0526654548,
+      "dalysRateUpper": 100890.97507483201,
+      "dalysRateLower": 93247.87755344785
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2005,
+      "dalysRate": 93078.48390788549,
+      "dalysRateUpper": 97265.30886056265,
+      "dalysRateLower": 89598.77029785729
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2006,
+      "dalysRate": 89431.02967932727,
+      "dalysRateUpper": 93626.84696318468,
+      "dalysRateLower": 85730.25922913398
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2007,
+      "dalysRate": 85696.48955815782,
+      "dalysRateUpper": 89693.09412951618,
+      "dalysRateLower": 82020.60388435586
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2008,
+      "dalysRate": 82757.73860941245,
+      "dalysRateUpper": 86524.0556386405,
+      "dalysRateLower": 79232.70793817825
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2009,
+      "dalysRate": 80245.0280150348,
+      "dalysRateUpper": 84293.30166982893,
+      "dalysRateLower": 76888.79280577484
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2010,
+      "dalysRate": 78179.6009718398,
+      "dalysRateUpper": 81920.93705545916,
+      "dalysRateLower": 74891.89386313791
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2011,
+      "dalysRate": 75752.28577049993,
+      "dalysRateUpper": 79237.3708286407,
+      "dalysRateLower": 72656.63155523555
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2012,
+      "dalysRate": 73877.07739515176,
+      "dalysRateUpper": 77452.62354769873,
+      "dalysRateLower": 70493.32565670599
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2013,
+      "dalysRate": 72351.1354077873,
+      "dalysRateUpper": 76054.81722409993,
+      "dalysRateLower": 68967.41538034772
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2014,
+      "dalysRate": 70788.66005284106,
+      "dalysRateUpper": 74235.33319809905,
+      "dalysRateLower": 67679.92026681153
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2015,
+      "dalysRate": 69369.26975829675,
+      "dalysRateUpper": 72565.20851762393,
+      "dalysRateLower": 66206.8611645157
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2016,
+      "dalysRate": 66540.3566514183,
+      "dalysRateUpper": 69731.38067955487,
+      "dalysRateLower": 63475.498118413685
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2017,
+      "dalysRate": 64243.06647141973,
+      "dalysRateUpper": 67513.44661988923,
+      "dalysRateLower": 61194.70737015663
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2018,
+      "dalysRate": 61751.8361130577,
+      "dalysRateUpper": 65166.69409178601,
+      "dalysRateLower": 58851.55904580292
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2019,
+      "dalysRate": 59432.99640132846,
+      "dalysRateUpper": 62735.890943277904,
+      "dalysRateLower": 56566.38027864025
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2020,
+      "dalysRate": 58601.4272546327,
+      "dalysRateUpper": 61849.22837178744,
+      "dalysRateLower": 55631.64986391902
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2021,
+      "dalysRate": 57342.10610924947,
+      "dalysRateUpper": 60995.57295500601,
+      "dalysRateLower": 54385.59789106313
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2022,
+      "dalysRate": 55371.151982121635,
+      "dalysRateUpper": 58628.56780286587,
+      "dalysRateLower": 52430.7523061738
+    },
+    {
+      "countryCode": "NGA",
+      "countryName": "Nigeria",
+      "year": 2023,
+      "dalysRate": 54295.82226658995,
+      "dalysRateUpper": 57448.62066193872,
+      "dalysRateLower": 51118.599276398745
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "year": 1990,
+      "dalysRate": 34106.05841307156,
+      "dalysRateUpper": 37791.84867219117,
+      "dalysRateLower": 30782.72219721785
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "year": 1991,
+      "dalysRate": 33937.39658362625,
+      "dalysRateUpper": 37567.86256741116,
+      "dalysRateLower": 30615.005505551475
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "year": 1992,
+      "dalysRate": 33671.79155683263,
+      "dalysRateUpper": 37267.00082360161,
+      "dalysRateLower": 30326.786247654076
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "year": 1993,
+      "dalysRate": 34045.19131120636,
+      "dalysRateUpper": 37628.38195111874,
+      "dalysRateLower": 30696.315567794023
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "year": 1994,
+      "dalysRate": 33898.631316189974,
+      "dalysRateUpper": 37463.9931621505,
+      "dalysRateLower": 30540.440562296655
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "year": 1995,
+      "dalysRate": 33811.61668323432,
+      "dalysRateUpper": 37341.60064344872,
+      "dalysRateLower": 30445.166522323412
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "year": 1996,
+      "dalysRate": 33352.43812059813,
+      "dalysRateUpper": 36883.585698399926,
+      "dalysRateLower": 29995.686021345093
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "year": 1997,
+      "dalysRate": 32867.477039932266,
+      "dalysRateUpper": 36397.582862352894,
+      "dalysRateLower": 29501.265552954294
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "year": 1998,
+      "dalysRate": 32705.435382489508,
+      "dalysRateUpper": 36245.658087079704,
+      "dalysRateLower": 29346.808500907784
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "year": 1999,
+      "dalysRate": 32817.14388749755,
+      "dalysRateUpper": 36331.213323215605,
+      "dalysRateLower": 29473.68144881148
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "year": 2000,
+      "dalysRate": 32769.338731038464,
+      "dalysRateUpper": 36286.552508990964,
+      "dalysRateLower": 29428.839160523796
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "year": 2001,
+      "dalysRate": 32771.48212707392,
+      "dalysRateUpper": 36303.95677660536,
+      "dalysRateLower": 29404.00972933536
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "year": 2002,
+      "dalysRate": 32806.93269834496,
+      "dalysRateUpper": 36369.964377720615,
+      "dalysRateLower": 29438.741159786274
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "year": 2003,
+      "dalysRate": 32765.493941866447,
+      "dalysRateUpper": 36325.31732157268,
+      "dalysRateLower": 29387.742580219583
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "year": 2004,
+      "dalysRate": 32343.59009052374,
+      "dalysRateUpper": 35894.96114564677,
+      "dalysRateLower": 28972.116309333716
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "year": 2005,
+      "dalysRate": 32554.118514115875,
+      "dalysRateUpper": 36123.4755964487,
+      "dalysRateLower": 29195.163682452825
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "year": 2006,
+      "dalysRate": 32357.766287554747,
+      "dalysRateUpper": 35916.94815468153,
+      "dalysRateLower": 29006.029746420787
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "year": 2007,
+      "dalysRate": 32184.0264244309,
+      "dalysRateUpper": 35780.49199034371,
+      "dalysRateLower": 28805.87392984527
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "year": 2008,
+      "dalysRate": 32259.68808409434,
+      "dalysRateUpper": 35881.409806631455,
+      "dalysRateLower": 28869.00104733665
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "year": 2009,
+      "dalysRate": 31975.775328903623,
+      "dalysRateUpper": 35665.583116815294,
+      "dalysRateLower": 28558.55801646027
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "year": 2010,
+      "dalysRate": 31932.258305181425,
+      "dalysRateUpper": 35646.33248992834,
+      "dalysRateLower": 28485.792073136683
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "year": 2011,
+      "dalysRate": 32121.005103096144,
+      "dalysRateUpper": 35886.862920387895,
+      "dalysRateLower": 28644.469179309985
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "year": 2012,
+      "dalysRate": 32267.086639462832,
+      "dalysRateUpper": 36052.90658860386,
+      "dalysRateLower": 28752.9061271368
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "year": 2013,
+      "dalysRate": 32593.030962549547,
+      "dalysRateUpper": 36435.972316540756,
+      "dalysRateLower": 29051.008246770114
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "year": 2014,
+      "dalysRate": 32854.6098123336,
+      "dalysRateUpper": 36727.834785622596,
+      "dalysRateLower": 29296.581522087607
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "year": 2015,
+      "dalysRate": 33386.18541452813,
+      "dalysRateUpper": 37285.29076012483,
+      "dalysRateLower": 29801.750024192654
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "year": 2016,
+      "dalysRate": 33757.015259737585,
+      "dalysRateUpper": 37690.58233398927,
+      "dalysRateLower": 30161.59378568916
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "year": 2017,
+      "dalysRate": 34112.24387130795,
+      "dalysRateUpper": 38081.839824049326,
+      "dalysRateLower": 30494.782516401552
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "year": 2018,
+      "dalysRate": 34193.88080809382,
+      "dalysRateUpper": 38211.01826123928,
+      "dalysRateLower": 30567.166094533728
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "year": 2019,
+      "dalysRate": 34339.04615056037,
+      "dalysRateUpper": 38402.197649011454,
+      "dalysRateLower": 30691.541565733143
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "year": 2020,
+      "dalysRate": 38190.52978603658,
+      "dalysRateUpper": 42348.32441812207,
+      "dalysRateLower": 34480.46130748712
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "year": 2021,
+      "dalysRate": 39781.52181337027,
+      "dalysRateUpper": 44023.080539848925,
+      "dalysRateLower": 35998.102281594736
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "year": 2022,
+      "dalysRate": 38025.21397238943,
+      "dalysRateUpper": 42300.923368940246,
+      "dalysRateLower": 34199.26397436298
+    },
+    {
+      "countryCode": "USA",
+      "countryName": "United States of America",
+      "year": 2023,
+      "dalysRate": 36739.51239885122,
+      "dalysRateUpper": 41051.83918015752,
+      "dalysRateLower": 32853.70479664927
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 1990,
+      "dalysRate": 42287.1845847538,
+      "dalysRateUpper": 45488.750523154034,
+      "dalysRateLower": 39652.7845898382
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 1991,
+      "dalysRate": 41165.990474719714,
+      "dalysRateUpper": 44370.196614007706,
+      "dalysRateLower": 38475.40363799035
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 1992,
+      "dalysRate": 40705.26179765447,
+      "dalysRateUpper": 43969.29959276894,
+      "dalysRateLower": 38113.57471824345
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 1993,
+      "dalysRate": 41380.81532897114,
+      "dalysRateUpper": 44414.63617945433,
+      "dalysRateLower": 38847.853324042815
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 1994,
+      "dalysRate": 43114.88191702491,
+      "dalysRateUpper": 46186.373257271145,
+      "dalysRateLower": 40586.204642017976
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 1995,
+      "dalysRate": 44633.84370172801,
+      "dalysRateUpper": 47473.258088921524,
+      "dalysRateLower": 42009.27060563005
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 1996,
+      "dalysRate": 48220.03160917931,
+      "dalysRateUpper": 51084.13663972019,
+      "dalysRateLower": 45568.94835926301
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 1997,
+      "dalysRate": 51386.11661213349,
+      "dalysRateUpper": 54460.04196909028,
+      "dalysRateLower": 48767.284910630246
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 1998,
+      "dalysRate": 55293.107804180574,
+      "dalysRateUpper": 58314.739923130524,
+      "dalysRateLower": 52609.36963643387
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 1999,
+      "dalysRate": 57929.7502245805,
+      "dalysRateUpper": 61044.29914386227,
+      "dalysRateLower": 55253.30125105605
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2000,
+      "dalysRate": 60732.73609932611,
+      "dalysRateUpper": 64150.255349210005,
+      "dalysRateLower": 58004.72249202273
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2001,
+      "dalysRate": 64570.318711532294,
+      "dalysRateUpper": 67907.97777090795,
+      "dalysRateLower": 61832.811331175995
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2002,
+      "dalysRate": 69172.04444895773,
+      "dalysRateUpper": 72552.19857339007,
+      "dalysRateLower": 66397.10917595292
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2003,
+      "dalysRate": 73090.52124807895,
+      "dalysRateUpper": 76517.7797194973,
+      "dalysRateLower": 70297.16272572665
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2004,
+      "dalysRate": 75704.3226702967,
+      "dalysRateUpper": 79316.19071343378,
+      "dalysRateLower": 72833.02825982627
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2005,
+      "dalysRate": 77407.89547828466,
+      "dalysRateUpper": 80973.89507018171,
+      "dalysRateLower": 74651.40358242895
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2006,
+      "dalysRate": 77652.93293658407,
+      "dalysRateUpper": 81130.00261279673,
+      "dalysRateLower": 74672.928692645
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2007,
+      "dalysRate": 76491.7785742844,
+      "dalysRateUpper": 80064.75627217007,
+      "dalysRateLower": 73464.0078112816
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2008,
+      "dalysRate": 73488.54914517583,
+      "dalysRateUpper": 76868.23204299713,
+      "dalysRateLower": 70571.92984798795
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2009,
+      "dalysRate": 70015.34107837027,
+      "dalysRateUpper": 73520.44834154114,
+      "dalysRateLower": 67122.73047708198
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2010,
+      "dalysRate": 66002.60869534552,
+      "dalysRateUpper": 69550.84436752755,
+      "dalysRateLower": 63139.82526416559
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2011,
+      "dalysRate": 61381.215366048025,
+      "dalysRateUpper": 65122.29331338517,
+      "dalysRateLower": 58275.252776411144
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2012,
+      "dalysRate": 57901.058409489415,
+      "dalysRateUpper": 61325.20685240064,
+      "dalysRateLower": 54718.81253023882
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2013,
+      "dalysRate": 55452.39709421151,
+      "dalysRateUpper": 58841.21859477663,
+      "dalysRateLower": 52253.014583048374
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2014,
+      "dalysRate": 53742.86636888303,
+      "dalysRateUpper": 57342.26549983307,
+      "dalysRateLower": 50679.963998397296
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2015,
+      "dalysRate": 51954.6415649767,
+      "dalysRateUpper": 55629.59645908496,
+      "dalysRateLower": 49043.70916754595
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2016,
+      "dalysRate": 50728.50269476953,
+      "dalysRateUpper": 54202.64318282271,
+      "dalysRateLower": 47707.80018433069
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2017,
+      "dalysRate": 49223.243334218394,
+      "dalysRateUpper": 52582.75778178962,
+      "dalysRateLower": 46191.99534780769
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2018,
+      "dalysRate": 47920.531976677135,
+      "dalysRateUpper": 51503.812337259806,
+      "dalysRateLower": 44945.81311151319
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2019,
+      "dalysRate": 46357.87429644345,
+      "dalysRateUpper": 50209.94047012365,
+      "dalysRateLower": 43408.7908640278
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2020,
+      "dalysRate": 49534.51974863568,
+      "dalysRateUpper": 53191.88088644267,
+      "dalysRateLower": 46416.212478016074
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2021,
+      "dalysRate": 56428.62445749349,
+      "dalysRateUpper": 60196.51492417374,
+      "dalysRateLower": 53283.57213063053
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2022,
+      "dalysRate": 48183.33468302177,
+      "dalysRateUpper": 51828.75182819288,
+      "dalysRateLower": 44952.85565275135
+    },
+    {
+      "countryCode": "ZAF",
+      "countryName": "South Africa",
+      "year": 2023,
+      "dalysRate": 46751.975308459034,
+      "dalysRateUpper": 50386.0711531388,
+      "dalysRateLower": 43369.94787407361
+    }
+  ]
+}

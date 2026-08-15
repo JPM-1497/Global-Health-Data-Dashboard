@@ -14,15 +14,20 @@ export interface GlobalEntityMetric {
   gdpGrowthRate: number | null
   population: number | null
   giniCoefficient: number | null
+  internetPenetrationPct: number | null
+  urbanPopulationPct: number | null
 
   // OWID / IHME
   lifeExpectancy: number | null
   under5MortalityRate: number | null
   daly100k: number | null
+  dalysRateUpper?: number | null
+  dalysRateLower?: number | null
   healthExpenditurePctGdp: number | null
 
   // Energy
   primaryEnergyTwh: number | null
+  primaryEnergyPerCapitaKwh?: number | null
   energyIntensityMjPerUsd: number | null
   renewableSharePct: number | null
   co2MtCo2: number | null

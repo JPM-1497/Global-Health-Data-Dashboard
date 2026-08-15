@@ -1,4 +1,12 @@
 import type { GlobalEntityMetric } from './types'
+import ihmeHealth from '../../../data/processed/ihme/health.json'
+
+const IHME_DALY_BY_KEY = new Map(
+  ihmeHealth.records.map((record) => [
+    `${record.countryCode}:${record.year}`,
+    record,
+  ]),
+)
 
 /** Simulated World Bank rows keyed by iso3 */
 const WORLD_BANK_ROWS: Record<string, Partial<GlobalEntityMetric>> = {
@@ -56,6 +64,7 @@ export function joinMetrics(iso3: string, year: number): GlobalEntityMetric {
   const wb = WORLD_BANK_ROWS[iso3] ?? {}
   const health = HEALTH_ROWS[iso3] ?? {}
   const energy = ENERGY_ROWS[iso3] ?? {}
+  const ihme = IHME_DALY_BY_KEY.get(`${iso3}:${year}`)
 
   // Simulate minor year-over-year drift so historical queries are plausible
   const yrDelta = year - 2023
@@ -71,6 +80,8 @@ export function joinMetrics(iso3: string, year: number): GlobalEntityMetric {
     gdpGrowthRate: wb.gdpGrowthRate ?? null,
     population: wb.population ?? null,
     giniCoefficient: wb.giniCoefficient ?? null,
+    internetPenetrationPct: null,
+    urbanPopulationPct: null,
     // Health
     lifeExpectancy: health.lifeExpectancy != null
       ? parseFloat((health.lifeExpectancy + yrDelta * 0.06).toFixed(1))
@@ -78,10 +89,15 @@ export function joinMetrics(iso3: string, year: number): GlobalEntityMetric {
     under5MortalityRate: health.under5MortalityRate != null
       ? parseFloat((health.under5MortalityRate * (1 - yrDelta * 0.01)).toFixed(1))
       : null,
-    daly100k: health.daly100k != null ? Math.round(health.daly100k * (1 - yrDelta * 0.008)) : null,
+    daly100k: ihme?.dalysRate ?? (health.daly100k != null
+      ? Math.round(health.daly100k * (1 - yrDelta * 0.008))
+      : null),
+    dalysRateUpper: ihme?.dalysRateUpper ?? null,
+    dalysRateLower: ihme?.dalysRateLower ?? null,
     healthExpenditurePctGdp: health.healthExpenditurePctGdp ?? null,
     // Energy
     primaryEnergyTwh: energy.primaryEnergyTwh != null ? Math.round(energy.primaryEnergyTwh * growth) : null,
+    primaryEnergyPerCapitaKwh: null,
     energyIntensityMjPerUsd: energy.energyIntensityMjPerUsd ?? null,
     renewableSharePct: energy.renewableSharePct != null
       ? parseFloat((energy.renewableSharePct + yrDelta * 0.5).toFixed(1))

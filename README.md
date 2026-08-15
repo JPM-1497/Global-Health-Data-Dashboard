@@ -81,7 +81,71 @@ npx wrangler kv:namespace create GLOBAL_DATA_KV --preview
 | OWID/IHME  | Life expectancy, under-5 mortality, DALYs, health spend |
 | Energy     | Primary energy (TWh), intensity, renewable share, CO₂ |
 
-The worker joins these three datasets by `iso3` + `year` in `apps/worker/src/data.ts`.
+The worker joins these datasets by `iso3` + `year`. World Bank economic indicators
+are fetched from the [World Bank Indicators API](https://api.worldbank.org/v2/)
+by `apps/worker/src/sources/worldBank.ts` and merged in
+`apps/worker/src/index.ts`. The OWID, IHME, and energy values remain local
+development data until their source adapters are added.
+
+The World Bank adapter currently captures:
+
+| Metric | Indicator |
+|--------|-----------|
+| GDP | `NY.GDP.MKTP.CD` |
+| GDP per capita | `NY.GDP.PCAP.CD` |
+| GDP growth rate | `NY.GDP.MKTP.KD.ZG` |
+| Population | `SP.POP.TOTL` |
+| Gini coefficient | `SI.POV.GINI` |
+| Internet penetration | `IT.NET.USER.ZS` |
+| Urban population | `SP.URB.TOTL.IN.ZS` |
+| Life expectancy at birth | `SP.DYN.LE00.IN` |
+
+To create a local analysis sample for the ten dashboard countries across
+1990–2023, run:
+
+```bash
+npm run sample:world-bank
+```
+
+This writes `data/raw/world-bank/sample.json`. The file includes source
+metadata, indicator codes, the selected country list, year range, and records
+joined by `countryCode` + `year`. It is a reproducible local analysis artifact,
+not a replacement for the Worker KV cache.
+
+OWID energy data is sourced from the maintained
+[owid/energy-data CSV](https://github.com/owid/energy-data). To create a local
+energy sample, run:
+
+```bash
+npm run sample:owid
+```
+
+This writes `data/raw/owid/energy-sample.json` with primary energy, energy per
+capita, and renewable energy share records for the same countries and years.
+
+IHME GBD exports must be downloaded through the official
+[GBD Results Tool](https://ghdx.healthdata.org/gbd-results-tool) and placed in
+`data/raw/ihme`. They are not exposed through the same kind of public API as
+World Bank or OWID. After placing an authorized CSV export there, normalize it
+with:
+
+```bash
+npm run prepare:ihme
+```
+
+The preprocessor writes `data/processed/ihme/health.json`, filtering DALYs to
+all causes, both sexes, all ages, and rate. It also captures life expectancy
+rows when they are present in the export.
+
+During local Worker builds, `apps/worker/src/data.ts` bundles this processed
+artifact and uses its real DALY rates in `/api/data`. Countries or years absent
+from the export continue using the development fallback values. A deployed
+Worker should move this processed artifact to a managed object or data store
+instead of relying on a repository-local JSON import.
+
+If the upstream World Bank request fails, `/api/data` falls back to the local
+development values for that request. The outer API response is still cached in
+KV for 24 hours when the KV binding is configured.
 
 ## API Reference
 

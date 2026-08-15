@@ -11,6 +11,9 @@
     "dev:worker": "npm run dev --workspace=apps/worker",
     "build:web": "npm run build --workspace=apps/web",
     "build:worker": "npm run build --workspace=apps/worker",
-    "build": "npm run build:web && npm run build:worker"
+    "build": "npm run build:web && npm run build:worker",
+    "sample:world-bank": "node scripts/fetch-world-bank-sample.mjs",
+    "sample:owid": "node scripts/fetch-owid-sample.mjs",
+    "prepare:ihme": "node scripts/prepare-ihme.mjs"
   }
 }
