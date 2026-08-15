@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-surface-900 text-gray-100 font-sans antialiased;
+  }
+
+  * {
+    @apply border-surface-600;
+  }
+}
+
+@layer components {
+  .card {
+    @apply bg-surface-800 rounded-xl border border-surface-600 p-4;
+  }
+
+  .badge-positive {
+    @apply inline-flex items-center gap-1 text-xs font-medium text-accent-green bg-green-900/30 px-2 py-0.5 rounded-full;
+  }
+
+  .badge-negative {
+    @apply inline-flex items-center gap-1 text-xs font-medium text-accent-red bg-red-900/30 px-2 py-0.5 rounded-full;
+  }
+
+  .badge-neutral {
+    @apply inline-flex items-center gap-1 text-xs font-medium text-gray-400 bg-surface-700 px-2 py-0.5 rounded-full;
+  }
+
+  .skeleton {
+    @apply animate-pulse bg-surface-700 rounded;
+  }
+
+  .slider-thumb {
+    @apply accent-accent-blue;
+  }
+}
