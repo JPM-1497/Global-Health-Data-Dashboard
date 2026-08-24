@@ -79,6 +79,7 @@ export function joinMetrics(iso3: string, year: number): GlobalEntityMetric {
     gdpPerCapitaUsd: wb.gdpPerCapitaUsd != null ? Math.round(wb.gdpPerCapitaUsd * growth) : null,
     gdpGrowthRate: wb.gdpGrowthRate ?? null,
     population: wb.population ?? null,
+    taxRevenuePctGdp: wb.taxRevenuePctGdp ?? null,
     giniCoefficient: wb.giniCoefficient ?? null,
     internetPenetrationPct: null,
     urbanPopulationPct: null,

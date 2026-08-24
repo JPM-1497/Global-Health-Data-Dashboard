@@ -1,59 +1,29 @@
-import { TrendingUp, TrendingDown, Minus } from 'lucide-react'
 import type { KpiMetric } from '../types'
 
 interface KpiCardProps {
   metric: KpiMetric
   icon?: React.ReactNode
+  period?: string
 }
 
-export default function KpiCard({ metric, icon }: KpiCardProps) {
-  const { label, value, yoyDelta, unit } = metric
-
-  const DeltaBadge = () => {
-    if (yoyDelta === null) {
-      return <span className="badge-neutral">N/A</span>
-    }
-    if (yoyDelta > 0) {
-      return (
-        <span className="badge-positive">
-          <TrendingUp size={10} />
-          +{yoyDelta.toFixed(1)}%
-        </span>
-      )
-    }
-    if (yoyDelta < 0) {
-      return (
-        <span className="badge-negative">
-          <TrendingDown size={10} />
-          {yoyDelta.toFixed(1)}%
-        </span>
-      )
-    }
-    return (
-      <span className="badge-neutral">
-        <Minus size={10} />
-        0.0%
-      </span>
-    )
-  }
+export default function KpiCard({ metric, icon, period }: KpiCardProps) {
+  const { label, value, unit } = metric
 
   return (
-    <div className="card flex flex-col gap-2 min-w-0">
-      <div className="flex items-center justify-between">
-        <span className="text-xs font-medium text-gray-400 uppercase tracking-wider truncate">
+    <div className="flex h-full min-w-0 flex-col rounded-lg border border-surface-600/60 bg-surface-800/50 px-3 py-2.5">
+      <div className="flex items-start justify-between gap-2">
+        <span className="text-[10px] font-medium uppercase leading-4 tracking-[0.08em] text-slate-400">
           {label}
         </span>
-        {icon && <span className="text-gray-500 shrink-0">{icon}</span>}
+        {icon && <span className="mt-0.5 shrink-0 text-slate-500">{icon}</span>}
       </div>
-      <div className="flex items-end gap-2">
-        <span className="text-2xl font-bold font-mono text-gray-100 truncate">
-          {value}
-        </span>
-        {unit && (
-          <span className="text-xs text-gray-500 mb-1 shrink-0">{unit}</span>
-        )}
+      <div className="mt-1.5 break-words font-mono text-xl font-semibold leading-6 text-slate-100">
+        {value}
       </div>
-      <DeltaBadge />
+      <div className="mt-auto flex items-center justify-between gap-2 pt-1 text-[10px] text-slate-500">
+        {unit && <span className="leading-4">{unit}</span>}
+        {period && <span className="shrink-0 font-mono">{period}</span>}
+      </div>
     </div>
   )
 }

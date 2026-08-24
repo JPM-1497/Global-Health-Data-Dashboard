@@ -7,6 +7,7 @@ const INDICATORS = {
   gdpPerCapitaUsd: 'NY.GDP.PCAP.CD',
   gdpGrowthRate: 'NY.GDP.MKTP.KD.ZG',
   population: 'SP.POP.TOTL',
+  taxRevenuePctGdp: 'GC.TAX.TOTL.GD.ZS',
   giniCoefficient: 'SI.POV.GINI',
   internetPenetrationPct: 'IT.NET.USER.ZS',
   urbanPopulationPct: 'SP.URB.TOTL.IN.ZS',

@@ -13,6 +13,7 @@ export interface GlobalEntityMetric {
   gdpPerCapitaUsd: number | null
   gdpGrowthRate: number | null
   population: number | null
+  taxRevenuePctGdp: number | null
   giniCoefficient: number | null
   internetPenetrationPct: number | null
   urbanPopulationPct: number | null

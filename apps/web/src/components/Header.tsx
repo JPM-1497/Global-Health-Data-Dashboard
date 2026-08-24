@@ -1,91 +1,57 @@
-import { Globe, TrendingUp } from 'lucide-react'
-
-const COUNTRIES = [
-  { iso3: 'USA', name: 'United States' },
-  { iso3: 'CHN', name: 'China' },
-  { iso3: 'IND', name: 'India' },
-  { iso3: 'DEU', name: 'Germany' },
-  { iso3: 'GBR', name: 'United Kingdom' },
-  { iso3: 'BRA', name: 'Brazil' },
-  { iso3: 'NGA', name: 'Nigeria' },
-  { iso3: 'ZAF', name: 'South Africa' },
-  { iso3: 'JPN', name: 'Japan' },
-  { iso3: 'AUS', name: 'Australia' },
-]
-
 interface HeaderProps {
-  selectedIso3: string
-  onIso3Change: (iso3: string) => void
+  title: string
   startYear: number
   endYear: number
   onRangeChange: (startYear: number, endYear: number) => void
 }
 
-export default function Header({
-  selectedIso3,
-  onIso3Change,
-  startYear,
-  endYear,
-  onRangeChange,
-}: HeaderProps) {
+const YEAR_MIN = 1990
+const YEAR_MAX = 2026
+
+export default function Header({ title, startYear, endYear, onRangeChange }: HeaderProps) {
+  const years = Array.from({ length: YEAR_MAX - YEAR_MIN + 1 }, (_, i) => YEAR_MIN + i)
+
+  const selectClass =
+    'rounded border border-surface-600/70 bg-surface-800/70 px-1.5 py-0.5 font-mono text-[11px] text-slate-300 focus:outline-none focus:ring-1 focus:ring-accent-blue/40'
+
   return (
-    <header className="sticky top-0 z-50 border-b border-surface-600 bg-surface-900/90 backdrop-blur">
-      <div className="mx-auto flex max-w-screen-2xl flex-col gap-2 px-4 py-2 sm:flex-row sm:items-center">
-        {/* Brand */}
-        <div className="mr-2 flex items-center gap-2">
-          <TrendingUp className="text-accent-blue" size={17} />
-          <span className="whitespace-nowrap text-xs font-semibold tracking-wide">
-            Global Intelligence Analytics
-          </span>
-        </div>
+    <header className="sticky top-0 z-50 border-b border-surface-600/80 bg-surface-900/85 backdrop-blur-md">
+      <div className="mx-auto max-w-screen-2xl px-4 py-4 sm:px-6">
+        <div className="flex items-end justify-between gap-4">
+          <div>
+            <p className="text-[10px] font-medium uppercase tracking-[0.28em] text-slate-400">
+              Global Health Data Dashboard
+            </p>
+            <h1 className="mt-2 text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+              {title}
+            </h1>
+          </div>
 
-        {/* Country Selector */}
-        <div className="flex items-center gap-2">
-          <Globe size={14} className="text-gray-400" />
-          <label htmlFor="country-select" className="sr-only">
-            Select country
-          </label>
-          <select
-            id="country-select"
-            value={selectedIso3}
-            onChange={(e) => onIso3Change(e.target.value)}
-            className="rounded-md border border-surface-600 bg-surface-700 px-2.5 py-1 text-xs text-gray-100 focus:outline-none focus:ring-2 focus:ring-accent-blue/50"
-          >
-            {COUNTRIES.map((c) => (
-              <option key={c.iso3} value={c.iso3}>
-                {c.name}
-              </option>
-            ))}
-          </select>
-        </div>
-
-        <div className="flex min-w-0 flex-1 items-center gap-2 sm:pl-2">
-          <span className="whitespace-nowrap text-[10px] text-gray-500">1990</span>
-          <div className="relative h-5 min-w-[120px] flex-1">
-            <div className="absolute left-0 right-0 top-2 h-1 rounded-full bg-surface-600" />
-            <input
-              type="range"
-              min={1990}
-              max={2026}
+          {/* Subtle year filter */}
+          <div className="flex items-center gap-1.5 text-slate-500">
+            <span className="text-[10px] uppercase tracking-[0.2em]">Period</span>
+            <select
               value={startYear}
               onChange={(e) => onRangeChange(Math.min(Number(e.target.value), endYear), endYear)}
-              className="pointer-events-none absolute inset-0 h-5 w-full appearance-none bg-transparent accent-accent-blue [&::-webkit-slider-thumb]:pointer-events-auto"
-              aria-label="Select start year"
-            />
-            <input
-              type="range"
-              min={1990}
-              max={2026}
+              className={selectClass}
+              aria-label="Start year"
+            >
+              {years.map((y) => (
+                <option key={y} value={y}>{y}</option>
+              ))}
+            </select>
+            <span className="text-[10px]">–</span>
+            <select
               value={endYear}
               onChange={(e) => onRangeChange(startYear, Math.max(Number(e.target.value), startYear))}
-              className="pointer-events-none absolute inset-0 h-5 w-full appearance-none bg-transparent accent-accent-yellow [&::-webkit-slider-thumb]:pointer-events-auto"
-              aria-label="Select end year"
-            />
+              className={selectClass}
+              aria-label="End year"
+            >
+              {years.map((y) => (
+                <option key={y} value={y}>{y}</option>
+              ))}
+            </select>
           </div>
-          <span className="whitespace-nowrap text-[10px] text-gray-500">2026</span>
-          <span className="w-20 whitespace-nowrap text-right font-mono text-[11px] font-semibold text-accent-blue">
-            {startYear} - {endYear}
-          </span>
         </div>
       </div>
     </header>

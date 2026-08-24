@@ -16,8 +16,14 @@ export interface GlobalEntityMetric {
   gdpGrowthRate: number | null;
   /** Population count */
   population: number | null;
+  /** Total tax revenue as % of GDP */
+  taxRevenuePctGdp: number | null;
   /** Gini coefficient (0–100) */
   giniCoefficient: number | null;
+  /** Internet users as % of population */
+  internetPenetrationPct: number | null;
+  /** Urban population as % of total population */
+  urbanPopulationPct: number | null;
 
   // --- Health (OWID / IHME) ---
   /** Life expectancy at birth (years) */
