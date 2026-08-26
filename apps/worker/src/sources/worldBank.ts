@@ -60,28 +60,48 @@ export async function fetchWorldBankMetrics(
   startYear: number,
   endYear: number,
 ): Promise<Map<number, Partial<GlobalEntityMetric>>> {
+  const byCountryYear = await fetchWorldBankMetricsForCountries([iso3], startYear, endYear)
+  const byYear = new Map<number, Partial<GlobalEntityMetric>>()
+  for (let year = startYear; year <= endYear; year++) {
+    const metric = byCountryYear.get(`${iso3}:${year}`)
+    if (metric) byYear.set(year, metric)
+  }
+  return byYear
+}
+
+export async function fetchWorldBankMetricsForCountries(
+  iso3List: string[],
+  startYear: number,
+  endYear: number,
+): Promise<Map<string, Partial<GlobalEntityMetric>>> {
+  const countries = [...new Set(iso3List.map((iso3) => iso3.toUpperCase()))]
+  if (countries.length === 0) return new Map()
+
+  const countryPath = countries.join(';')
   const entries = await Promise.all(
     (Object.entries(INDICATORS) as [WorldBankIndicator, string][]).map(
       async ([name, indicator]) => [
         name,
-        await fetchIndicator(iso3, indicator, startYear, endYear),
+        await fetchIndicator(countryPath, indicator, startYear, endYear),
       ] as const,
     ),
   )
 
-  const byYear = new Map<number, Partial<GlobalEntityMetric>>()
+  const byCountryYear = new Map<string, Partial<GlobalEntityMetric>>()
 
   for (const [name, rows] of entries) {
     for (const row of rows) {
+      const iso3 = row.countryiso3code?.toUpperCase()
       const year = Number(row.date)
-      if (!Number.isInteger(year)) continue
+      if (!iso3 || !Number.isInteger(year) || !countries.includes(iso3)) continue
 
-      const current = byYear.get(year) ?? {}
+      const key = `${iso3}:${year}`
+      const current = byCountryYear.get(key) ?? {}
       current[name] = toNumber(row.value)
       if (row.country?.value) current.countryName = row.country.value
-      byYear.set(year, current)
+      byCountryYear.set(key, current)
     }
   }
 
-  return byYear
+  return byCountryYear
 }

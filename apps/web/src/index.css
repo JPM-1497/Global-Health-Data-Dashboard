@@ -5,6 +5,11 @@
 @layer base {
   body {
     @apply bg-surface-900 text-gray-100 font-sans antialiased;
+    scrollbar-width: none;
+  }
+
+  body::-webkit-scrollbar {
+    display: none;
   }
 
   * {
@@ -35,5 +40,14 @@
 
   .slider-thumb {
     @apply accent-accent-blue;
+  }
+
+  .scrollbar-hidden {
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+
+  .scrollbar-hidden::-webkit-scrollbar {
+    display: none;
   }
 }

@@ -4,58 +4,14 @@ import Header from './components/Header'
 import KpiCard from './components/KpiCard'
 import MetricTrendChart, { type CountrySeries } from './components/MetricTrendChart'
 import CountryComparisonTable from './components/CountryComparisonTable'
+import { COUNTRY_NAMES } from './countryCatalog'
 import type { GlobalEntityMetric, ApiDataResponse, KpiMetric } from './types'
 
-/** Human-readable names matching COUNTRY_NAMES in apps/worker/src/data.ts */
-const COUNTRY_NAMES: Record<string, string> = {
-  USA: 'United States', CHN: 'China', IND: 'India', DEU: 'Germany',
-  GBR: 'United Kingdom', BRA: 'Brazil', NGA: 'Nigeria', ZAF: 'South Africa',
-  JPN: 'Japan', AUS: 'Australia',
-}
-
-/** Generate plausible mock data for the selected country + year range */
-function generateMockData(iso3: string, startYear: number, endYear: number): GlobalEntityMetric[] {
-  const base: Record<string, Partial<GlobalEntityMetric>> = {
-    USA: { gdpPerCapitaUsd: 65000, lifeExpectancy: 78.9, daly100k: 23500, primaryEnergyTwh: 23000, renewableSharePct: 12 },
-    CHN: { gdpPerCapitaUsd: 12500, lifeExpectancy: 77.3, daly100k: 25000, primaryEnergyTwh: 35000, renewableSharePct: 28 },
-    IND: { gdpPerCapitaUsd: 2400, lifeExpectancy: 70.1, daly100k: 34000, primaryEnergyTwh: 9000, renewableSharePct: 18 },
-    DEU: { gdpPerCapitaUsd: 48000, lifeExpectancy: 81.2, daly100k: 21000, primaryEnergyTwh: 3300, renewableSharePct: 46 },
-    GBR: { gdpPerCapitaUsd: 43000, lifeExpectancy: 81.0, daly100k: 22000, primaryEnergyTwh: 2100, renewableSharePct: 40 },
-    BRA: { gdpPerCapitaUsd: 8800, lifeExpectancy: 75.9, daly100k: 28000, primaryEnergyTwh: 3000, renewableSharePct: 45 },
-    NGA: { gdpPerCapitaUsd: 2100, lifeExpectancy: 63.0, daly100k: 52000, primaryEnergyTwh: 160, renewableSharePct: 20 },
-    ZAF: { gdpPerCapitaUsd: 6200, lifeExpectancy: 64.9, daly100k: 47000, primaryEnergyTwh: 580, renewableSharePct: 8 },
-    JPN: { gdpPerCapitaUsd: 40000, lifeExpectancy: 84.3, daly100k: 19000, primaryEnergyTwh: 4300, renewableSharePct: 22 },
-    AUS: { gdpPerCapitaUsd: 55000, lifeExpectancy: 83.4, daly100k: 20000, primaryEnergyTwh: 1600, renewableSharePct: 24 },
-  }
-
-  const b = base[iso3] ?? base['USA']
-
-  // Return a small time-series for charts plus the current year
-  return Array.from({ length: endYear - startYear + 1 }, (_, i) => {
-    const y = startYear + i
-    const growth = 1 + i * 0.012
-    return {
-      iso3,
-      countryName: COUNTRY_NAMES[iso3] ?? iso3,
-      year: y,
-      gdpUsd: null,
-      gdpPerCapitaUsd: Math.round((b.gdpPerCapitaUsd ?? 0) * growth),
-      gdpGrowthRate: 2.1 + Math.random() * 2,
-      population: b.population ?? null,
-      taxRevenuePctGdp: b.taxRevenuePctGdp ?? null,
-      giniCoefficient: b.giniCoefficient ?? null,
-      internetPenetrationPct: b.internetPenetrationPct ?? null,
-      urbanPopulationPct: b.urbanPopulationPct ?? null,
-      lifeExpectancy: parseFloat(((b.lifeExpectancy ?? 70) + i * 0.06).toFixed(1)),
-      under5MortalityRate: null,
-      daly100k: Math.round((b.daly100k ?? 30000) * (1 - i * 0.008)),
-      healthExpenditurePctGdp: 8.5 + Math.random(),
-      primaryEnergyTwh: Math.round((b.primaryEnergyTwh ?? 1000) * growth),
-      energyIntensityMjPerUsd: null,
-      renewableSharePct: parseFloat(((b.renewableSharePct ?? 20) + i * 0.5).toFixed(1)),
-      co2MtCo2: null,
-    }
-  })
+interface CountryMetricsResponse {
+  data: GlobalEntityMetric[]
+  cached: boolean
+  year: number
+  lastUpdated: string
 }
 
 function buildAverageKpis(rows: Array<Partial<GlobalEntityMetric>>): KpiMetric[] {
@@ -85,47 +41,14 @@ function buildAverageKpis(rows: Array<Partial<GlobalEntityMetric>>): KpiMetric[]
   ]
 }
 
-function buildComparisonRows(endYear: number) {
-  const base: Record<string, Partial<GlobalEntityMetric>> = {
-    USA: { gdpPerCapitaUsd: 65000, population: 340000000, taxRevenuePctGdp: 24.8, lifeExpectancy: 78.9, daly100k: 23500, giniCoefficient: 41.5, urbanPopulationPct: 83.3, internetPenetrationPct: 79.0, primaryEnergyTwh: 23000, renewableSharePct: 12 },
-    CHN: { gdpPerCapitaUsd: 12500, population: 1412000000, taxRevenuePctGdp: 18.2, lifeExpectancy: 77.3, daly100k: 25000, giniCoefficient: 38.5, urbanPopulationPct: 65.2, internetPenetrationPct: 73.0, primaryEnergyTwh: 35000, renewableSharePct: 28 },
-    IND: { gdpPerCapitaUsd: 2400, population: 1440000000, taxRevenuePctGdp: 18.1, lifeExpectancy: 70.1, daly100k: 34000, giniCoefficient: 35.7, urbanPopulationPct: 35.4, internetPenetrationPct: 47.0, primaryEnergyTwh: 9000, renewableSharePct: 18 },
-    DEU: { gdpPerCapitaUsd: 48000, population: 84000000, taxRevenuePctGdp: 23.6, lifeExpectancy: 81.2, daly100k: 21000, giniCoefficient: 31.7, urbanPopulationPct: 77.5, internetPenetrationPct: 89.0, primaryEnergyTwh: 3300, renewableSharePct: 46 },
-    GBR: { gdpPerCapitaUsd: 43000, population: 68000000, taxRevenuePctGdp: 28.7, lifeExpectancy: 81.0, daly100k: 22000, giniCoefficient: 36.3, urbanPopulationPct: 84.5, internetPenetrationPct: 95.0, primaryEnergyTwh: 2100, renewableSharePct: 40 },
-    BRA: { gdpPerCapitaUsd: 8800, population: 215000000, taxRevenuePctGdp: 22.9, lifeExpectancy: 75.9, daly100k: 28000, giniCoefficient: 53.4, urbanPopulationPct: 87.3, internetPenetrationPct: 82.0, primaryEnergyTwh: 3000, renewableSharePct: 45 },
-    NGA: { gdpPerCapitaUsd: 2100, population: 220000000, taxRevenuePctGdp: 6.2, lifeExpectancy: 63.0, daly100k: 52000, giniCoefficient: 43.0, urbanPopulationPct: 54.7, internetPenetrationPct: 42.0, primaryEnergyTwh: 160, renewableSharePct: 20 },
-    ZAF: { gdpPerCapitaUsd: 6200, population: 61000000, taxRevenuePctGdp: 25.9, lifeExpectancy: 64.9, daly100k: 47000, giniCoefficient: 63.0, urbanPopulationPct: 67.4, internetPenetrationPct: 76.0, primaryEnergyTwh: 580, renewableSharePct: 8 },
-    JPN: { gdpPerCapitaUsd: 40000, population: 124000000, taxRevenuePctGdp: 25.2, lifeExpectancy: 84.3, daly100k: 19000, giniCoefficient: 32.9, urbanPopulationPct: 91.8, internetPenetrationPct: 95.0, primaryEnergyTwh: 4300, renewableSharePct: 22 },
-    AUS: { gdpPerCapitaUsd: 55000, population: 26000000, taxRevenuePctGdp: 24.1, lifeExpectancy: 83.4, daly100k: 20000, giniCoefficient: 34.3, urbanPopulationPct: 86.2, internetPenetrationPct: 93.0, primaryEnergyTwh: 1600, renewableSharePct: 24 },
-  }
-
-  return Object.entries(COUNTRY_NAMES).map(([iso3, countryName]) => {
-    const values = base[iso3] ?? base.USA
-    const growth = iso3 === 'CHN' ? 0.92 : iso3 === 'IND' ? 0.88 : 1
-    return {
-      iso3,
-      countryName,
-      gdpPerCapitaUsd: Math.round((values.gdpPerCapitaUsd ?? 0) * growth),
-      population: values.population ?? 0,
-      taxRevenuePctGdp: values.taxRevenuePctGdp ?? 0,
-      lifeExpectancy: Number(((values.lifeExpectancy ?? 70) + (endYear - 2023) * 0.08).toFixed(1)),
-      daly100k: Math.round((values.daly100k ?? 30000) * (1 - (endYear - 2023) * 0.006)),
-      giniCoefficient: values.giniCoefficient ?? 0,
-      urbanPopulationPct: values.urbanPopulationPct ?? 0,
-      internetPenetrationPct: values.internetPenetrationPct ?? 0,
-      renewableSharePct: Number(((values.renewableSharePct ?? 20) + (endYear - 2023) * 0.6).toFixed(1)),
-      primaryEnergyTwh: Math.round((values.primaryEnergyTwh ?? 1000) * (1 + (endYear - 2023) * 0.008)),
-    }
-  })
-}
-
 export default function App() {
   const [selectedIso3, setSelectedIso3] = useState('USA')
   const [startYear, setStartYear] = useState(2017)
   const [endYear, setEndYear] = useState(2023)
   const [metrics, setMetrics] = useState<GlobalEntityMetric[]>([])
-  const [compareIso3s, setCompareIso3s] = useState<string[]>(['USA', 'CHN', 'IND'])
+  const [compareIso3s, setCompareIso3s] = useState<string[]>(['USA', 'CAN', 'BRA'])
   const [compareSeries, setCompareSeries] = useState<CountrySeries[]>([])
+  const [countryRows, setCountryRows] = useState<GlobalEntityMetric[]>([])
   const [activeTab, setActiveTab] = useState<'overview' | 'countries'>('overview')
 
   useEffect(() => {
@@ -141,9 +64,8 @@ export default function App() {
         if (!response.ok) throw new Error('Data API error')
         const payload = await response.json() as ApiDataResponse
         setMetrics(payload.data)
-      } catch (error) {
-        if (error instanceof DOMException && error.name === 'AbortError') return
-        setMetrics(generateMockData(selectedIso3, startYear, endYear))
+      } catch {
+        if (!controller.signal.aborted) setMetrics([])
       }
     }
 
@@ -166,9 +88,9 @@ export default function App() {
             if (!response.ok) throw new Error('Data API error')
             const payload = (await response.json()) as ApiDataResponse
             return { iso3, name: COUNTRY_NAMES[iso3] ?? iso3, data: payload.data }
-          } catch (error) {
-            if (error instanceof DOMException && error.name === 'AbortError') return null
-            return { iso3, name: COUNTRY_NAMES[iso3] ?? iso3, data: generateMockData(iso3, startYear, endYear) }
+          } catch {
+            if (controller.signal.aborted) return null
+            return { iso3, name: COUNTRY_NAMES[iso3] ?? iso3, data: [] }
           }
         }),
       )
@@ -179,6 +101,26 @@ export default function App() {
     loadComparison()
     return () => controller.abort()
   }, [compareIso3s, startYear, endYear])
+
+  useEffect(() => {
+    const controller = new AbortController()
+
+    async function loadCountryRows() {
+      try {
+        const response = await fetch(`/api/country-metrics?year=${endYear}`, {
+          signal: controller.signal,
+        })
+        if (!response.ok) throw new Error('Country metrics API error')
+        const payload = (await response.json()) as CountryMetricsResponse
+        setCountryRows(payload.data)
+      } catch {
+        if (!controller.signal.aborted) setCountryRows([])
+      }
+    }
+
+    loadCountryRows()
+    return () => controller.abort()
+  }, [endYear])
 
   const toggleCompareCountry = useCallback((iso3: string) => {
     setCompareIso3s((current) =>
@@ -192,8 +134,7 @@ export default function App() {
     )
   }, [])
 
-  const comparisonRows = buildComparisonRows(endYear)
-  const kpis = buildAverageKpis(comparisonRows)
+  const kpis = buildAverageKpis(countryRows)
 
   return (
     <div className="min-h-screen bg-surface-900 text-slate-100">
@@ -266,9 +207,10 @@ export default function App() {
             />
           ) : (
             <CountryComparisonTable
-              rows={comparisonRows}
+              rows={countryRows}
               selectedIso3={selectedIso3}
               onCountrySelect={setSelectedIso3}
+              endYear={endYear}
             />
           )}
         </section>

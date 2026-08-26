@@ -1,6 +1,14 @@
 import { mkdir, writeFile } from 'node:fs/promises'
 
-const countries = ['USA', 'CHN', 'IND', 'DEU', 'GBR', 'BRA', 'NGA', 'ZAF', 'JPN', 'AUS']
+const countries = [
+  'ATG', 'ARG', 'BHS', 'BRB', 'BLZ', 'BOL', 'BRA', 'CAN', 'CHL', 'COL',
+  'CRI', 'CUB', 'DMA', 'DOM', 'ECU', 'SLV', 'GRD', 'GTM', 'GUY', 'HTI',
+  'HND', 'JAM', 'MEX', 'NIC', 'PAN', 'PRY', 'PER', 'KNA', 'LCA', 'VCT',
+  'SUR', 'TTO', 'USA', 'URY', 'VEN',
+  'AUT', 'BEL', 'CZE', 'DNK', 'FIN', 'FRA', 'DEU', 'GRC', 'HUN', 'IRL',
+  'ITA', 'NLD', 'NOR', 'POL', 'PRT', 'ROU', 'ESP', 'SWE', 'CHE', 'UKR', 'GBR',
+  'AUS', 'CHN', 'IND', 'JPN', 'NGA', 'ZAF',
+]
 const startYear = 1990
 const endYear = 2023
 const indicators = {

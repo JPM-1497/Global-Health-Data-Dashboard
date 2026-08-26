@@ -1,7 +1,9 @@
 import type { Env, GlobalEntityMetric } from './types'
 import { joinMetrics } from './data'
 import { fetchWorldBankMetrics } from './sources/worldBank'
+import { fetchWorldBankMetricsForCountries } from './sources/worldBank'
 import { fetchOwidMetrics } from './sources/owid'
+import { DASHBOARD_COUNTRY_ISO3 } from './countryCatalog'
 
 /** TTL for KV cache entries: 24 hours in seconds */
 const CACHE_TTL_SECONDS = 86_400
@@ -65,10 +67,7 @@ async function handleData(
     worldBankMetrics = new Map()
   }
 
-  const dashboardCountries = new Set([
-    'USA', 'CHN', 'IND', 'DEU', 'GBR',
-    'BRA', 'NGA', 'ZAF', 'JPN', 'AUS',
-  ])
+  const dashboardCountries = new Set([iso3])
   let owidMetrics: Map<string, Partial<GlobalEntityMetric>>
   try {
     owidMetrics = await fetchOwidMetrics(dashboardCountries, startYear, endYear)
@@ -91,6 +90,52 @@ async function handleData(
   })
 
   return json({ data: series, cached: false, lastUpdated: new Date().toISOString() })
+}
+
+/** ---- Route: GET /api/country-metrics ---- */
+async function handleCountryMetrics(
+  request: Request,
+  env: Env,
+): Promise<Response> {
+  const url = new URL(request.url)
+  const yearParam = url.searchParams.get('year')
+  const year = yearParam ? parseInt(yearParam, 10) : 2023
+
+  if (isNaN(year) || year < 1990 || year > 2026) {
+    return errorJson('year must be between 1990 and 2026')
+  }
+
+  const cacheKey = `country-metrics:${year}`
+  const cached = await env.GLOBAL_DATA_KV.get(cacheKey, 'json')
+  if (cached !== null) {
+    return json({ data: cached, cached: true, year, lastUpdated: new Date().toISOString() })
+  }
+
+  let wbByCountryYear = new Map<string, Partial<GlobalEntityMetric>>()
+  try {
+    wbByCountryYear = await fetchWorldBankMetricsForCountries(DASHBOARD_COUNTRY_ISO3, year, year)
+  } catch {
+    wbByCountryYear = new Map()
+  }
+
+  let owidByCountryYear = new Map<string, Partial<GlobalEntityMetric>>()
+  try {
+    owidByCountryYear = await fetchOwidMetrics(new Set(DASHBOARD_COUNTRY_ISO3), year, year)
+  } catch {
+    owidByCountryYear = new Map()
+  }
+
+  const rows = DASHBOARD_COUNTRY_ISO3.map((iso3) => ({
+    ...joinMetrics(iso3, year),
+    ...(wbByCountryYear.get(`${iso3}:${year}`) ?? {}),
+    ...(owidByCountryYear.get(`${iso3}:${year}`) ?? {}),
+  }))
+
+  await env.GLOBAL_DATA_KV.put(cacheKey, JSON.stringify(rows), {
+    expirationTtl: CACHE_TTL_SECONDS,
+  })
+
+  return json({ data: rows, cached: false, year, lastUpdated: new Date().toISOString() })
 }
 
 /** ---- Route: GET /api/summary ---- */
@@ -153,8 +198,9 @@ export default {
     const { pathname } = new URL(request.url)
 
     if (pathname === '/api/data') return handleData(request, env)
+    if (pathname === '/api/country-metrics') return handleCountryMetrics(request, env)
     if (pathname === '/api/summary') return handleSummary(request, env)
 
-    return json({ status: 'Global Intelligence Analytics Worker', routes: ['/api/data', '/api/summary'] })
+    return json({ status: 'Global Intelligence Analytics Worker', routes: ['/api/data', '/api/country-metrics', '/api/summary'] })
   },
 }

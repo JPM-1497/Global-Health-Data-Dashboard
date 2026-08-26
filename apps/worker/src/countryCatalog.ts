@@ -1,0 +1,77 @@
+export interface WorkerCountry {
+  iso3: string
+  name: string
+}
+
+export const DASHBOARD_COUNTRIES: WorkerCountry[] = [
+  { iso3: 'ATG', name: 'Antigua and Barbuda' },
+  { iso3: 'ARG', name: 'Argentina' },
+  { iso3: 'BHS', name: 'Bahamas' },
+  { iso3: 'BRB', name: 'Barbados' },
+  { iso3: 'BLZ', name: 'Belize' },
+  { iso3: 'BOL', name: 'Bolivia' },
+  { iso3: 'BRA', name: 'Brazil' },
+  { iso3: 'CAN', name: 'Canada' },
+  { iso3: 'CHL', name: 'Chile' },
+  { iso3: 'COL', name: 'Colombia' },
+  { iso3: 'CRI', name: 'Costa Rica' },
+  { iso3: 'CUB', name: 'Cuba' },
+  { iso3: 'DMA', name: 'Dominica' },
+  { iso3: 'DOM', name: 'Dominican Republic' },
+  { iso3: 'ECU', name: 'Ecuador' },
+  { iso3: 'SLV', name: 'El Salvador' },
+  { iso3: 'GRD', name: 'Grenada' },
+  { iso3: 'GTM', name: 'Guatemala' },
+  { iso3: 'GUY', name: 'Guyana' },
+  { iso3: 'HTI', name: 'Haiti' },
+  { iso3: 'HND', name: 'Honduras' },
+  { iso3: 'JAM', name: 'Jamaica' },
+  { iso3: 'MEX', name: 'Mexico' },
+  { iso3: 'NIC', name: 'Nicaragua' },
+  { iso3: 'PAN', name: 'Panama' },
+  { iso3: 'PRY', name: 'Paraguay' },
+  { iso3: 'PER', name: 'Peru' },
+  { iso3: 'KNA', name: 'Saint Kitts and Nevis' },
+  { iso3: 'LCA', name: 'Saint Lucia' },
+  { iso3: 'VCT', name: 'Saint Vincent and the Grenadines' },
+  { iso3: 'SUR', name: 'Suriname' },
+  { iso3: 'TTO', name: 'Trinidad and Tobago' },
+  { iso3: 'USA', name: 'United States' },
+  { iso3: 'URY', name: 'Uruguay' },
+  { iso3: 'VEN', name: 'Venezuela' },
+
+  { iso3: 'AUT', name: 'Austria' },
+  { iso3: 'BEL', name: 'Belgium' },
+  { iso3: 'CZE', name: 'Czechia' },
+  { iso3: 'DNK', name: 'Denmark' },
+  { iso3: 'FIN', name: 'Finland' },
+  { iso3: 'FRA', name: 'France' },
+  { iso3: 'DEU', name: 'Germany' },
+  { iso3: 'GRC', name: 'Greece' },
+  { iso3: 'HUN', name: 'Hungary' },
+  { iso3: 'IRL', name: 'Ireland' },
+  { iso3: 'ITA', name: 'Italy' },
+  { iso3: 'NLD', name: 'Netherlands' },
+  { iso3: 'NOR', name: 'Norway' },
+  { iso3: 'POL', name: 'Poland' },
+  { iso3: 'PRT', name: 'Portugal' },
+  { iso3: 'ROU', name: 'Romania' },
+  { iso3: 'ESP', name: 'Spain' },
+  { iso3: 'SWE', name: 'Sweden' },
+  { iso3: 'CHE', name: 'Switzerland' },
+  { iso3: 'UKR', name: 'Ukraine' },
+  { iso3: 'GBR', name: 'United Kingdom' },
+
+  { iso3: 'AUS', name: 'Australia' },
+  { iso3: 'CHN', name: 'China' },
+  { iso3: 'IND', name: 'India' },
+  { iso3: 'JPN', name: 'Japan' },
+  { iso3: 'NGA', name: 'Nigeria' },
+  { iso3: 'ZAF', name: 'South Africa' },
+]
+
+export const DASHBOARD_COUNTRY_ISO3 = DASHBOARD_COUNTRIES.map((country) => country.iso3)
+
+export const COUNTRY_NAMES: Record<string, string> = Object.fromEntries(
+  DASHBOARD_COUNTRIES.map((country) => [country.iso3, country.name]),
+)

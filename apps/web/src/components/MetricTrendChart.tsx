@@ -11,6 +11,7 @@ import {
   XAxis,
   YAxis,
 } from 'recharts'
+import { DASHBOARD_COUNTRIES } from '../countryCatalog'
 import type { GlobalEntityMetric } from '../types'
 
 type MetricKey =
@@ -47,19 +48,6 @@ const METRICS: Array<{
 const COUNTRY_COLORS = ['#58a6ff', '#f85149', '#3fb950', '#f59e0b', '#bc8cff']
 const MAX_COUNTRIES = 5
 
-const ALL_COUNTRIES: Array<{ iso3: string; name: string }> = [
-  { iso3: 'USA', name: 'United States' },
-  { iso3: 'CHN', name: 'China' },
-  { iso3: 'IND', name: 'India' },
-  { iso3: 'DEU', name: 'Germany' },
-  { iso3: 'GBR', name: 'United Kingdom' },
-  { iso3: 'BRA', name: 'Brazil' },
-  { iso3: 'NGA', name: 'Nigeria' },
-  { iso3: 'ZAF', name: 'South Africa' },
-  { iso3: 'JPN', name: 'Japan' },
-  { iso3: 'AUS', name: 'Australia' },
-]
-
 export interface CountrySeries {
   iso3: string
   name: string
@@ -89,6 +77,7 @@ export default function MetricTrendChart({ data, comparison = [], onCountryToggl
     'renewableSharePct',
   ])
   const [countryMetric, setCountryMetric] = useState<MetricKey>('lifeExpectancy')
+  const [countrySearch, setCountrySearch] = useState('')
   const [showInfo, setShowInfo] = useState(false)
 
   const sorted = useMemo(() => [...data].sort((left, right) => left.year - right.year), [data])
@@ -177,7 +166,15 @@ export default function MetricTrendChart({ data, comparison = [], onCountryToggl
       active ? 'bg-accent-blue/20 text-accent-blue' : 'text-gray-500 hover:text-gray-300'
     }`
 
-  const availableCountries = ALL_COUNTRIES.filter((c) => !comparison.some((s) => s.iso3 === c.iso3))
+  const availableCountries = DASHBOARD_COUNTRIES
+    .filter((c) => !comparison.some((s) => s.iso3 === c.iso3))
+    .sort((a, b) => a.name.localeCompare(b.name))
+
+  const filteredCountries = availableCountries.filter((country) => {
+    const query = countrySearch.trim().toLowerCase()
+    if (!query) return true
+    return country.name.toLowerCase().includes(query) || country.iso3.toLowerCase().includes(query)
+  })
 
   return (
     <div className="card space-y-4">
@@ -263,7 +260,7 @@ export default function MetricTrendChart({ data, comparison = [], onCountryToggl
               value={countryMetric}
               onChange={(e) => setCountryMetric(e.target.value as MetricKey)}
               aria-label="Comparison metric"
-              className="rounded-full border border-surface-600/80 bg-surface-800 px-2.5 py-1 text-[11px] text-gray-200 focus:outline-none focus:ring-1 focus:ring-accent-blue/40"
+              className="rounded-full border border-surface-600/80 bg-surface-800 px-2.5 py-1 text-[11px] text-gray-200 [color-scheme:dark] focus:outline-none focus:ring-1 focus:ring-accent-blue/40"
             >
               {METRICS.map((m) => (
                 <option key={m.key} value={m.key}>{m.label}</option>
@@ -292,19 +289,30 @@ export default function MetricTrendChart({ data, comparison = [], onCountryToggl
                 </button>
               ))}
               {comparison.length < MAX_COUNTRIES && availableCountries.length > 0 && (
-                <select
-                  value=""
-                  onChange={(e) => {
-                    if (e.target.value) onCountryToggle?.(e.target.value)
-                  }}
-                  aria-label="Add country to comparison"
-                  className="rounded-full border border-dashed border-surface-600/80 bg-transparent px-2.5 py-1 text-[11px] text-gray-500 transition-colors hover:border-gray-500 hover:text-gray-300 focus:outline-none"
-                >
-                  <option value="">+ Add country</option>
-                  {availableCountries.map((c) => (
-                    <option key={c.iso3} value={c.iso3}>{c.name}</option>
-                  ))}
-                </select>
+                <div className="flex items-center gap-1.5">
+                  <input
+                    value={countrySearch}
+                    onChange={(e) => setCountrySearch(e.target.value)}
+                    placeholder="Search"
+                    aria-label="Search countries in dropdown"
+                    className="w-28 rounded-full border border-surface-600/80 bg-surface-800 px-2.5 py-1 text-[11px] text-gray-200 placeholder:text-gray-500 focus:outline-none focus:ring-1 focus:ring-accent-blue/40"
+                  />
+                  <select
+                    value=""
+                    onChange={(e) => {
+                      if (!e.target.value) return
+                      onCountryToggle?.(e.target.value)
+                      setCountrySearch('')
+                    }}
+                    aria-label="Add country to comparison"
+                    className="rounded-full border border-dashed border-surface-600/80 bg-surface-800 px-2.5 py-1 text-[11px] text-gray-300 [color-scheme:dark] transition-colors hover:border-gray-500 hover:text-gray-100 focus:outline-none"
+                  >
+                    <option value="">+ Add country</option>
+                    {filteredCountries.map((c) => (
+                      <option key={c.iso3} value={c.iso3}>{c.name}</option>
+                    ))}
+                  </select>
+                </div>
               )}
             </div>
           </div>
