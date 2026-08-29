@@ -16,19 +16,19 @@ export default function Header({ title, startYear, endYear, onRangeChange }: Hea
 
   return (
     <header className="sticky top-0 z-50 border-b border-surface-600/80 bg-surface-900/85 backdrop-blur-md">
-      <div className="mx-auto max-w-screen-2xl px-4 py-4 sm:px-6">
-        <div className="flex items-end justify-between gap-4">
+      <div className="mx-auto max-w-screen-2xl px-3 py-3 sm:px-6 sm:py-4">
+        <div className="flex flex-col items-start gap-3 sm:flex-row sm:items-end sm:justify-between sm:gap-4">
           <div>
             <p className="text-[10px] font-medium uppercase tracking-[0.28em] text-slate-400">
               Global Health Data Dashboard
             </p>
-            <h1 className="mt-2 text-2xl font-semibold tracking-tight text-white sm:text-3xl">
+            <h1 className="mt-1 text-xl font-semibold tracking-tight text-white sm:mt-2 sm:text-3xl">
               {title}
             </h1>
           </div>
 
           {/* Subtle year filter */}
-          <div className="flex items-center gap-1.5 text-slate-500">
+          <div className="flex flex-wrap items-center gap-1.5 text-slate-500">
             <span className="text-[10px] uppercase tracking-[0.2em]">Period</span>
             <select
               value={startYear}

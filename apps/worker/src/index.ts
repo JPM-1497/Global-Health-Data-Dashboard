@@ -1,4 +1,4 @@
-import type { Env, GlobalEntityMetric } from './types'
+import type { Env, GlobalEntityMetric, AnalyticsEventPayload } from './types'
 import { joinMetrics } from './data'
 import { fetchWorldBankMetrics } from './sources/worldBank'
 import { fetchWorldBankMetricsForCountries } from './sources/worldBank'
@@ -200,7 +200,39 @@ export default {
     if (pathname === '/api/data') return handleData(request, env)
     if (pathname === '/api/country-metrics') return handleCountryMetrics(request, env)
     if (pathname === '/api/summary') return handleSummary(request, env)
+    if (pathname === '/api/usage-events') {
+      const usageKey = 'analytics:events'
+      const stored = await env.GLOBAL_DATA_KV.get(usageKey, 'json') as Array<Record<string, unknown>> | null
+      return json({ data: stored ?? [] })
+    }
+    if (pathname === '/api/track') {
+      if (request.method !== 'POST') {
+        return json({ error: 'Method not allowed' }, 405)
+      }
 
-    return json({ status: 'Global Intelligence Analytics Worker', routes: ['/api/data', '/api/country-metrics', '/api/summary'] })
+      try {
+        const payload = await request.json() as AnalyticsEventPayload
+        const key = `analytics:${Date.now()}:${payload.sessionId ?? 'anonymous'}`
+        const eventEntry = {
+          ...payload,
+          ipCountry: (request.cf as { country?: string } | undefined)?.country ?? null,
+          ipCity: (request.cf as { city?: string } | undefined)?.city ?? null,
+        }
+
+        const existing = await env.GLOBAL_DATA_KV.get('analytics:events', 'json') as Array<Record<string, unknown>> | null
+        const nextEvents = [...(existing ?? []), eventEntry]
+        await env.GLOBAL_DATA_KV.put('analytics:events', JSON.stringify(nextEvents.slice(-200)), {
+          expirationTtl: 60 * 60 * 24 * 30,
+        })
+        await env.GLOBAL_DATA_KV.put(key, JSON.stringify(eventEntry), {
+          expirationTtl: 60 * 60 * 24 * 30,
+        })
+        return json({ ok: true })
+      } catch {
+        return json({ error: 'Invalid analytics payload' }, 400)
+      }
+    }
+
+    return json({ status: 'Global Intelligence Analytics Worker', routes: ['/api/data', '/api/country-metrics', '/api/summary', '/api/track', '/api/usage-events'] })
   },
 }

@@ -176,7 +176,7 @@ export default function CountryComparisonTable({
         </div>
         <div className="flex flex-wrap gap-2" aria-label="Select comparison metric">
           {METRIC_CONFIG.map((metric) => (
-            <div key={metric.key} className="group relative">
+            <div key={metric.key} className="group relative z-50">
               <button
                 type="button"
                 onClick={() => setSelectedMetric(metric.key)}
@@ -189,7 +189,7 @@ export default function CountryComparisonTable({
               >
                 {metric.label}
               </button>
-              <div className="pointer-events-none absolute left-1/2 top-full z-10 mt-2 w-72 -translate-x-1/2 rounded-md border border-surface-600 bg-surface-900 p-2 text-left text-[11px] leading-5 text-gray-300 opacity-0 shadow-xl transition group-hover:opacity-100 whitespace-normal">
+              <div className="pointer-events-none absolute left-1/2 top-full z-50 mt-2 w-72 -translate-x-1/2 rounded-md border border-surface-600 bg-surface-900 p-2 text-left text-[11px] leading-5 text-gray-300 opacity-0 shadow-xl transition group-hover:opacity-100 whitespace-normal">
                 <div className="font-medium text-accent-blue">{metric.label}</div>
                 <div className="mt-1 text-gray-300">{metric.definition}</div>
                 <div className="mt-1 text-gray-400">{metric.interpretation}</div>
@@ -207,10 +207,10 @@ export default function CountryComparisonTable({
             <tr className="text-[11px] uppercase tracking-[0.14em] text-gray-500">
               <th className="sticky left-0 top-0 z-30 w-44 border-r border-surface-600 bg-surface-900 px-1.5 py-1 text-center font-medium shadow-[8px_0_12px_-10px_rgba(0,0,0,0.75)]">Country</th>
               {METRIC_CONFIG.map((metric) => (
-                <th key={metric.key} className="sticky top-0 z-20 bg-surface-900 px-2 py-1 text-center font-medium align-bottom">
+                <th key={metric.key} className="sticky top-0 z-20 bg-surface-900 px-2 py-1 text-center font-medium align-bottom hover:z-40">
                   <div className="group relative inline-block">
                     <span className="block max-w-[16ch] cursor-help whitespace-normal break-normal text-center leading-4 underline decoration-dotted underline-offset-4">{metric.label}</span>
-                    <div className="pointer-events-none absolute left-1/2 top-full z-10 mt-2 w-72 -translate-x-1/2 rounded-md border border-surface-600 bg-surface-900 p-2 text-left text-[11px] leading-5 text-gray-300 opacity-0 shadow-xl transition group-hover:opacity-100 whitespace-normal">
+                    <div className="pointer-events-none absolute left-1/2 top-full z-50 mt-2 w-72 -translate-x-1/2 rounded-md border border-surface-600 bg-surface-900 p-2 text-left text-[11px] leading-5 text-gray-300 opacity-0 shadow-xl transition group-hover:opacity-100 whitespace-normal">
                       <div className="font-medium text-accent-blue">{metric.label}</div>
                       <div className="mt-1 text-gray-300">{metric.definition}</div>
                       <div className="mt-1 text-gray-400">{metric.interpretation}</div>
@@ -257,10 +257,10 @@ export default function CountryComparisonTable({
                   {METRIC_CONFIG.map((metric) => {
                     const displayValue = metric.formatter(row[metric.key])
                     return (
-                      <td key={`${row.iso3}-${metric.key}`} className="px-2 py-1.5 align-middle text-center text-gray-300 whitespace-nowrap">
+                      <td key={`${row.iso3}-${metric.key}`} className="relative z-0 px-2 py-1.5 align-middle text-center text-gray-300 whitespace-nowrap hover:z-40">
                         <div className="group relative inline-block">
                           <span className="cursor-help underline decoration-dotted underline-offset-4">{displayValue}</span>
-                          <div className="pointer-events-none absolute left-1/2 top-full z-10 mt-2 w-72 -translate-x-1/2 rounded-md border border-surface-600 bg-surface-900 p-2 text-left text-[11px] leading-5 text-gray-300 opacity-0 shadow-xl transition group-hover:opacity-100 whitespace-normal">
+                          <div className="pointer-events-none absolute left-1/2 top-full z-50 mt-2 w-72 -translate-x-1/2 rounded-md border border-surface-600 bg-surface-900 p-2 text-left text-[11px] leading-5 text-gray-300 opacity-0 shadow-xl transition group-hover:opacity-100 whitespace-normal">
                             <div className="font-medium text-accent-blue">{metric.label}</div>
                             <div className="mt-1 text-gray-300">Value: {displayValue}</div>
                             <div className="mt-1 text-gray-500">Calculation: {metric.calculation(endYear)}</div>

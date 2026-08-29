@@ -4,8 +4,10 @@ import Header from './components/Header'
 import KpiCard from './components/KpiCard'
 import MetricTrendChart, { type CountrySeries } from './components/MetricTrendChart'
 import CountryComparisonTable from './components/CountryComparisonTable'
+import UsageMetricsPanel from './components/UsageMetricsPanel'
 import { COUNTRY_NAMES } from './countryCatalog'
 import type { GlobalEntityMetric, ApiDataResponse, KpiMetric } from './types'
+import { trackEvent } from './lib/analytics'
 
 interface CountryMetricsResponse {
   data: GlobalEntityMetric[]
@@ -24,20 +26,20 @@ function buildAverageKpis(rows: Array<Partial<GlobalEntityMetric>>): KpiMetric[]
     return values.reduce((sum, value) => sum + Number(value), 0) / values.length
   }
 
-  const fmt = (v: number | null, prefix = '', suffix = '') =>
-    v != null ? `${prefix}${v.toLocaleString(undefined, { maximumFractionDigits: 1 })}${suffix}` : '—'
+  const fmt = (v: number | null, prefix = '', suffix = '', maximumFractionDigits = 1) =>
+    v != null ? `${prefix}${v.toLocaleString(undefined, { maximumFractionDigits })}${suffix}` : '—'
 
   return [
-    { label: 'GDP per Capita', value: fmt(average('gdpPerCapitaUsd'), '$'), yoyDelta: null, unit: 'USD' },
-    { label: 'Population', value: fmt(average('population')), yoyDelta: null, unit: 'people' },
+    { label: 'GDP per Capita', value: fmt(average('gdpPerCapitaUsd'), '$', '', 0), yoyDelta: null, unit: 'USD' },
+    { label: 'Population', value: fmt(average('population'), '', '', 0), yoyDelta: null, unit: 'people' },
     { label: 'Tax Revenue', value: fmt(average('taxRevenuePctGdp'), '', '%'), yoyDelta: null, unit: '% of GDP' },
     { label: 'Life Expectancy', value: fmt(average('lifeExpectancy'), '', ' yrs'), yoyDelta: null, unit: 'years' },
-    { label: 'DALYs / 100k', value: fmt(average('daly100k')), yoyDelta: null, unit: 'health burden' },
+    { label: 'DALYs / 100k', value: fmt(average('daly100k'), '', '', 0), yoyDelta: null, unit: 'health burden' },
     { label: 'Gini Index', value: fmt(average('giniCoefficient')), yoyDelta: null, unit: '0–100' },
     { label: 'Urban Population', value: fmt(average('urbanPopulationPct'), '', '%'), yoyDelta: null, unit: 'of total' },
     { label: 'Internet Access', value: fmt(average('internetPenetrationPct'), '', '%'), yoyDelta: null, unit: 'of population' },
     { label: 'Renewable Share', value: fmt(average('renewableSharePct'), '', '%'), yoyDelta: null, unit: 'of energy' },
-    { label: 'Primary Energy', value: fmt(average('primaryEnergyTwh'), '', ' TWh'), yoyDelta: null, unit: 'consumption' },
+    { label: 'Primary Energy', value: fmt(average('primaryEnergyTwh'), '', ' TWh', 0), yoyDelta: null, unit: 'consumption' },
   ]
 }
 
@@ -49,7 +51,21 @@ export default function App() {
   const [compareIso3s, setCompareIso3s] = useState<string[]>(['USA', 'CAN', 'BRA'])
   const [compareSeries, setCompareSeries] = useState<CountrySeries[]>([])
   const [countryRows, setCountryRows] = useState<GlobalEntityMetric[]>([])
-  const [activeTab, setActiveTab] = useState<'overview' | 'countries'>('overview')
+  const [usageEvents, setUsageEvents] = useState<Array<{ event: string; sessionId: string; timestamp: string; pathname: string; metadata: Record<string, unknown>; ipCountry?: string | null; ipCity?: string | null }>>([])
+  const [activeTab, setActiveTab] = useState<'overview' | 'countries' | 'usage'>('overview')
+
+  const getTabName = useCallback((tab: 'overview' | 'countries' | 'usage') => {
+    switch (tab) {
+      case 'overview':
+        return 'Overview'
+      case 'countries':
+        return 'Country metrics'
+      case 'usage':
+        return 'Usage metrics'
+      default:
+        return 'Overview'
+    }
+  }, [])
 
   useEffect(() => {
     const controller = new AbortController()
@@ -122,17 +138,48 @@ export default function App() {
     return () => controller.abort()
   }, [endYear])
 
+  useEffect(() => {
+    if (activeTab !== 'usage') return
+
+    const controller = new AbortController()
+
+    async function loadUsageEvents() {
+      try {
+        const response = await fetch('/api/usage-events', { signal: controller.signal })
+        if (!response.ok) throw new Error('Usage events API error')
+        const payload = (await response.json()) as { data: Array<{ event: string; sessionId: string; timestamp: string; pathname: string; metadata: Record<string, unknown>; ipCountry?: string | null; ipCity?: string | null }> }
+        setUsageEvents(payload.data ?? [])
+      } catch {
+        if (!controller.signal.aborted) setUsageEvents([])
+      }
+    }
+
+    loadUsageEvents()
+    return () => controller.abort()
+  }, [activeTab])
+
   const toggleCompareCountry = useCallback((iso3: string) => {
-    setCompareIso3s((current) =>
-      current.includes(iso3)
+    setCompareIso3s((current) => {
+      const next = current.includes(iso3)
         ? current.length > 1
           ? current.filter((item) => item !== iso3)
           : current
         : current.length < 5
           ? [...current, iso3]
-          : current,
-    )
-  }, [])
+          : current
+
+      const eventMeta = {
+        iso3,
+        countryName: COUNTRY_NAMES[iso3] ?? iso3,
+        compareIso3s: next,
+        activeTab,
+        tabName: getTabName(activeTab),
+      }
+
+      trackEvent(current.includes(iso3) ? 'chart_country_removed' : 'chart_country_added', eventMeta)
+      return next
+    })
+  }, [activeTab, getTabName])
 
   const kpis = buildAverageKpis(countryRows)
 
@@ -143,19 +190,26 @@ export default function App() {
         startYear={startYear}
         endYear={endYear}
         onRangeChange={(nextStart, nextEnd) => {
+          trackEvent('year_range_changed', {
+            startYear: nextStart,
+            endYear: nextEnd,
+            selectedIso3,
+            countryName: COUNTRY_NAMES[selectedIso3] ?? selectedIso3,
+            tabName: getTabName(activeTab),
+          })
           setStartYear(nextStart)
           setEndYear(nextEnd)
         }}
       />
 
-      <main className="mx-auto max-w-screen-2xl space-y-6 px-4 py-8 sm:px-6 lg:px-8">
+      <main className="mx-auto max-w-screen-2xl space-y-5 px-3 py-5 sm:space-y-6 sm:px-6 sm:py-8 lg:px-8">
         <section aria-label="Average key performance indicators">
           <p className="mb-2 text-[10px] font-medium uppercase tracking-[0.2em] text-slate-500">
             Average across all countries
           </p>
-          <div className="flex gap-2 overflow-x-auto [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
+          <div className="grid grid-cols-1 gap-2 min-[420px]:grid-cols-2 sm:grid-cols-3 lg:grid-cols-5">
             {kpis.map((kpi, i) => (
-              <div key={kpi.label} className="w-40 shrink-0">
+              <div key={kpi.label} className="min-w-0">
                 <KpiCard
                   metric={kpi}
                   period={`${startYear}–${endYear}`}
@@ -181,20 +235,30 @@ export default function App() {
 
         <section aria-label="Dashboard content">
           <div className="mb-4 flex gap-1 border-b border-surface-600/60" role="tablist">
-            {(['overview', 'countries'] as const).map((tab) => (
+            {(['overview', 'countries', 'usage'] as const).map((tab) => (
               <button
                 key={tab}
                 type="button"
                 role="tab"
                 aria-selected={activeTab === tab}
-                onClick={() => setActiveTab(tab)}
+                onClick={() => {
+                  setActiveTab(tab)
+                  trackEvent('tab_changed', {
+                    tab,
+                    tabName: getTabName(tab),
+                    selectedIso3,
+                    countryName: COUNTRY_NAMES[selectedIso3] ?? selectedIso3,
+                    startYear,
+                    endYear,
+                  })
+                }}
                 className={`-mb-px border-b-2 px-3 pb-2 text-xs font-medium transition-colors ${
                   activeTab === tab
                     ? 'border-accent-blue text-slate-100'
                     : 'border-transparent text-slate-500 hover:text-slate-300'
                 }`}
               >
-                {tab === 'overview' ? 'Overview' : 'Country metrics'}
+                {tab === 'overview' ? 'Overview' : tab === 'countries' ? 'Country metrics' : 'Usage metrics'}
               </button>
             ))}
           </div>
@@ -204,14 +268,39 @@ export default function App() {
               data={metrics}
               comparison={compareSeries}
               onCountryToggle={toggleCompareCountry}
+              selectedIso3={selectedIso3}
+              onSelectedCountryChange={(iso3) => {
+                setSelectedIso3(iso3)
+                trackEvent('country_selected', {
+                  iso3,
+                  countryName: COUNTRY_NAMES[iso3] ?? iso3,
+                  selectedIso3: iso3,
+                  activeTab,
+                  tabName: getTabName(activeTab),
+                  startYear,
+                  endYear,
+                })
+              }}
             />
-          ) : (
+          ) : activeTab === 'countries' ? (
             <CountryComparisonTable
               rows={countryRows}
               selectedIso3={selectedIso3}
-              onCountrySelect={setSelectedIso3}
+              onCountrySelect={(iso3) => {
+                setSelectedIso3(iso3)
+                trackEvent('country_selected', {
+                  iso3,
+                  countryName: COUNTRY_NAMES[iso3] ?? iso3,
+                  selectedIso3: iso3,
+                  endYear,
+                  activeTab,
+                  tabName: getTabName(activeTab),
+                })
+              }}
               endYear={endYear}
             />
+          ) : (
+            <UsageMetricsPanel events={usageEvents} />
           )}
         </section>
       </main>

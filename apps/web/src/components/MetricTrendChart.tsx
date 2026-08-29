@@ -13,6 +13,7 @@ import {
 } from 'recharts'
 import { DASHBOARD_COUNTRIES } from '../countryCatalog'
 import type { GlobalEntityMetric } from '../types'
+import { trackEvent } from '../lib/analytics'
 
 type MetricKey =
   | 'gdpPerCapitaUsd'
@@ -58,6 +59,8 @@ interface MetricTrendChartProps {
   data: GlobalEntityMetric[]
   comparison?: CountrySeries[]
   onCountryToggle?: (iso3: string) => void
+  selectedIso3: string
+  onSelectedCountryChange: (iso3: string) => void
 }
 
 interface LineSpec {
@@ -68,7 +71,13 @@ interface LineSpec {
   actual: (year: number) => number | null
 }
 
-export default function MetricTrendChart({ data, comparison = [], onCountryToggle }: MetricTrendChartProps) {
+export default function MetricTrendChart({
+  data,
+  comparison = [],
+  onCountryToggle,
+  selectedIso3,
+  onSelectedCountryChange,
+}: MetricTrendChartProps) {
   const [mode, setMode] = useState<'metrics' | 'countries'>('metrics')
   const [scale, setScale] = useState<'index' | 'actual'>('index')
   const [selectedKeys, setSelectedKeys] = useState<MetricKey[]>([
@@ -150,9 +159,19 @@ export default function MetricTrendChart({ data, comparison = [], onCountryToggl
   const activeMetric = METRICS.find((m) => m.key === countryMetric)
 
   const toggleMetric = (key: MetricKey) => {
-    setSelectedKeys((current) => current.includes(key)
-      ? current.filter((item) => item !== key)
-      : [...current, key])
+    setSelectedKeys((current) => {
+      const next = current.includes(key)
+        ? current.filter((item) => item !== key)
+        : [...current, key]
+      trackEvent('metric_selected', {
+        metric: key,
+        metricLabel: METRICS.find((metric) => metric.key === key)?.label ?? key,
+        selectedKeys: next,
+        mode,
+        scale,
+      })
+      return next
+    })
   }
 
   const yFormatter = (value: number) => {
@@ -180,10 +199,26 @@ export default function MetricTrendChart({ data, comparison = [], onCountryToggl
     <div className="card space-y-4">
       <div className="space-y-3">
         <div className="flex flex-wrap items-center justify-between gap-3">
-          <div className="relative flex items-center gap-2">
+          <div className="relative flex flex-wrap items-center gap-2">
             <h3 className="text-sm font-semibold text-gray-200">
-              {mode === 'metrics' ? 'Metric trends' : `${activeMetric?.label ?? 'Metric'} — country comparison`}
+              {mode === 'metrics' ? 'Metric Trends' : `${activeMetric?.label ?? 'Metric'} — country comparison`}
             </h3>
+            {mode === 'metrics' && (
+              <>
+                <label className="sr-only" htmlFor="overview-country-filter">Country</label>
+                <select
+                  id="overview-country-filter"
+                  value={selectedIso3}
+                  onChange={(event) => onSelectedCountryChange(event.target.value)}
+                  aria-label="Select overview country"
+                  className="max-w-[min(14rem,calc(100vw-7rem))] rounded-full border border-surface-600/80 bg-surface-800 px-2.5 py-1 text-[11px] text-gray-200 [color-scheme:dark] focus:outline-none focus:ring-1 focus:ring-accent-blue/40"
+                >
+                  {DASHBOARD_COUNTRIES.map((country) => (
+                    <option key={country.iso3} value={country.iso3}>{country.name}</option>
+                  ))}
+                </select>
+              </>
+            )}
             <button
               type="button"
               onClick={() => setShowInfo((v) => !v)}
@@ -210,18 +245,18 @@ export default function MetricTrendChart({ data, comparison = [], onCountryToggl
 
           <div className="flex items-center gap-3">
             <div className="flex rounded-full border border-surface-600/80 p-0.5" aria-label="Chart mode">
-              <button type="button" onClick={() => setMode('metrics')} aria-pressed={mode === 'metrics'} className={toggleClass(mode === 'metrics')}>
+              <button type="button" onClick={() => { setMode('metrics'); trackEvent('metric_trend_mode_changed', { mode: 'metrics', modeLabel: 'Metrics', scale, selectedKeys }) }} aria-pressed={mode === 'metrics'} className={toggleClass(mode === 'metrics')}>
                 Metrics
               </button>
-              <button type="button" onClick={() => setMode('countries')} aria-pressed={mode === 'countries'} className={toggleClass(mode === 'countries')}>
+              <button type="button" onClick={() => { setMode('countries'); trackEvent('metric_trend_mode_changed', { mode: 'countries', modeLabel: 'Countries', scale, selectedKeys, countryMetric }) }} aria-pressed={mode === 'countries'} className={toggleClass(mode === 'countries')}>
                 Countries
               </button>
             </div>
             <div className="flex rounded-full border border-surface-600/80 p-0.5" aria-label="Y-axis scale">
-              <button type="button" onClick={() => setScale('index')} aria-pressed={scale === 'index'} className={toggleClass(scale === 'index')}>
+              <button type="button" onClick={() => { setScale('index'); trackEvent('metric_trend_scale_changed', { scale: 'index', scaleLabel: 'Index', mode, selectedKeys, countryMetric }) }} aria-pressed={scale === 'index'} className={toggleClass(scale === 'index')}>
                 Index
               </button>
-              <button type="button" onClick={() => setScale('actual')} aria-pressed={scale === 'actual'} className={toggleClass(scale === 'actual')}>
+              <button type="button" onClick={() => { setScale('actual'); trackEvent('metric_trend_scale_changed', { scale: 'actual', scaleLabel: 'Actual', mode, selectedKeys, countryMetric }) }} aria-pressed={scale === 'actual'} className={toggleClass(scale === 'actual')}>
                 Actual
               </button>
             </div>
@@ -230,35 +265,45 @@ export default function MetricTrendChart({ data, comparison = [], onCountryToggl
 
         {mode === 'metrics' ? (
           <div className="flex flex-wrap gap-1.5" aria-label="Select trend metrics">
-            {METRICS.map((metric) => {
-              const active = selectedKeys.includes(metric.key)
-              return (
-                <button
-                  key={metric.key}
-                  type="button"
-                  onClick={() => toggleMetric(metric.key)}
-                  aria-pressed={active}
-                  className={`flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-[11px] transition-all ${
-                    active
-                      ? 'text-gray-100'
-                      : 'border-surface-600/70 bg-transparent text-gray-500 hover:border-gray-500 hover:text-gray-300'
-                  }`}
-                  style={active ? { backgroundColor: `${metric.color}26`, borderColor: `${metric.color}55` } : undefined}
-                >
-                  <span
-                    className="h-1.5 w-1.5 rounded-full"
-                    style={{ backgroundColor: active ? metric.color : '#6e7681' }}
-                  />
-                  {metric.label}
-                </button>
-              )
-            })}
+              {METRICS.map((metric) => {
+                const active = selectedKeys.includes(metric.key)
+                return (
+                  <button
+                    key={metric.key}
+                    type="button"
+                    onClick={() => toggleMetric(metric.key)}
+                    aria-pressed={active}
+                    className={`flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-[11px] transition-all ${
+                      active
+                        ? 'text-gray-100'
+                        : 'border-surface-600/70 bg-transparent text-gray-500 hover:border-gray-500 hover:text-gray-300'
+                    }`}
+                    style={active ? { backgroundColor: `${metric.color}26`, borderColor: `${metric.color}55` } : undefined}
+                  >
+                    <span
+                      className="h-1.5 w-1.5 rounded-full"
+                      style={{ backgroundColor: active ? metric.color : '#6e7681' }}
+                    />
+                    {metric.label}
+                  </button>
+                )
+              })}
           </div>
         ) : (
           <div className="flex flex-wrap items-center gap-2">
             <select
               value={countryMetric}
-              onChange={(e) => setCountryMetric(e.target.value as MetricKey)}
+              onChange={(e) => {
+                const next = e.target.value as MetricKey
+                setCountryMetric(next)
+                trackEvent('filter_changed', {
+                  filter: 'country_metric',
+                  value: next,
+                  valueLabel: METRICS.find((metric) => metric.key === next)?.label ?? next,
+                  mode,
+                  scale,
+                })
+              }}
               aria-label="Comparison metric"
               className="rounded-full border border-surface-600/80 bg-surface-800 px-2.5 py-1 text-[11px] text-gray-200 [color-scheme:dark] focus:outline-none focus:ring-1 focus:ring-accent-blue/40"
             >
@@ -272,7 +317,17 @@ export default function MetricTrendChart({ data, comparison = [], onCountryToggl
                 <button
                   key={series.iso3}
                   type="button"
-                  onClick={() => onCountryToggle?.(series.iso3)}
+                  onClick={() => {
+                    onCountryToggle?.(series.iso3)
+                    trackEvent('country_comparison_toggled', {
+                      iso3: series.iso3,
+                      countryName: series.name,
+                      action: 'remove',
+                      mode,
+                      scale,
+                      countryMetric,
+                    })
+                  }}
                   title="Remove country"
                   className="flex items-center gap-1.5 rounded-full border px-2.5 py-1 text-[11px] text-gray-100 transition-all"
                   style={{
@@ -292,7 +347,15 @@ export default function MetricTrendChart({ data, comparison = [], onCountryToggl
                 <div className="flex items-center gap-1.5">
                   <input
                     value={countrySearch}
-                    onChange={(e) => setCountrySearch(e.target.value)}
+                    onChange={(e) => {
+                      setCountrySearch(e.target.value)
+                      trackEvent('filter_changed', {
+                        filter: 'country_search',
+                        value: e.target.value,
+                        mode,
+                        scale,
+                      })
+                    }}
                     placeholder="Search"
                     aria-label="Search countries in dropdown"
                     className="w-28 rounded-full border border-surface-600/80 bg-surface-800 px-2.5 py-1 text-[11px] text-gray-200 placeholder:text-gray-500 focus:outline-none focus:ring-1 focus:ring-accent-blue/40"
@@ -302,6 +365,15 @@ export default function MetricTrendChart({ data, comparison = [], onCountryToggl
                     onChange={(e) => {
                       if (!e.target.value) return
                       onCountryToggle?.(e.target.value)
+                      const nextCountry = DASHBOARD_COUNTRIES.find((country) => country.iso3 === e.target.value)
+                      trackEvent('country_comparison_toggled', {
+                        iso3: e.target.value,
+                        countryName: nextCountry?.name ?? e.target.value,
+                        action: 'add',
+                        mode,
+                        scale,
+                        countryMetric,
+                      })
                       setCountrySearch('')
                     }}
                     aria-label="Add country to comparison"
@@ -319,7 +391,7 @@ export default function MetricTrendChart({ data, comparison = [], onCountryToggl
         )}
       </div>
 
-      <ResponsiveContainer width="100%" height={300}>
+      <ResponsiveContainer width="100%" height={280}>
         <LineChart data={chartData} margin={{ top: 4, right: 16, bottom: 4, left: 0 }}>
           <CartesianGrid strokeDasharray="3 3" stroke="#30363d" />
           <XAxis dataKey="year" tick={{ fill: '#8b949e', fontSize: 11 }} />

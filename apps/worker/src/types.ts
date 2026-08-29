@@ -38,3 +38,11 @@ export interface Env {
   GLOBAL_DATA_KV: KVNamespace
   AI: Ai
 }
+
+export interface AnalyticsEventPayload {
+  event: string
+  sessionId: string
+  timestamp: string
+  pathname: string
+  metadata: Record<string, unknown>
+}
