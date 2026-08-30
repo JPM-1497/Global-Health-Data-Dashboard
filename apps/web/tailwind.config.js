@@ -6,16 +6,16 @@ export default {
     extend: {
       colors: {
         surface: {
-          900: '#0d1117',
-          800: '#161b22',
-          700: '#21262d',
-          600: '#30363d',
+          900: '#081c17',
+          800: '#102a23',
+          700: '#193b31',
+          600: '#2a5547',
         },
         accent: {
-          blue: '#58a6ff',
-          green: '#3fb950',
-          red: '#f85149',
-          yellow: '#d29922',
+          blue: '#63c7b2',
+          green: '#72bd8c',
+          red: '#ed7d6d',
+          yellow: '#e3b869',
         },
       },
       fontFamily: {

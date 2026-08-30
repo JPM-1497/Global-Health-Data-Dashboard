@@ -32,6 +32,7 @@ interface CountryComparisonTableProps {
   selectedIso3: string
   onCountrySelect: (iso3: string) => void
   endYear: number
+  onEndYearChange: (year: number) => void
 }
 
 const METRIC_CONFIG: Array<{
@@ -151,8 +152,10 @@ export default function CountryComparisonTable({
   selectedIso3,
   onCountrySelect,
   endYear,
+  onEndYearChange,
 }: CountryComparisonTableProps) {
   const [selectedMetric, setSelectedMetric] = useState<ComparisonMetric>('gdpPerCapitaUsd')
+  const years = Array.from({ length: 37 }, (_, index) => 1990 + index)
 
   const sortedRows = useMemo(() => {
     const metric = METRIC_CONFIG.find((option) => option.key === selectedMetric) ?? METRIC_CONFIG[0]
@@ -164,19 +167,28 @@ export default function CountryComparisonTable({
   }, [rows, selectedMetric])
 
   return (
-    <div className="card space-y-4 border-surface-600/80 bg-surface-800/70">
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between">
-        <div>
-          <h3 className="text-sm font-semibold text-gray-200">Country Comparison</h3>
-          <p className="mt-1">
-            <span className="inline-flex rounded-full border border-accent-blue/50 bg-accent-blue/10 px-2 py-0.5 font-mono text-[10px] uppercase tracking-[0.14em] text-accent-blue">
-              Year {endYear}
-            </span>
-          </p>
+    <div className="card space-y-4 border-[#f4efe2]/30 bg-[#1d3930] shadow-[0_14px_30px_rgba(2,16,12,0.2)]">
+      <div className="space-y-3">
+        <div className="flex flex-wrap items-center justify-between gap-3">
+          <div className="flex items-center gap-2">
+            <h3 className="text-sm font-semibold text-gray-200">Country Comparison</h3>
+            <span className="font-mono text-xs text-accent-blue">{endYear}</span>
+          </div>
+          <div className="flex flex-col gap-1.5">
+            <label className="text-[9px] font-medium uppercase tracking-[0.14em] text-slate-500" htmlFor="country-metrics-year">Year</label>
+            <select
+              id="country-metrics-year"
+              value={endYear}
+              onChange={(event) => onEndYearChange(Number(event.target.value))}
+              className="rounded-md border border-surface-600/80 bg-surface-900 px-2 py-1.5 font-mono text-[11px] text-slate-300 [color-scheme:dark] focus:outline-none focus:ring-1 focus:ring-accent-blue/40"
+            >
+              {years.map((year) => <option key={year} value={year}>{year}</option>)}
+            </select>
+          </div>
         </div>
-        <div className="flex flex-wrap gap-2" aria-label="Select comparison metric">
+        <div className="flex gap-2 overflow-x-auto pb-1 scrollbar-hidden" aria-label="Select comparison metric">
           {METRIC_CONFIG.map((metric) => (
-            <div key={metric.key} className="group relative z-50">
+            <div key={metric.key} className="group relative z-0 shrink-0 hover:z-[60]">
               <button
                 type="button"
                 onClick={() => setSelectedMetric(metric.key)}
@@ -189,12 +201,13 @@ export default function CountryComparisonTable({
               >
                 {metric.label}
               </button>
-              <div className="pointer-events-none absolute left-1/2 top-full z-50 mt-2 w-72 -translate-x-1/2 rounded-md border border-surface-600 bg-surface-900 p-2 text-left text-[11px] leading-5 text-gray-300 opacity-0 shadow-xl transition group-hover:opacity-100 whitespace-normal">
+              <div className="pointer-events-none absolute left-1/2 top-full z-[70] mt-2 w-72 -translate-x-1/2 rounded-md border border-surface-600 bg-surface-900 p-2 text-left text-[11px] leading-5 text-gray-300 opacity-0 shadow-xl transition group-hover:opacity-100 whitespace-normal">
                 <div className="font-medium text-accent-blue">{metric.label}</div>
                 <div className="mt-1 text-gray-300">{metric.definition}</div>
                 <div className="mt-1 text-gray-400">{metric.interpretation}</div>
                 <div className="mt-1 text-gray-500">Calculation: {metric.calculation(endYear)}</div>
                 <div className="mt-1 text-gray-500">Source: {metric.sourceDetail}</div>
+                <div className="mt-1 text-gray-500">Source Badge: {metric.sourceLabel}</div>
               </div>
             </div>
           ))}
@@ -210,12 +223,13 @@ export default function CountryComparisonTable({
                 <th key={metric.key} className="sticky top-0 z-20 bg-surface-900 px-2 py-1 text-center font-medium align-bottom hover:z-40">
                   <div className="group relative inline-block">
                     <span className="block max-w-[16ch] cursor-help whitespace-normal break-normal text-center leading-4 underline decoration-dotted underline-offset-4">{metric.label}</span>
-                    <div className="pointer-events-none absolute left-1/2 top-full z-50 mt-2 w-72 -translate-x-1/2 rounded-md border border-surface-600 bg-surface-900 p-2 text-left text-[11px] leading-5 text-gray-300 opacity-0 shadow-xl transition group-hover:opacity-100 whitespace-normal">
+                    <div className="pointer-events-none absolute left-1/2 top-full z-50 mt-2 w-72 -translate-x-1/2 rounded-md border border-surface-600 bg-surface-900 p-2 text-left text-[11px] font-normal normal-case leading-5 tracking-normal text-gray-300 opacity-0 shadow-xl transition group-hover:opacity-100 whitespace-normal">
                       <div className="font-medium text-accent-blue">{metric.label}</div>
                       <div className="mt-1 text-gray-300">{metric.definition}</div>
                       <div className="mt-1 text-gray-400">{metric.interpretation}</div>
                       <div className="mt-1 text-gray-500">Calculation: {metric.calculation(endYear)}</div>
                       <div className="mt-1 text-gray-500">Source: {metric.sourceDetail}</div>
+                      <div className="mt-1 text-gray-500">Source Badge: {metric.sourceLabel}</div>
                     </div>
                   </div>
                 </th>
@@ -223,7 +237,7 @@ export default function CountryComparisonTable({
             </tr>
           </thead>
           <tbody>
-            {sortedRows.map((row, index) => {
+            {sortedRows.map((row) => {
               const isSelected = row.iso3 === selectedIso3
 
               return (
@@ -257,20 +271,8 @@ export default function CountryComparisonTable({
                   {METRIC_CONFIG.map((metric) => {
                     const displayValue = metric.formatter(row[metric.key])
                     return (
-                      <td key={`${row.iso3}-${metric.key}`} className="relative z-0 px-2 py-1.5 align-middle text-center text-gray-300 whitespace-nowrap hover:z-40">
-                        <div className="group relative inline-block">
-                          <span className="cursor-help underline decoration-dotted underline-offset-4">{displayValue}</span>
-                          <div className="pointer-events-none absolute left-1/2 top-full z-50 mt-2 w-72 -translate-x-1/2 rounded-md border border-surface-600 bg-surface-900 p-2 text-left text-[11px] leading-5 text-gray-300 opacity-0 shadow-xl transition group-hover:opacity-100 whitespace-normal">
-                            <div className="font-medium text-accent-blue">{metric.label}</div>
-                            <div className="mt-1 text-gray-300">Value: {displayValue}</div>
-                            <div className="mt-1 text-gray-500">Calculation: {metric.calculation(endYear)}</div>
-                            <div className="mt-1 text-gray-500">Source: {metric.sourceDetail}</div>
-                            <div className="mt-1 text-gray-500">Source Badge: {metric.sourceLabel}</div>
-                            {metric.key === selectedMetric && (
-                              <div className="mt-1 text-gray-500">Rank: #{index + 1}</div>
-                            )}
-                          </div>
-                        </div>
+                      <td key={`${row.iso3}-${metric.key}`} className="px-2 py-1.5 text-center align-middle text-gray-300 whitespace-nowrap">
+                        {displayValue}
                       </td>
                     )
                   })}

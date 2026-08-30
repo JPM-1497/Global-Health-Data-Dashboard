@@ -41,6 +41,7 @@ export interface Env {
 
 export interface AnalyticsEventPayload {
   event: string
+  userId?: string
   sessionId: string
   timestamp: string
   pathname: string

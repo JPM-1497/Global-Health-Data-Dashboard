@@ -212,9 +212,11 @@ export default {
 
       try {
         const payload = await request.json() as AnalyticsEventPayload
-        const key = `analytics:${Date.now()}:${payload.sessionId ?? 'anonymous'}`
+        const userId = payload.userId ?? payload.sessionId ?? 'anonymous'
+        const key = `analytics:${Date.now()}:${userId}`
         const eventEntry = {
           ...payload,
+          userId,
           ipCountry: (request.cf as { country?: string } | undefined)?.country ?? null,
           ipCity: (request.cf as { city?: string } | undefined)?.city ?? null,
         }

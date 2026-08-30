@@ -1,8 +1,9 @@
-import { Download, Search, X } from 'lucide-react'
+import { Activity, Filter, MousePointer2, Search, Users, X } from 'lucide-react'
 import { useState } from 'react'
 
 type UsageEvent = {
   event: string
+  userId?: string
   sessionId: string
   timestamp: string
   pathname: string
@@ -21,9 +22,12 @@ function formatEventLabel(event: string): string {
     .replace(/\b\w/g, (char) => char.toUpperCase())
 }
 
-function toCsvValue(value: unknown): string {
-  const text = String(value ?? '')
-  return `"${text.replace(/"/g, '""')}"`
+function eventAccent(event: string): string {
+  if (event.includes('country')) return 'border-l-emerald-400 text-emerald-300'
+  if (event.includes('metric')) return 'border-l-cyan-400 text-cyan-300'
+  if (event.includes('tab')) return 'border-l-amber-400 text-amber-300'
+  if (event.includes('year') || event.includes('filter')) return 'border-l-violet-400 text-violet-300'
+  return 'border-l-accent-blue text-accent-blue'
 }
 
 export default function UsageMetricsPanel({ events }: UsageMetricsPanelProps) {
@@ -37,7 +41,7 @@ export default function UsageMetricsPanel({ events }: UsageMetricsPanelProps) {
 
     const searchable = [
       event.event,
-      event.sessionId,
+      event.userId ?? event.sessionId,
       event.pathname,
       event.ipCountry,
       event.ipCity,
@@ -46,54 +50,60 @@ export default function UsageMetricsPanel({ events }: UsageMetricsPanelProps) {
     return searchable.includes(normalizedQuery)
   })
   const totalEvents = filteredEvents.length
-  const uniqueSessions = new Set(filteredEvents.map((event) => event.sessionId)).size
+  const uniqueUsers = new Set(filteredEvents.map((event) => event.userId ?? event.sessionId)).size
   const topEvents = Object.entries(
     filteredEvents.reduce<Record<string, number>>((acc, event) => {
       acc[event.event] = (acc[event.event] ?? 0) + 1
       return acc
     }, {}),
   ).sort((a, b) => b[1] - a[1])
-
-  const exportCsv = () => {
-    const header = ['Timestamp', 'Event', 'Session ID', 'Path', 'Visitor country', 'Visitor city', 'Metadata']
-    const rows = filteredEvents.map((event) => [
-      event.timestamp,
-      formatEventLabel(event.event),
-      event.sessionId,
-      event.pathname,
-      event.ipCountry,
-      event.ipCity,
-      JSON.stringify(event.metadata),
-    ])
-    const csv = [header, ...rows].map((row) => row.map(toCsvValue).join(',')).join('\r\n')
-    const url = URL.createObjectURL(new Blob([csv], { type: 'text/csv;charset=utf-8' }))
-    const link = document.createElement('a')
-    link.href = url
-    link.download = `usage-events-${new Date().toISOString().slice(0, 10)}.csv`
-    link.click()
-    URL.revokeObjectURL(url)
-  }
+  const selectedCountries = new Set(
+    filteredEvents
+      .map((event) => event.metadata.countryName)
+      .filter((country): country is string => typeof country === 'string'),
+  )
+  const selectedTabs = new Set(
+    filteredEvents
+      .map((event) => event.metadata.tabName)
+      .filter((tab): tab is string => typeof tab === 'string'),
+  )
+  const latestEvent = filteredEvents[0]
 
   return (
-    <div className="card space-y-4">
-      <div className="flex flex-wrap gap-3">
-        <div className="rounded-lg border border-surface-600 bg-surface-900/60 px-3 py-2">
-          <div className="text-[10px] uppercase tracking-[0.2em] text-slate-500">Total events</div>
-          <div className="mt-1 text-xl font-semibold text-white">{totalEvents}</div>
+    <div className="space-y-5">
+      <section className="border-b border-surface-700/80 pb-5" aria-labelledby="usage-title">
+        <div className="flex flex-wrap items-end justify-between gap-3">
+          <div>
+            <p className="text-[10px] font-medium uppercase tracking-[0.22em] text-accent-blue">Behavior report</p>
+            <h3 id="usage-title" className="mt-1 text-xl font-semibold text-white">Usage Metrics</h3>
+          </div>
+          <p className="text-xs text-slate-500">{latestEvent ? `Latest activity ${new Date(latestEvent.timestamp).toLocaleString()}` : 'No activity captured yet'}</p>
         </div>
-        <div className="rounded-lg border border-surface-600 bg-surface-900/60 px-3 py-2">
-          <div className="text-[10px] uppercase tracking-[0.2em] text-slate-500">Active sessions</div>
-          <div className="mt-1 text-xl font-semibold text-white">{uniqueSessions}</div>
-        </div>
-        <div className="rounded-lg border border-surface-600 bg-surface-900/60 px-3 py-2">
-          <div className="text-[10px] uppercase tracking-[0.2em] text-slate-500">Top event</div>
-          <div className="mt-1 text-sm font-semibold text-white">
-            {topEvents[0] ? formatEventLabel(topEvents[0][0]) : 'None'}
+        <div className="mt-5 grid grid-cols-2 gap-px overflow-hidden rounded-md border border-surface-600 bg-surface-600 sm:grid-cols-4">
+          <div className="bg-surface-800 px-3 py-3">
+            <Activity size={15} className="text-accent-blue" aria-hidden="true" />
+            <div className="mt-3 text-2xl font-semibold text-white">{totalEvents}</div>
+            <div className="text-[10px] uppercase tracking-[0.16em] text-slate-500">Events</div>
+          </div>
+          <div className="bg-surface-800 px-3 py-3">
+            <Users size={15} className="text-emerald-400" aria-hidden="true" />
+            <div className="mt-3 text-2xl font-semibold text-white">{uniqueUsers}</div>
+            <div className="text-[10px] uppercase tracking-[0.16em] text-slate-500">Users</div>
+          </div>
+          <div className="bg-surface-800 px-3 py-3">
+            <MousePointer2 size={15} className="text-amber-400" aria-hidden="true" />
+            <div className="mt-3 truncate text-sm font-semibold text-white">{topEvents[0] ? formatEventLabel(topEvents[0][0]) : 'None'}</div>
+            <div className="mt-1 text-[10px] uppercase tracking-[0.16em] text-slate-500">Top interaction</div>
+          </div>
+          <div className="bg-surface-800 px-3 py-3">
+            <Filter size={15} className="text-violet-400" aria-hidden="true" />
+            <div className="mt-3 text-2xl font-semibold text-white">{selectedCountries.size}</div>
+            <div className="text-[10px] uppercase tracking-[0.16em] text-slate-500">Countries explored</div>
           </div>
         </div>
-      </div>
+      </section>
 
-      <div className="flex flex-wrap items-center justify-between gap-3 border-y border-surface-700/80 py-3">
+      <div className="flex flex-wrap items-center gap-3 border-y border-surface-700/80 py-3">
         <div className="flex flex-1 flex-wrap items-center gap-2">
           <label className="sr-only" htmlFor="usage-event-filter">Filter by event type</label>
           <select
@@ -131,86 +141,35 @@ export default function UsageMetricsPanel({ events }: UsageMetricsPanelProps) {
             )}
           </div>
         </div>
-        <button
-          type="button"
-          onClick={exportCsv}
-          disabled={filteredEvents.length === 0}
-          className="inline-flex h-8 items-center gap-1.5 rounded-md border border-surface-600 bg-surface-800 px-2.5 text-xs font-medium text-slate-200 transition-colors hover:border-accent-blue/60 hover:text-white disabled:cursor-not-allowed disabled:opacity-50"
-          title="Download filtered events as CSV"
-        >
-          <Download size={14} aria-hidden="true" />
-          Export CSV
-        </button>
       </div>
 
-      <div className="grid gap-4 xl:grid-cols-[1.1fr_2fr]">
-        <div className="rounded-lg border border-surface-600 bg-surface-900/50 p-3">
-          <h4 className="text-sm font-semibold text-slate-200">Event breakdown</h4>
-          <div className="mt-3 space-y-2">
+      <section className="border-y border-surface-700/80 py-4" aria-labelledby="event-insights-title">
+          <div className="flex items-center justify-between gap-3">
+            <div>
+              <p className="text-[10px] font-medium uppercase tracking-[0.18em] text-slate-500">Interaction mix</p>
+              <h4 id="event-insights-title" className="mt-1 text-sm font-semibold text-slate-200">Event insights</h4>
+            </div>
+            <span className="text-xs text-slate-500">{topEvents.length} types</span>
+          </div>
+          <div className="mt-4 space-y-2">
             {topEvents.length === 0 ? (
               <p className="text-xs text-slate-500">No usage events yet.</p>
             ) : (
               topEvents.slice(0, 8).map(([event, count]) => (
-                <div key={event} className="flex items-center justify-between gap-2">
-                  <span className="text-xs text-slate-300">{formatEventLabel(event)}</span>
-                  <span className="rounded-full border border-surface-600 bg-surface-800 px-2 py-0.5 text-[10px] text-accent-blue">
-                    {count}
-                  </span>
+                <div key={event} className={`flex items-center justify-between gap-3 border-l-2 bg-surface-800/60 px-3 py-2 ${eventAccent(event)}`}>
+                  <div className="min-w-0">
+                    <div className="truncate text-xs font-medium text-slate-200">{formatEventLabel(event)}</div>
+                    <div className="mt-0.5 text-[10px] text-slate-500">{totalEvents ? Math.round((count / totalEvents) * 100) : 0}% of visible activity</div>
+                  </div>
+                  <span className="font-mono text-sm font-semibold">{count}</span>
                 </div>
               ))
             )}
           </div>
-        </div>
-
-        <div className="overflow-hidden rounded-lg border border-surface-600 bg-surface-900/50">
-          <div className="max-h-[480px] overflow-auto">
-            <table className="min-w-full text-left text-xs">
-              <thead className="sticky top-0 bg-surface-900/95 text-slate-400">
-                <tr>
-                  <th className="px-3 py-2 font-medium">Time</th>
-                  <th className="px-3 py-2 font-medium">Session</th>
-                  <th className="px-3 py-2 font-medium">Event</th>
-                  <th className="px-3 py-2 font-medium">Metadata</th>
-                </tr>
-              </thead>
-              <tbody>
-                {filteredEvents.length === 0 ? (
-                  <tr>
-                    <td colSpan={4} className="px-3 py-4 text-center text-slate-500">
-                      {events.length === 0 ? 'No usage activity captured yet.' : 'No events match these filters.'}
-                    </td>
-                  </tr>
-                ) : (
-                  filteredEvents.map((event, index) => (
-                    <tr key={`${event.sessionId}-${event.timestamp}-${index}`} className="border-t border-surface-700/80">
-                      <td className="whitespace-nowrap px-3 py-2 text-slate-300">
-                        {new Date(event.timestamp).toLocaleString()}
-                      </td>
-                      <td className="whitespace-nowrap px-3 py-2 text-slate-300">{event.sessionId.slice(0, 8)}</td>
-                      <td className="whitespace-nowrap px-3 py-2 text-slate-200">{formatEventLabel(event.event)}</td>
-                      <td className="px-3 py-2 text-slate-400">
-                        <div className="space-y-1">
-                          {event.ipCountry && <div>Country: {event.ipCountry}</div>}
-                          {event.ipCity && <div>City: {event.ipCity}</div>}
-                          {Object.entries(event.metadata).length > 0 && (
-                            <div>
-                              {Object.entries(event.metadata).map(([key, value]) => (
-                                <div key={`${event.event}-${key}`}>
-                                  {key}: {String(value)}
-                                </div>
-                              ))}
-                            </div>
-                          )}
-                        </div>
-                      </td>
-                    </tr>
-                  ))
-                )}
-              </tbody>
-            </table>
+          <div className="mt-4 border-t border-surface-700/80 pt-3 text-xs text-slate-500">
+            {selectedTabs.size ? `${[...selectedTabs].join(', ')} tabs represented` : 'No tab context available'}
           </div>
-        </div>
-      </div>
+      </section>
     </div>
   )
 }

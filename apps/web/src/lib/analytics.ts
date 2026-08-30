@@ -1,12 +1,13 @@
-const SESSION_KEY = 'global-health-dashboard-session'
+const USER_KEY = 'global-health-dashboard-user'
+const LEGACY_SESSION_KEY = 'global-health-dashboard-session'
 
-function getSessionId(): string {
-  let sessionId = localStorage.getItem(SESSION_KEY)
-  if (!sessionId) {
-    sessionId = crypto.randomUUID()
-    localStorage.setItem(SESSION_KEY, sessionId)
+function getUserId(): string {
+  let userId = localStorage.getItem(USER_KEY) ?? localStorage.getItem(LEGACY_SESSION_KEY)
+  if (!userId) {
+    userId = crypto.randomUUID()
+    localStorage.setItem(USER_KEY, userId)
   }
-  return sessionId
+  return userId
 }
 
 export type AnalyticsEventName =
@@ -26,9 +27,11 @@ export async function trackEvent(
   metadata: Record<string, unknown> = {},
 ): Promise<void> {
   try {
+    const userId = getUserId()
     const payload = {
       event,
-      sessionId: getSessionId(),
+      userId,
+      sessionId: userId,
       timestamp: new Date().toISOString(),
       pathname: window.location.pathname,
       metadata,

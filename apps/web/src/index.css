@@ -5,6 +5,10 @@
 @layer base {
   body {
     @apply bg-surface-900 text-gray-100 font-sans antialiased;
+    background-image:
+      linear-gradient(rgba(114, 189, 140, 0.025) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(114, 189, 140, 0.025) 1px, transparent 1px);
+    background-size: 32px 32px;
     scrollbar-width: none;
   }
 
@@ -19,7 +23,7 @@
 
 @layer components {
   .card {
-    @apply bg-surface-800 rounded-xl border border-surface-600 p-4;
+    @apply bg-surface-800 rounded-xl border border-surface-600 p-4 shadow-[0_12px_28px_rgba(2,16,12,0.18)];
   }
 
   .badge-positive {
