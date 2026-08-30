@@ -3,6 +3,7 @@ import { Zap, DollarSign, Heart, Landmark, Users, Scale, Wifi, Building2, Activi
 import Header from './components/Header'
 import KpiCard from './components/KpiCard'
 import MetricTrendChart, { type CountrySeries } from './components/MetricTrendChart'
+import PopulationInsights from './components/PopulationInsights'
 import CountryComparisonTable from './components/CountryComparisonTable'
 import UsageMetricsPanel from './components/UsageMetricsPanel'
 import { COUNTRY_NAMES } from './countryCatalog'
@@ -273,37 +274,40 @@ export default function App() {
 
         <section aria-label="Dashboard content">
           {activeTab === 'overview' ? (
-            <MetricTrendChart
-              data={metrics}
-              comparison={compareSeries}
-              onCountryToggle={toggleCompareCountry}
-              selectedIso3={selectedIso3}
-              startYear={startYear}
-              endYear={endYear}
-              onRangeChange={(nextStart, nextEnd) => {
-                trackEvent('year_range_changed', {
-                  startYear: nextStart,
-                  endYear: nextEnd,
-                  selectedIso3,
-                  countryName: COUNTRY_NAMES[selectedIso3] ?? selectedIso3,
-                  tabName: getTabName(activeTab),
-                })
-                setStartYear(nextStart)
-                setEndYear(nextEnd)
-              }}
-              onSelectedCountryChange={(iso3) => {
-                setSelectedIso3(iso3)
-                trackEvent('country_selected', {
-                  iso3,
-                  countryName: COUNTRY_NAMES[iso3] ?? iso3,
-                  selectedIso3: iso3,
-                  activeTab,
-                  tabName: getTabName(activeTab),
-                  startYear,
-                  endYear,
-                })
-              }}
-            />
+            <div className="space-y-5">
+              <MetricTrendChart
+                data={metrics}
+                comparison={compareSeries}
+                onCountryToggle={toggleCompareCountry}
+                selectedIso3={selectedIso3}
+                startYear={startYear}
+                endYear={endYear}
+                onRangeChange={(nextStart, nextEnd) => {
+                  trackEvent('year_range_changed', {
+                    startYear: nextStart,
+                    endYear: nextEnd,
+                    selectedIso3,
+                    countryName: COUNTRY_NAMES[selectedIso3] ?? selectedIso3,
+                    tabName: getTabName(activeTab),
+                  })
+                  setStartYear(nextStart)
+                  setEndYear(nextEnd)
+                }}
+                onSelectedCountryChange={(iso3) => {
+                  setSelectedIso3(iso3)
+                  trackEvent('country_selected', {
+                    iso3,
+                    countryName: COUNTRY_NAMES[iso3] ?? iso3,
+                    selectedIso3: iso3,
+                    activeTab,
+                    tabName: getTabName(activeTab),
+                    startYear,
+                    endYear,
+                  })
+                }}
+              />
+              <PopulationInsights rows={countryRows} selectedIso3={selectedIso3} endYear={endYear} />
+            </div>
           ) : activeTab === 'countries' ? (
             <CountryComparisonTable
               rows={countryRows}
